@@ -1,0 +1,172 @@
+# 2 INTRODUCTION TO PYTHON
+
+### 编程语言的差别，可以用哪几对天平衡量？
+
+低层*low-level* v.s. 高层*high-level*
+
+通用*General* v.s. 定向特定领域 *targeted to an application domain* 
+
+解释型 v.s. 编译型
+
+### Python是什么类型的语言，有什么缺点和优点？
+
+Python是比较高层的通用语言，属于解释型。
+
+缺点有三：
+
+1. 可以编写几乎任何程序，只要不需要直接与计算机硬件打交道。
+2. 不对高可靠性做优化，因为静态语义检查比较弱。
+3. 不适合很多人长期维护，也是因为静态语义检查弱。
+
+优点
+
+1. 相对容易学，因为解释器给出的运行反馈，对新手很有帮助。
+2. 大量的免费库，扩展了功能。
+
+### 通过此书学python，可以预期多少，有什么补救？
+
+打个预防针：本书不是全面介绍Python的书。用多少讲多少，用到什么讲什么。
+
+建议去看其他更全面的网络资源。
+
+### Python的发展历史怎样，我们现在的版本可靠吗？
+
+1990年，Guido von Rossum介绍Python给世界，起初很少人用。直到2000年Python2.0面世，很多人加入了python生态圈，作出很多无缝衔接的库。2008年，python3发布，清除了python2种很多不一致的地方，也造成与python2不兼容。
+
+过去几年里，绝大多数公开领域的库完成了向python3的迁移，并用python3.5测试过。本书也是基于python3.5的。
+
+### 一段`script`由什么组成？
+
+一段程序*program*也称为代码*script*，是由一系列定义*definition*和命令*command*组成。
+
+### 程序在哪里运行？
+
+在shell里运行。一般一个程序打开一个shell，一个shell对应一个窗口。
+
+### `object`是什么？定义类型`type`有什么意义？类型大体分为哪两种？
+
+对象*object*是Python程序操作的核心。每个object都有自己的一个类型*type*，它定义了可以对它做什么种类的操作。
+
+### 所有`type`都能从字面上看出来吗？
+
+如果打出它的定义形态，一般可以从字面上看出来，比如`3`，`'abc'`。
+
+### 有哪四种标量类型？
+
+1. 整数
+2. 浮点数
+3. 布尔
+4. None
+
+### 为什么不把`float`类型干脆叫做`real`？
+
+实数*real number*在现代编程系统中都用浮点数*floating point number*形式来存储。它有很多优点，但是在某些情况下，也造成浮点运算与实数运算有所不同。
+
+### 表达式`expression`由什么构成，有什么归宿？
+
+> Objects and operators can be combined to form expressions, each of which evaluates to an object of some type. We will refer to this as the value of the expression.
+
+### 给`int`和`float`可以加什么操作符？
+
+`i + - * j` either one is float, the result is float
+
+`i / j` i divided by j
+
+`i // j`  interger division
+
+`i % j` i mod j, i modulo j;
+
+`i ** j` i raised to the power j
+
+`i == != > >= < <= j`
+
+### 变量*variable*和赋值*assignment*仅仅是什么？
+
+Variable is just a name.
+
+Assignment associates a name with an object. An object can have one, more than one, or no name associated with it.  
+
+### 为什么要给变量起个合适*apt*的名字？
+
+帮助读程序的人进入思考/反省模式：
+
+读一段程序：
+
+```
+a = 3.14159
+b = 11.2
+c = a*(b**2)
+```
+这段程序有什么问题吗？
+
+再看这段：
+
+```
+pi = 3.14159
+diameter = 11.2
+area = pi*(diameter**2)
+```
+
+发现什么问题了吗？
+
+### python 3 的保留字都有什么？
+
+`and, as, assert, break, class, continue, def, elif, except, False, finally, for, from, global, if, import, in, is, lambda, nonlocal, None, not, or, pass, raise, return, True, try, while, with, yield`
+
+### 怎样实现变量调换值？利用了赋值的什么性质？
+
+`x, y = y, x`
+
+赋值时，先计算`=`右边的表达式。
+
+### 推荐哪些Python的IDE？
+
+IDE：Integrated Development Environment
+
+IDLE
+anaconda
+canopy
+
+我用的是PyCharm
+
+### 缩进有意义吗？“行”的概念重要吗？
+
+缩进在语义上有意义，表达block关系。
+
+正因为缩进有意义，line的概念在Python中才重要。
+
+### 怎样尽量避免nested condition？
+
+用复合布尔表达式。
+
+### 只有分支结构的程序，有什么特性？
+
+得到执行的语句一定比语句总数要少。 
+
+### 恒定时间*constant time*的程序有什么特点？
+
+这里的恒定，是说可以找到一个常数，时间不会超过它。
+
+### 什么是过载*overloaded*？
+
+针对运算符或函数来说的。运算符会检测它操作的对象类型，执行功能类似，然而有所不同（大同小异）的操作。
+
+### 在python的版本演化中，类型检查的强弱有变化吗？
+
+Python2中，类型检查不强。Python3中，禁止了一些没啥意思的类型容错。
+
+例如: `'a' < 2` 在python2中认为一切字母都小于数字，但是在Python3中，静态语法检查会报错，因为这种比较没什么实际意义。
+
+### 输入函数input在python2和python3中有什么不同？
+
+Python3的`input`相当于Python2的`raw input`。它把用户输入的内容都转化成字符串。程序需要用特定代码，把字符串转换*type conversion or type cast*成相应的类型。
+
+Python2里的`input`，会根据输入内容自动决定函数返回对象的类型。
+
+### 编码的两个大系统里，现在最常用哪套编码？占多少比例？
+
+过去曾经使用ASCII系统（128个），现在多使用Unicode（12万个）。
+
+全世界的网站，截至2016年，有85%以上使用UTF-8编码。
+
+`# -*- coding: utf-8 -*-`

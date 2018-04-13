@@ -1,0 +1,218 @@
+# 3 SOME SIMPLE NUMERICAL PROGRAMS
+
+## 3.1 Exhaustive Enumeration
+
+### 用`while`的时候必须想好什么？
+
+decrement function，什么时候停下来。
+
+### decrementing function有哪四个属性？
+
+从问题中提取一组变量，把它映射到一个变量；
+这个变量的初始值非负；
+每次运算这个变量都会变小；
+小于等于零，就停止循环。
+
+### 可以使用猜试法的问题，有什么特征？
+
+猜试系：猜一个结果，试一下对不对，不对就再猜。
+
+前提
+* 试起来很容易。
+* 错了没惩罚。
+* 以可以接受的成本，有望得到答案。
+
+### 猜试法中有一种什么有效的"笨"办法？
+
+穷举法——把答案空间中的所有可能都试一下，要么找到答案，要么证明没有。
+
+为什么有效呢？
+
+* 方法简单粗暴，相对于手工推演等算法，实现更容易。
+* 节省了想算法的时间。
+* 计算机的速度很快。
+
+## 3.2 For Loops
+
+### `range(start, stop, step)`的三个参数怎么理解，输出什么结果？
+
+start是砖，肯定能踩准；stop是墙，以step来走，永远不会触碰。
+
+### 在python3里，`range(100000)`会占用很多空间吗？
+
+不会。
+
+> be generated on an "as needed" basis.
+
+这个功能在Python2中需要使用`xrange()`。
+
+### 用计算机解平方根，与手工解法一样吗？
+
+手工一步步试商；计算机小步走，乘方后检验是否足够接近。 
+
+计算机的解题方法经常与手工不一样。
+
+### 什么样就算是一个好答案？
+
+按照问题定义的程度，足够接近，就是好答案。
+
+更接近，或者完全吻合，并不会更好*no better than*。
+
+## 3.3 Approximate Solutions and Bisection Search
+
+### 二分查找与齐步走查找本质区别在哪里？
+
+步长不同。
+
+* 齐步走每次迈一小步，保证不漏过真正的正确值。
+* 二分法每次排除一半的空间，越来越接近正确值。
+
+这就带来几个不同的表现。
+
+* 齐步走可能漏过；二分法不会漏过。
+* 齐步走的计算量可以估计，二分法变动比较大。
+
+二分法有个前提：可能空间和比较空间都是有序的。
+
+### 二分查找法仅仅限于解平方根吗？它属于哪个系列？
+
+不限于解平方根，也可以解立方根，只要结果空间的大小比较，可以用来指导选择可能空间的哪一半，就可以使用。也就是说，"大了，就往小里找"，或者相反。
+
+它属于猜试法。
+
+## 3.4 A Few Words About Using Floats
+
+### "重构的我不是我"的代码结果
+
+``` python
+x = 0.0
+for i in range(10):
+    x = x + 0.1
+if x == 1.0:
+    print(x, '= 1.0')
+else:
+    print(x, 'is not 1.0')
+    print(x)
+```
+
+在Python2.7中的运行结果
+``` terminal
+(0.9999999999999999, 'is not 1.0')
+1.0
+```
+
+在Python3.6中的运行结果
+``` terminal
+0.9999999999999999 is not 1.0
+0.9999999999999999
+```
+
+因为
+1. Python2.7中，`print`是statement，而不是function；
+2. Python2.7中，`print` 会自动圆整。
+3. `0.1` 这样的数在计算机中存储时，一定有截断。
+
+### 什么是浮点数？计算机里的浮点数什么样？
+
+> We would represent a number with a pair of integers 
+> - the significant digits
+> - an exponent
+
+十进制浮点数
+
+`1.949 = 
+(1949, -3) =
+1949*10**(-3)` 
+
+二进制浮点数
+
+`0.625 = 5/8 =
+(101, -11) =
+5*2**(-3)` 
+
+计算机中的`0.1`
+```
+0.1 = 1/10
+(0011, -101) = 3/32 = 0.09375
+(11001, -1000) = 25/256 = 0.0976525
+``` 
+
+不存在这样的`sig`和`exp`，使得`sig*2**(-exp) == 0.1`。
+
+在Python系统里，这个significant digits是53位。
+
+### 舍入误差对程序有影响吗？
+
+注意避免直接比较两个实数是否`==`，而用"差值足够小"来表达。
+
+`x == y` v.s. `abs(x - y) < 0.0001`
+
+在某些设计不良的程序里，也会发生误差向一个方向积累的情况。
+
+## 3.5 Newton-Raphson
+
+### 最常用的近似算法叫什么？
+
+通常归功与Issac Newton，但是Raphson几乎同时也发表了这个算法。
+
+也叫"切线法"，基本思想是以直代曲，每一步近似为线性方程来求解。
+
+任意函数，做Taylor一阶展开，解出x作为新的近似跟。
+
+![](https://ws1.sinaimg.cn/large/006tKfTcly1fq5202w15nj31kw23vnpd.jpg)
+
+### 在多项式函数里，有哪些术语？
+
+注意：N-R法不只用来解一元多项式方程，还可以解多元方程、非线性方程。它只有局部收敛性，没有全局收敛性。
+
+* polinomial of one varialbe
+* term
+* coefficient
+* nonnegative integer exponent
+* degree of term
+* degree of polynomial
+* value of polynomial
+* root of the polynomial
+
+### 同样的精度，Bisecton Search与Newton-Raphson方法各自的收敛速度怎么样？
+
+快三倍？
+
+``` python
+y = 54.0
+epsilon = 0.01
+
+numGuesses = 0
+low = 0.0
+high = y
+ans = (high + low)/2.0
+
+while abs(ans**2 - y) >= epsilon:
+    print('low = ' + str(low) + ' high = ' + str(high) + ' ans = ' + str(ans))
+    numGuesses += 1
+    if ans**2 < y:
+        low = ans
+    else:
+        high = ans
+    ans = (high + low)/2.0
+print('Bisection search numGuesses = ' + str(numGuesses))
+print(str(ans) + ' is close to square root of ' + str(y))
+
+guess = y/2.0
+numGuesses = 0
+
+while abs(guess*guess - y) >= epsilon:
+    numGuesses += 1
+    guess = guess - (((guess**2) - y)/(2*guess))
+print('Newton-Raphson numGuesses = ' + str(numGuesses))
+print('Square root of ' + str(y) + ' is about ' + str(guess))
+```
+
+输出结果：
+
+``` term
+Bisection search numGuesses = 14
+7.34820556641 is close to square root of 54.0
+Newton-Raphson numGuesses = 5
+Square root of 54.0 is about 7.34846948355
+```

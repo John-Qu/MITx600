@@ -12,3 +12,4 @@ for c in string_of_num:
 num = float(s_num)
 sum += num
 print('sum is', sum)
+
