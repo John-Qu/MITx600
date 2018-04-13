@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a5a47a1-793f-4974-94e3-350147d8e3ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/C1-GETTING-STARTED.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/C2-INTRODUCTION-TO-PYTHON.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/C3-SOME-SIMPLE-NUMERICAL PROGRAMS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/C4-FUNCTION-SCOPING-AND-ABSTRACTION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/C5-STRUCTURED TYPES, MUTABILITY, AND HIGHER-ORDER FUNCITONS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/C6-TESTING-AND-DEBUGGING.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Book_Finger_exercise/2-4-Fe1-toPrint-numXs-times" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Book_Finger_exercise/2-4-Fe2-toFind-largest-odd-number.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Book_Finger_exercise/3-2-Fe1-Sum-string-num.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Book_Finger_exercise/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/note-of-INTRODUCTION-TO-COMPUTATION-AND-PROGRAMMING-WITH-PYTHON.md" beforeDir="false" />
-    </list>
+    <list default="true" id="2a5a47a1-793f-4974-94e3-350147d8e3ef" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/Readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="96">
+              <first_editor relative-caret-position="168">
                 <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
               </first_editor>
               <second_editor />
@@ -100,7 +86,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1120" />
+    <option name="width" value="840" />
     <option name="height" value="1028" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -276,17 +262,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1120" height="1028" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="22" width="840" height="1028" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918962" visible="true" weight="0.2311192" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918962" visible="true" weight="0.31013432" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50045496" side_tool="true" weight="0.5102041" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.33641025" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49954504" weight="0.42964554" />
       <window_info id="Structure" order="1" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49954504" weight="0.74865735" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49954504" visible="true" weight="0.74865735" />
       <window_info id="Favorites" order="2" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -566,7 +551,7 @@
     <entry file="file://$PROJECT_DIR$/Readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="96">
+          <first_editor relative-caret-position="168">
             <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
           </first_editor>
           <second_editor />
