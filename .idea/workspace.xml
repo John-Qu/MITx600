@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a5a47a1-793f-4974-94e3-350147d8e3ef" name="Default" comment="" />
+    <list default="true" id="2a5a47a1-793f-4974-94e3-350147d8e3ef" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/C4-FUNCTION-SCOPING-AND-ABSTRACTION.md" beforeDir="false" afterPath="$PROJECT_DIR$/C4-FUNCTION-SCOPING-AND-ABSTRACTION.md" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,12 +16,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Readme.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Readme.md">
+      <file leaf-file-name="C4-FUNCTION-SCOPING-AND-ABSTRACTION.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/C4-FUNCTION-SCOPING-AND-ABSTRACTION.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="168">
-                <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="6735">
+                <caret line="254" selection-start-line="254" selection-end-line="254" />
               </first_editor>
               <second_editor />
             </state>
@@ -39,6 +41,7 @@
     <findStrings>
       <find>x</find>
       <find>factor</find>
+      <find>只有分支与循环的程序有什么不足</find>
     </findStrings>
     <replaceStrings>
       <replace>y</replace>
@@ -65,7 +68,6 @@
         <option value="$PROJECT_DIR$/C3-SOME-SIMPLE-NUMERICAL PROGRAMS.md" />
         <option value="$PROJECT_DIR$/4-2-Em1.py" />
         <option value="$PROJECT_DIR$/4-3-2-Palindrome.py" />
-        <option value="$PROJECT_DIR$/C4-FUNCTION-SCOPING-AND-ABSTRACTION.md" />
         <option value="$PROJECT_DIR$/5-3-1-Em-removeDups.py" />
         <option value="$PROJECT_DIR$/4-3-Em-factorial.py" />
         <option value="$PROJECT_DIR$/Book_Finger_exercise/4-2-Em1.py" />
@@ -81,6 +83,7 @@
         <option value="$PROJECT_DIR$/C1-GETTING-STARTED.md" />
         <option value="$PROJECT_DIR$/note-of-INTRODUCTION-TO-COMPUTATION-AND-PROGRAMMING-WITH-PYTHON.md" />
         <option value="$PROJECT_DIR$/Readme.md" />
+        <option value="$PROJECT_DIR$/C4-FUNCTION-SCOPING-AND-ABSTRACTION.md" />
       </list>
     </option>
   </component>
@@ -97,6 +100,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -108,7 +112,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -264,14 +267,15 @@
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="840" height="1028" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918962" visible="true" weight="0.31013432" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918962" visible="true" weight="0.31013432" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50045496" side_tool="true" weight="0.5102041" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.33641025" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49954504" weight="0.42964554" />
       <window_info id="Structure" order="1" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49954504" visible="true" weight="0.74865735" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49954504" weight="0.74865735" />
       <window_info id="Favorites" order="2" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -280,26 +284,25 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918962" visible="true" weight="0.11646952" />
       <window_info id="Structure" order="1" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32867885" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.33641025" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.33683106" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
       <window_info id="Favorites" order="2" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.33641025" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -461,30 +464,8 @@
     <entry file="file://$PROJECT_DIR$/Book_Finger_exercise/4-2-Em1.py" />
     <entry file="file://$PROJECT_DIR$/Book_Finger_exercise/3-4-Em1-not-equal.py" />
     <entry file="file://$PROJECT_DIR$/5-4-Em-apply_to_each.py" />
-    <entry file="file://$PROJECT_DIR$/Book_Finger_exercise/em_4_3_fibonacci.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/C4-FUNCTION-SCOPING-AND-ABSTRACTION.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="91">
-            <caret line="271" selection-start-line="271" selection-end-line="271" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Book_Finger_exercise/em_6_1_1_copy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Book_Finger_exercise/em_4_3_fibonacci.py" />
+    <entry file="file://$PROJECT_DIR$/Book_Finger_exercise/em_6_1_1_copy.py" />
     <entry file="file://$PROJECT_DIR$/C5-STRUCTURED TYPES, MUTABILITY, AND HIGHER-ORDER FUNCITONS.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -495,30 +476,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Book_Finger_exercise/em_6_1_2_isprime.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="4" selection-end-line="8" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Book_Finger_exercise/em_6_1_2_abs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="829">
-            <caret line="30" selection-start-line="30" selection-end-line="30" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Book_Finger_exercise/em_6_1_2_isprime.py" />
+    <entry file="file://$PROJECT_DIR$/Book_Finger_exercise/em_6_1_2_abs.py" />
+    <entry file="file://$PROJECT_DIR$/temp.md" />
     <entry file="file://$PROJECT_DIR$/C2-INTRODUCTION-TO-PYTHON.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -551,8 +511,18 @@
     <entry file="file://$PROJECT_DIR$/Readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="168">
-            <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <first_editor relative-caret-position="192">
+            <caret line="1" selection-start-line="1" selection-end-line="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C4-FUNCTION-SCOPING-AND-ABSTRACTION.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="6735">
+            <caret line="254" selection-start-line="254" selection-end-line="254" />
           </first_editor>
           <second_editor />
         </state>
