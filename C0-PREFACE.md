@@ -4,9 +4,9 @@
 
 MIT是2006。MIT的OCW-Open CourseWare从2008年起，有2008，[2011](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00sc-introduction-to-computer-science-and-programming-spring-2011/index.htm)（Guttag全程），[2016](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/index.htm)（Bell Grimson Guttag三人）三个版本。那里有给MIT学生的随堂习题、测验的PDF。
 
-[edX](https://www.edx.org/)的MOOC-Massive Online Open Courses是2012起，目前的版本是2017年[8月](https://courses.edx.org/courses/course-v1:MITx+6.00.1x+2T2017_2/course/)和10月上线的，三人讲课。上下两门课的认证通道还有两个月关闭，费是49+49美元。
+[edX](https://www.edx.org/)的MOOC-Massive Online Open Courses是2012起，目前的版本是2017年[8月](https://courses.edx.org/courses/course-v1:MITx+6.00.1x+2T2017_2/course/)和10月上线的，三人讲课。上下两门课的认证通道，分别在2018年7月5日、8月15日关闭，认证费是49+49美元。
 
-在“[学堂在线](http://www.xuetangx.com/courses/course-v1:MITx+6_00_1x+sp/courseware/Week_1/)”上面，是2016年版，中文字幕，不用翻墙即可播放。认证通道已关闭。
+在“[学堂在线](http://www.xuetangx.com/courses/course-v1:MITx+6_00_1x+sp/courseware/Week_1/)”上面，是2016年版，中文字幕，认证通道已关闭。
 
 ### 内容定位在哪里？
 

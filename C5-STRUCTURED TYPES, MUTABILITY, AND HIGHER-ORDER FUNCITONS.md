@@ -295,7 +295,7 @@ dict类似于list，values可以是任何类型。
 
 dict通过keys索引，list通过index索引。
 
-dict查找不需要遍历，于容量无关。
+dict查找不需要遍历，与容量无关。
 
 ### dict的keys是hashtable type的对象，必须满足哪两点？
 
