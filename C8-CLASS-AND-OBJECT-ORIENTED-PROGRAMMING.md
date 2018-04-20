@@ -423,7 +423,7 @@ type(p6) == Student 返回 False
 称为substitution principle.
 
 
-## Encapsulation and Information Hiding
+## 8.3 Encapsulation and Information Hiding
 
 
 ### 什么是封装？举例说明。
@@ -533,7 +533,7 @@ for s in course.getStudents():
 ```
 
 
-## 8.2 Mortgages, an Extended Example
+## 8.4 Mortgages, an Extended Example
 
 
 ### 网上查来的公式，要确认一下什么？

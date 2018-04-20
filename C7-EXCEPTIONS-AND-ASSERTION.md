@@ -149,3 +149,5 @@ except:
 另一种defensive programming的习惯。检验中间值，检验函数返回值。
 
 assert *Boolean expression*, argument
+
+以上，2018-04-15记。

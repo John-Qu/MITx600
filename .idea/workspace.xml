@@ -2,23 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a5a47a1-793f-4974-94e3-350147d8e3ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/C7-EXCEPTIONS-AND-ASSERTION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codes_from_book/em_7_1_read_val.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codes_from_book/em_8_1_2_Person.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codes_from_book/em_8_1_int_set.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codes_from_book/em_8_4_mortgate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/finger_exercis_in_book/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/finger_exercis_in_book/fe_7_1_sum_digits.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/finger_exercis_in_book/fe_7_2_find_an_even.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/finger_exercis_in_book/fe_7_2_get_ratios.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/C10-SOME-SIMPLE-ALGORITHMS-AND-DATA-STRUCTURES.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/C9-A-SIMPLISTIC-INTRODUCTION-TO-ALGORITHMIC-COMPLEXITY.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/C0-PREFACE.md" beforeDir="false" afterPath="$PROJECT_DIR$/C0-PREFACE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/C5-STRUCTURED TYPES, MUTABILITY, AND HIGHER-ORDER FUNCITONS.md" beforeDir="false" afterPath="$PROJECT_DIR$/C5-STRUCTURED TYPES, MUTABILITY, AND HIGHER-ORDER FUNCITONS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C1-GETTING-STARTED.md" beforeDir="false" afterPath="$PROJECT_DIR$/C1-GETTING-STARTED.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/C6-TESTING-AND-DEBUGGING.md" beforeDir="false" afterPath="$PROJECT_DIR$/C6-TESTING-AND-DEBUGGING.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/fe_2_4_toFind_largest_odd_number.py" beforeDir="false" afterPath="$PROJECT_DIR$/finger_exercis_in_book/fe_2_4_toFind_largest_odd_number.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/fe_2_4_toPrint_numXs_times.py" beforeDir="false" afterPath="$PROJECT_DIR$/finger_exercis_in_book/fe_2_4_toPrint_numXs_times.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/fe_3_2_Sum_string_num.py" beforeDir="false" afterPath="$PROJECT_DIR$/finger_exercis_in_book/fe_3_2_Sum_string_num.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C7-EXCEPTIONS-AND-ASSERTION.md" beforeDir="false" afterPath="$PROJECT_DIR$/C7-EXCEPTIONS-AND-ASSERTION.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C8-CLASS-AND-OBJECT-ORIENTED-PROGRAMMING.md" beforeDir="false" afterPath="$PROJECT_DIR$/C8-CLASS-AND-OBJECT-ORIENTED-PROGRAMMING.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,36 +22,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="C8-CLASS-AND-OBJECT-ORIENTED-PROGRAMMING.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/C8-CLASS-AND-OBJECT-ORIENTED-PROGRAMMING.md">
+      <file leaf-file-name="C10-SOME-SIMPLE-ALGORITHMS-AND-DATA-STRUCTURES.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/C10-SOME-SIMPLE-ALGORITHMS-AND-DATA-STRUCTURES.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="868">
-                <caret line="673" lean-forward="true" selection-start-line="673" selection-end-line="673" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Readme.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="275">
-                <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="C0-PREFACE.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/C0-PREFACE.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="575">
-                <caret line="6" column="212" selection-start-line="6" selection-start-column="212" selection-end-line="6" selection-end-column="212" />
+              <first_editor relative-caret-position="824">
+                <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
               </first_editor>
               <second_editor />
             </state>
@@ -118,26 +84,28 @@
         <option value="$PROJECT_DIR$/em_6_1_1_copy.py" />
         <option value="$PROJECT_DIR$/em_6_1_2_isprime.py" />
         <option value="$PROJECT_DIR$/em_6_1_2_abs.py" />
-        <option value="$PROJECT_DIR$/C1-GETTING-STARTED.md" />
         <option value="$PROJECT_DIR$/note-of-INTRODUCTION-TO-COMPUTATION-AND-PROGRAMMING-WITH-PYTHON.md" />
         <option value="$PROJECT_DIR$/C4-FUNCTION-SCOPING-AND-ABSTRACTION.md" />
-        <option value="$PROJECT_DIR$/C6-TESTING-AND-DEBUGGING.md" />
         <option value="$PROJECT_DIR$/finger_exercis_in_book/fe_7_1_sum_digits.py" />
         <option value="$PROJECT_DIR$/codes_from_book/em_7_1_read_val.py" />
         <option value="$PROJECT_DIR$/finger_exercis_in_book/fe_7_2_find_an_even.py" />
         <option value="$PROJECT_DIR$/finger_exercis_in_book/fe_7_2_get_ratios.py" />
-        <option value="$PROJECT_DIR$/C7-EXCEPTIONS-AND-ASSERTION.md" />
         <option value="$PROJECT_DIR$/C5-STRUCTURED TYPES, MUTABILITY, AND HIGHER-ORDER FUNCITONS.md" />
         <option value="$PROJECT_DIR$/codes_from_book/em_8_1_int_set.py" />
         <option value="$PROJECT_DIR$/codes_from_book/em_8_1_2_Person.py" />
         <option value="$PROJECT_DIR$/codes_from_book/em_8_4_mortgate.py" />
-        <option value="$PROJECT_DIR$/C8-CLASS-AND-OBJECT-ORIENTED-PROGRAMMING.md" />
         <option value="$PROJECT_DIR$/C0-PREFACE.md" />
         <option value="$PROJECT_DIR$/Readme.md" />
+        <option value="$PROJECT_DIR$/C6-TESTING-AND-DEBUGGING.md" />
+        <option value="$PROJECT_DIR$/C1-GETTING-STARTED.md" />
+        <option value="$PROJECT_DIR$/C7-EXCEPTIONS-AND-ASSERTION.md" />
+        <option value="$PROJECT_DIR$/C8-CLASS-AND-OBJECT-ORIENTED-PROGRAMMING.md" />
+        <option value="$PROJECT_DIR$/C9-A-SIMPLISTIC-INTRODUCTION-TO-ALGORITHMIC-COMPLEXITY.md" />
+        <option value="$PROJECT_DIR$/C10-SOME-SIMPLE-ALGORITHMS-AND-DATA-STRUCTURES.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="840" />
     <option name="height" value="1028" />
@@ -321,10 +289,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="1028" extended-state="6" />
+    <frame x="0" y="22" width="840" height="1028" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918962" visible="true" weight="0.3074141" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918962" weight="0.30525032" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50045496" side_tool="true" weight="0.5102041" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
@@ -374,17 +342,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/C4-FUNCTION-SCOPING-AND-ABSTRACTION.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="4292">
-            <caret line="148" lean-forward="true" selection-start-line="148" selection-end-line="148" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Book_Finger_exercise/4-2-Em1.py" />
     <entry file="file://$PROJECT_DIR$/C3-SOME-SIMPLE-NUMERICAL PROGRAMS.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -490,25 +447,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/C1-GETTING-STARTED.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/note-of-INTRODUCTION-TO-COMPUTATION-AND-PROGRAMMING-WITH-PYTHON.md" />
-    <entry file="file://$PROJECT_DIR$/C4-FUNCTION-SCOPING-AND-ABSTRACTION.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="24">
-            <caret line="254" selection-start-line="254" selection-end-line="254" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/finger_exercis_in_book/fe_7_1_sum_digits.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -527,26 +466,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/C7-EXCEPTIONS-AND-ASSERTION.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="3625">
-            <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/C6-TESTING-AND-DEBUGGING.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="124">
-            <caret line="215" lean-forward="true" selection-start-line="215" selection-end-line="215" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -588,16 +507,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/C8-CLASS-AND-OBJECT-ORIENTED-PROGRAMMING.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="868">
-            <caret line="673" lean-forward="true" selection-start-line="673" selection-end-line="673" />
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="275">
+            <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
           </first_editor>
           <second_editor />
         </state>
@@ -613,11 +527,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Readme.md">
+    <entry file="file://$PROJECT_DIR$/C1-GETTING-STARTED.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="275">
-            <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+            <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C4-FUNCTION-SCOPING-AND-ABSTRACTION.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="330">
+            <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C6-TESTING-AND-DEBUGGING.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="25">
+            <caret line="79" column="32" selection-start-line="79" selection-start-column="32" selection-end-line="79" selection-end-column="32" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C7-EXCEPTIONS-AND-ASSERTION.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="302">
+            <caret line="135" column="63" lean-forward="true" selection-start-line="135" selection-start-column="63" selection-end-line="135" selection-end-column="63" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C8-CLASS-AND-OBJECT-ORIENTED-PROGRAMMING.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="1413">
+            <caret line="567" selection-start-line="567" selection-end-line="567" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C9-A-SIMPLISTIC-INTRODUCTION-TO-ALGORITHMIC-COMPLEXITY.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="177">
+            <caret line="326" lean-forward="true" selection-start-line="326" selection-end-line="326" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C10-SOME-SIMPLE-ALGORITHMS-AND-DATA-STRUCTURES.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="824">
+            <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
           </first_editor>
           <second_editor />
         </state>
