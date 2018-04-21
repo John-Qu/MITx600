@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a5a47a1-793f-4974-94e3-350147d8e3ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/C10-SOME-SIMPLE-ALGORITHMS-AND-DATA-STRUCTURES.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/C9-A-SIMPLISTIC-INTRODUCTION-TO-ALGORITHMIC-COMPLEXITY.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/C1-GETTING-STARTED.md" beforeDir="false" afterPath="$PROJECT_DIR$/C1-GETTING-STARTED.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/C6-TESTING-AND-DEBUGGING.md" beforeDir="false" afterPath="$PROJECT_DIR$/C6-TESTING-AND-DEBUGGING.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/C7-EXCEPTIONS-AND-ASSERTION.md" beforeDir="false" afterPath="$PROJECT_DIR$/C7-EXCEPTIONS-AND-ASSERTION.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/C8-CLASS-AND-OBJECT-ORIENTED-PROGRAMMING.md" beforeDir="false" afterPath="$PROJECT_DIR$/C8-CLASS-AND-OBJECT-ORIENTED-PROGRAMMING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C10-SOME-SIMPLE-ALGORITHMS-AND-DATA-STRUCTURES.md" beforeDir="false" afterPath="$PROJECT_DIR$/C10-SOME-SIMPLE-ALGORITHMS-AND-DATA-STRUCTURES.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,8 +21,8 @@
         <entry file="file://$PROJECT_DIR$/C10-SOME-SIMPLE-ALGORITHMS-AND-DATA-STRUCTURES.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="824">
-                <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+              <first_editor relative-caret-position="827">
+                <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
               </first_editor>
               <second_editor />
             </state>
@@ -295,13 +290,13 @@
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918962" weight="0.30525032" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50045496" side_tool="true" weight="0.5102041" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49954504" weight="0.42964554" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.33619764" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49954504" weight="0.42964554" />
       <window_info id="Structure" order="1" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49954504" weight="0.5413534" />
-      <window_info id="Favorites" order="2" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -313,21 +308,21 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918962" visible="true" weight="0.11646952" />
       <window_info id="Structure" order="1" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32867885" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.33641025" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.33683106" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.33641025" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -595,8 +590,8 @@
     <entry file="file://$PROJECT_DIR$/C10-SOME-SIMPLE-ALGORITHMS-AND-DATA-STRUCTURES.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="824">
-            <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+          <first_editor relative-caret-position="827">
+            <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
           </first_editor>
           <second_editor />
         </state>

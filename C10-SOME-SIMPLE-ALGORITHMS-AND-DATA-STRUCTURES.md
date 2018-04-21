@@ -56,6 +56,66 @@ The major point was that the key to efficiency is a good algorithm, not clever c
 - 依此往复改良。
 
 
+## 10.1 Search Algorithms
+
+
+### 什么是搜索算法？
+
+一种寻找的方法
+
+- 在哪里搜？搜索空间 search space，collection of items
+- 搜什么？一个或一组元素, an item or group of items
+- 依据什么？特征属性，with specific propertities
+
+
+### 搜索空间一定是具体的吗？
+
+具体：电子病例
+
+抽象：整数集
+
+
+### 说`e in li`的算法复杂度"至好"是线性的逻辑是什么？
+
+```python
+for i in range(len(L)):
+    if L[i] == e:
+        return True
+return False
+```
+
+- 最坏输入数据情况下，e不在L里，执行O(len(L))次测试。
+- 各次测试都是常数时间吗？如果是，那么才可以说复杂度与len(L)是线性关系。
+- 各次测试分为找到Li与比较。
+- 元素比较是常数时间。
+- 找到各个L[i]是常数时间吗？
+- 我们默认系统找到对应地址的内容（从某个地址里提取元素）这个动作是常数时间。
+- 那么问题简化为：Python能否在常数时间内计算出下一个元素的地址。
+
+
+### Python怎样实现在常数时间里顺序索引元素？
+
+先假想一个理想情况：
+- 一个list，每个元素都是int。
+- 在内存中顺序存储。
+- 因为每个整数是1字长byte占4个或8个字节bit（32位处理器或64位，硬件决定）
+- 计算索引地址：start+4*i
+
+真实情况类似：列表的表现方式是"长度+指针1+指针2+..."
+- 指针就是固定长度的，有的32位，有的64位。
+- 指针所指向的地址里，才是任意类型的元素。
+- 计算索引地址：start+4+4*i。
+
+![](http://www.ituring.com.cn/figures/2017/PythonIntroduction/13.d10z.001.png)
+
+
+### Python对List的表示方式体现什么计算机技术？
+
+间接引用, indirection
+
+
+
+
 ### 
 
 
