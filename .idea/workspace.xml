@@ -4,6 +4,7 @@
     <list default="true" id="2a5a47a1-793f-4974-94e3-350147d8e3ef" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/C10-SOME-SIMPLE-ALGORITHMS-AND-DATA-STRUCTURES.md" beforeDir="false" afterPath="$PROJECT_DIR$/C10-SOME-SIMPLE-ALGORITHMS-AND-DATA-STRUCTURES.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C8-CLASS-AND-OBJECT-ORIENTED-PROGRAMMING.md" beforeDir="false" afterPath="$PROJECT_DIR$/C8-CLASS-AND-OBJECT-ORIENTED-PROGRAMMING.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,8 +22,8 @@
         <entry file="file://$PROJECT_DIR$/C10-SOME-SIMPLE-ALGORITHMS-AND-DATA-STRUCTURES.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="827">
-                <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+              <first_editor relative-caret-position="652">
+                <caret line="526" lean-forward="true" selection-start-line="519" selection-end-line="526" />
               </first_editor>
               <second_editor />
             </state>
@@ -43,6 +44,7 @@
       <find>x</find>
       <find>factor</find>
       <find>只有分支与循环的程序有什么不足</find>
+      <find>什么是信息隐藏information hiding</find>
     </findStrings>
     <replaceStrings>
       <replace>y</replace>
@@ -94,8 +96,8 @@
         <option value="$PROJECT_DIR$/C6-TESTING-AND-DEBUGGING.md" />
         <option value="$PROJECT_DIR$/C1-GETTING-STARTED.md" />
         <option value="$PROJECT_DIR$/C7-EXCEPTIONS-AND-ASSERTION.md" />
-        <option value="$PROJECT_DIR$/C8-CLASS-AND-OBJECT-ORIENTED-PROGRAMMING.md" />
         <option value="$PROJECT_DIR$/C9-A-SIMPLISTIC-INTRODUCTION-TO-ALGORITHMIC-COMPLEXITY.md" />
+        <option value="$PROJECT_DIR$/C8-CLASS-AND-OBJECT-ORIENTED-PROGRAMMING.md" />
         <option value="$PROJECT_DIR$/C10-SOME-SIMPLE-ALGORITHMS-AND-DATA-STRUCTURES.md" />
       </list>
     </option>
@@ -112,25 +114,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Guttag" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Guttag" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Guttag" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Guttag" type="462c0819:PsiDirectoryNode" />
-              <item name="codes_from_book" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -290,13 +274,13 @@
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918962" weight="0.30525032" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50045496" side_tool="true" weight="0.5102041" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49954504" weight="0.42964554" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.33619764" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49954504" weight="0.42964554" />
       <window_info id="Structure" order="1" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49954504" weight="0.5413534" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -308,21 +292,21 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918962" visible="true" weight="0.11646952" />
       <window_info id="Structure" order="1" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32867885" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.33641025" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.33683106" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
       <window_info id="Favorites" order="2" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.33641025" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -562,21 +546,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/C8-CLASS-AND-OBJECT-ORIENTED-PROGRAMMING.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="1413">
-            <caret line="567" selection-start-line="567" selection-end-line="567" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/C9-A-SIMPLISTIC-INTRODUCTION-TO-ALGORITHMIC-COMPLEXITY.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -587,11 +556,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/C8-CLASS-AND-OBJECT-ORIENTED-PROGRAMMING.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="236">
+            <caret line="454" column="6" lean-forward="true" selection-start-line="454" selection-start-column="6" selection-end-line="454" selection-end-column="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/C10-SOME-SIMPLE-ALGORITHMS-AND-DATA-STRUCTURES.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="827">
-            <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+          <first_editor relative-caret-position="652">
+            <caret line="526" lean-forward="true" selection-start-line="519" selection-end-line="526" />
           </first_editor>
           <second_editor />
         </state>
