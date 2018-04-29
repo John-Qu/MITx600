@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a5a47a1-793f-4974-94e3-350147d8e3ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/C11-PLOTTING-AND-MORE-ABOUT-CLASSES.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/C12-KNAPSACK-AND-GRAPH-OPTIMIZATION-PROBLEMS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/C13-DYNAMIC-PROGRAMMING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codes_from_book/em_11_0_pylab.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codes_from_book/em_11_1_principal.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codes_from_book/em_11_2_mortgage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codes_from_book/em_12_1_choosebest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codes_from_book/em_12_1_greedy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codes_from_book/em_12_2_graph.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codes_from_book/em_13_2_fastfib.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codes_from_book/em_13_2_knapsack.puy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codes_from_book/em_9_3_6_gempowerset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/C10-SOME-SIMPLE-ALGORITHMS-AND-DATA-STRUCTURES.md" beforeDir="false" afterPath="$PROJECT_DIR$/C10-SOME-SIMPLE-ALGORITHMS-AND-DATA-STRUCTURES.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,44 +16,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="C13-DYNAMIC-PROGRAMMING.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/C13-DYNAMIC-PROGRAMMING.md">
+      <file leaf-file-name="Readme.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="572">
-                <caret line="174" lean-forward="true" selection-start-line="169" selection-end-line="174" />
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="575">
+                <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="em_13_2_knapsack.puy.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codes_from_book/em_13_2_knapsack.puy.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="67" selection-start-line="67" selection-end-line="67" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="em_12_2_graph.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codes_from_book/em_12_2_graph.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4400">
-              <caret line="117" selection-start-line="117" selection-end-line="117" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="em_12_1_greedy.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codes_from_book/em_12_1_greedy.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3025">
-              <caret line="88" column="1" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -136,7 +93,6 @@
         <option value="$PROJECT_DIR$/codes_from_book/em_8_1_2_Person.py" />
         <option value="$PROJECT_DIR$/codes_from_book/em_8_4_mortgate.py" />
         <option value="$PROJECT_DIR$/C0-PREFACE.md" />
-        <option value="$PROJECT_DIR$/Readme.md" />
         <option value="$PROJECT_DIR$/C6-TESTING-AND-DEBUGGING.md" />
         <option value="$PROJECT_DIR$/C1-GETTING-STARTED.md" />
         <option value="$PROJECT_DIR$/C7-EXCEPTIONS-AND-ASSERTION.md" />
@@ -155,6 +111,7 @@
         <option value="$PROJECT_DIR$/codes_from_book/em_13_2_fastfib.py" />
         <option value="$PROJECT_DIR$/codes_from_book/em_13_2_knapsack.puy.py" />
         <option value="$PROJECT_DIR$/C13-DYNAMIC-PROGRAMMING.md" />
+        <option value="$PROJECT_DIR$/Readme.md" />
       </list>
     </option>
   </component>
@@ -502,26 +459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="275">
-            <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/C0-PREFACE.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="575">
-            <caret line="6" column="212" selection-start-line="6" selection-start-column="212" selection-end-line="6" selection-end-column="212" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/C1-GETTING-STARTED.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -652,22 +589,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codes_from_book/em_12_2_graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4400">
-          <caret line="117" selection-start-line="117" selection-end-line="117" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codes_from_book/em_12_1_greedy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3025">
-          <caret line="88" column="1" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/codes_from_book/em_13_2_fastfib.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C13-DYNAMIC-PROGRAMMING.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="198">
+            <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/codes_from_book/em_13_2_knapsack.puy.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -679,11 +612,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/C13-DYNAMIC-PROGRAMMING.md">
+    <entry file="file://$PROJECT_DIR$/codes_from_book/em_12_2_graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3250">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codes_from_book/em_12_1_greedy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2375">
+          <caret line="88" column="1" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0-PREFACE.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="572">
-            <caret line="174" lean-forward="true" selection-start-line="169" selection-end-line="174" />
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-43">
+            <caret line="6" column="212" selection-start-line="6" selection-start-column="212" selection-end-line="6" selection-end-column="212" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="575">
+            <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
           </first_editor>
           <second_editor />
         </state>
