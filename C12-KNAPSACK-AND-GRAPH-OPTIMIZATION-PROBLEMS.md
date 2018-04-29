@@ -1,0 +1,526 @@
+# 12 KNAPSACK AND GRAPH OPTIMIZATION PROBLEMS
+
+
+### 学最优化问题的目的是什么？ 
+
+生活中有很多类似问题，比如the biggest, the smallest, the most, the fewest, the fastest, the least expensive，可以映射为最优化问题，找到经典解法。
+
+
+### 最优化问题有哪两个部分？
+
+- An objective function. e.g. the airfare between Boston and Istanbul.
+- A set of constraints. e.g. an upper bound on the travel time.
+
+
+### 本章的五个核心议题？
+
+- 很多具有重要现实意义的问题都可以表述为一种简单的形式，并顺理成章地使用计算方法来解决；
+- 将一个貌似新鲜的问题归结为我们熟知问题的一个实例，就可以使用已有的方案解决这个问题；
+- 很多其他问题都可以归结为背包问题和图的最优化问题；
+- 穷举法提供了一种搜索最优解的简单方法，但在计算上经常是不可行的；
+- 贪婪算法非常实用，经常可以为最优化问题找出相当好的解，但不一定是最优解。
+
+## 12.1 Knapsack Problems
+
+### 入室盗贼遇到的财物，以及他的三个心算结果？
+
+|        | 价值 | 重量 | 价值/重量 |
+| :----: | :--: | :--: | :-------: |
+|   钟   | 175  |  10  |   17.5    |
+|  油画  |  90  |  9   |    10     |
+| 收音机 |  20  |  4   |     5     |
+|  花瓶  |  50  |  2   |    25     |
+|   书   |  10  |  1   |    10     |
+|  电脑  | 200  |  20  |    10     |
+
+> 对于这个问题，找出近似解的最简单方法就是**贪婪算法**——窃贼会首先选择最好的物品，然后是次好的，这样继续下去，直到将背包装满。
+
+> 当然，在此之前，窃贼必须确定什么是“最好”的。最好的物品是价值最高的，重量最轻的？还是具有最高价值/重量比值的呢？如果选择价值最高的物品，就应该只带电脑离开，这样可以得到200美元。如果选择重量最轻的，那么应该依次带走书、花瓶、收音机和油画，一共价值170美元。最后，如果确定“最好”的含义是价值/重量比值最高，那么应当首先拿走花瓶和钟。然后有三种物品的价值/重量比值都是10，但背包里只能放下书了。拿走书之后，他还可以拿走收音机。这样，所有赃物的价值是255美元。
+
+不要误解贪婪算法，它确实是一种算法。
+- 它表达了比较的依据：最好的。
+- 它明确了顺序：依次选择。
+- 它限制了边界：背包装满。
+
+
+### 表达贪婪算法的程序？
+
+```python
+class Item(object):
+    """将财物建立抽象概念，初始化它的三个属性，可以分别提取；同时定义打印输出的框架"""
+
+    def __init__(self, n, v, w):
+        self.name = n
+        self.value = v
+        self.weight = w
+
+    def getName(self):
+        return self.name
+
+    def getValue(self):
+        return self.value
+
+    def getWeight(self):
+        return self.weight
+
+    def __str__(self):
+        result = '<' + self.name + ', ' + str(self.value)\
+                 + ', ' + str(self.weight) + '>'
+        return result
+
+
+def value(item):
+    """将item tpye的object映射为它的value值"""
+    return item.getValue()
+
+
+def weightInverse(item):
+    """将item tpye的object映射为它的weight值的倒数"""
+    return 1.0/item.getWeight()
+
+
+def density(item):
+    """将item tpye的object映射为它的value/weight值"""
+    return item.getValue()/item.getWeight()
+
+
+#greedy函数是greedy算法的核心
+def greedy(items, maxWeight, keyFunction):
+    """假设Items是列表，maxWeight >= 0
+       keyFunctions是上面定义的三个函数之一，将item type映射到它的某个可衡量的data attribute"""
+    itemsCopy = sorted(items, key=keyFunction, reverse = True) #这里用"什么是值得"把财物做了排序，最坏情况O(n*log(n))
+    result = []
+    totalValue, totalWeight = 0.0, 0.0
+    for i in range(len(itemsCopy)):
+        if (totalWeight + itemsCopy[i].getWeight()) <= maxWeight: #看看还能不能再拿一个？
+            result.append(itemsCopy[i]) #再装一个
+            totalWeight += itemsCopy[i].getWeight() #更新总重
+            totalValue += itemsCopy[i].getValue() #更新总额
+    return (result, totalValue)
+
+
+def buildItems():
+    """初始化类实例，批量初始化后没有分别绑定一个变量名，而是顺手加入了一个列表，给这个列表一个变量名。"""
+    names = ['clock','painting','radio','vase','book','computer']
+    values = [175,90,20,50,10,200]
+    weights = [10,9,4,2,1,20]
+    Items = []
+    for i in range(len(values)):
+        Items.append(Item(names[i], values[i], weights[i]))
+    return Items
+
+
+def testGreedy(items, maxWeight, keyFunction):
+    """计算与打印一种结果"""
+    taken, val = greedy(items, maxWeight, keyFunction)
+    print('Total value of items taken is', val)
+    for item in taken:
+        print(' ', item)
+
+
+def testGreedys(maxWeight = 20):
+    """在统一约束下，比较三种方式"""
+    items = buildItems()
+
+    print('Use greedy by value to fill knapsack of size', maxWeight)
+    testGreedy(items, maxWeight, value)
+
+    print('\nUse greedy by weight to fill knapsack of size',
+          maxWeight)
+    testGreedy(items, maxWeight, weightInverse)
+    
+    print('\nUse greedy by density to fill knapsack of size',
+          maxWeight)
+    testGreedy(items, maxWeight, density)
+```
+
+输出
+
+```commandline
+Use greedy by value to fill knapsack of size 20
+Total value of items taken is 200.0
+  <computer, 200, 20>
+
+Use greedy by weight to fill knapsack of size 20
+Total value of items taken is 170.0
+  <book, 10, 1>
+  <vase, 50, 2>
+  <radio, 20, 4>
+  <painting, 90, 9>
+
+Use greedy by density to fill knapsack of size 20
+Total value of items taken is 255.0
+  <vase, 50, 2>
+  <clock, 175, 10>
+  <book, 10, 1>
+  <radio, 20, 4>
+
+```
+
+
+### 为什么说贪婪算法不是全局最优解？
+
+三种定义"最好"的方式下，衡量单位重量价值（价值密度）的方式，得到的结论比另外两种好。
+
+但是得到的取财物的组合就是最好的吗？如果换成其他组合，有没有可能价值更大？
+
+有。
+
+贪婪算法只是保证了在各自价值体系内，用这种排序后从大到小取财物的方式，能得到各自体系内的最优组合。
+
+因为财物不能无限细分，如果可以的话，0/1背包问题 就变成了 分数背包问题，或称 连续背包问题。对那样的问题，对于具有最高价值/重量比值的物品来说，肯定拿得越多越好。
+
+> 举例来说，假如我们的窃贼在一间屋子中只发现3种有价值的物品：一袋金粉、一袋银粉和一袋葡萄干。那么在这种情况下，密度贪婪算法肯定能找到最优解。
+
+
+
+### 0/1背包问题可以定义?
+
+- 每个物品都可以用一个值对<价值, 重量>表示；
+- 背包能够容纳的物品总重量不能超过w；
+- 长度为n的向量I表示一个可用的物品集合，向量中的每个元素都代表一个物品；
+- 长度为n 的向量V表示物品是否被窃贼带走。如果V[i] = 1，则物品I[i]被带走；如果V[i] = 0，则物品I[i]没有被带走；
+- 目标是找到一个V，使得：
+
+$$ \sum^{n-1}_{i=0}{\rm V}[i]^*{\rm I}[i].{\rm value} $$
+![](https://ws4.sinaimg.cn/large/006tKfTcgy1fqoyz6vskwj30bk02a74d.jpg)
+
+的值最大，并满足以下约束条件：
+
+$$ \sum^{n-1}_{i=0}{\rm V}[i]*{\rm I}[i].{\rm weight}\leqslant w $$
+![](https://ws2.sinaimg.cn/large/006tKfTcgy1fqoyzoquftj30fc0260sw.jpg)
+
+
+
+### 有没有办法求得0/1背包问题的全局最优解？
+
+穷举法。
+
+(1) 枚举所有可能的物品组合。也就是说，生成物品集合的所有子集(即物品集合的幂集)。
+
+(2) 去掉所有超过背包允许重量的物品组合。
+
+(3) 在余下的物品组合中，选出任意一个价值最大的组合。
+
+```python
+from em_9_3_6_gempowerset import genPowerset, getBinaryRep
+
+from em_12_1_greedy import *
+
+def chooseBest(pset, maxWeight, getVal, getWeight):
+    #计算复杂度是n*2^n, n = len(items)
+    bestVal = 0.0
+    bestSet = None
+    for items in pset: #pset的长度是2**len(items)
+        itemsVal = 0.0
+        itemsWeight = 0.0
+        for item in items: #最长len(items)
+            itemsVal += getVal(item)
+            itemsWeight += getWeight(item)
+        if itemsWeight <= maxWeight and itemsVal > bestVal:
+           bestVal = itemsVal
+           bestSet = items
+    return (bestSet, bestVal)
+
+def testBest(maxWeight = 20):
+    items = buildItems()
+    pset = genPowerset(items) #pset的长度是2**len(items), 计算复杂度是O(2**len(items))
+    taken, val = chooseBest(pset, maxWeight, Item.getValue,
+                            Item.getWeight)#计算复杂度是n*2^n, n = len(items)
+    print('Total value of items taken is', val)
+    for item in taken:
+        print(item)
+
+testBest()
+```
+
+```commandline
+Total value of items taken is 275.0
+<clock, 175, 10>
+<painting, 90, 9>
+<book, 10, 1>
+```
+
+暴力的穷举法确实最优，但是如果财物太多，那就太难算了。贪婪算法虽然不是全局最优，至少能及时给出我可以接受的"好"结果。从这个角度看来，Ivan Boesky说得有理：
+
+> I think greed is healthy. You can be greedy and still feel good about yourself.
+
+他几个月后因内幕交易被判入狱2年，罚款1亿美金。
+
+---
+以上，2018-04-25。
+
+
+## 12.2 Graph Optimization Problems
+
+### 关于飞机航线，我可能关心那些问题？
+
+假设你有一个航空公司航线的价格列表，其中包括美国任意两个城市之间的航班价格。假设有3个城市A、B和C，从A出发经过B到达C的价格是从A到B的价格加上从B到C的价格。你可能会有以下几个提问：
+
+1. 某两个城市之间最少的停留次数是多少？
+2. 某两个城市之间最便宜的飞机票价是多少？
+3. 某两个城市之间，如果停留次数不超过两次，那么最便宜的飞机票价是多少？
+4. 如果想访问多个城市，那么最便宜的路线是什么？
+
+这里的模型有两个变量：城市和票价。提问1和提问2是分别最优化城市和票价，提问3约束城市个数优化票价，提问4指定城市约束票价。
+
+
+### 什么是图？
+
+> A **graph** is a set of objects called **nodes** (or **vertices**) connected by a set of **edges** (or **arcs**). 
+> If the edges are unidirectional, the graph is called a **directed graph** or **digraph**. 
+> In a directed graph, if there is an edge from n1 to n2, we refer to n1 as **source** or **parent node** and n2 as the **destination** or **child node**.
+
+图是一个抽象概念，它是节点和节点之间的连接的集合。
+
+
+### graph与plot，chart有什么区别？
+
+计算机和数学家讲graph，就是图论中的graph。而用plot和chart指称信息可视化方面的图表。
+
+
+### 图这个模型用来表达哪类问题？
+
+当事物的各个部分之间存在某种有价值的关系时，就可以用图表示。
+
+1735年，瑞士数学家莱昂哈德·欧拉使用后来被称为图论的方法描述并解决了著名的哥尼斯堡七桥问题。欧拉的洞见在于简化概念，只留节点和连线。
+
+显而易见的图关系：
+
+- 地图软件，在两点之间找几条线路，算时间和距离。
+- WWW的各个网页之间是单向图。链接流量可以作为线的加权。
+
+还有很多图的应用不那么显而易见
+
+- 生物学家使用图建立多种模型，从蛋白质之间的相互作用到基因表达网络；
+- 物理学家使用图描述相变；
+- 流行病学家使用图对疾病传播的轨迹进行建模
+
+
+### 可以用什么数据结构表现节点之间的关系？
+
+adjacency matrix
+
+n x n矩阵，有关系就是True，也可以写权重值。
+
+adjacency list
+
+节点对应的子节点的list，作为元素存在字典里，母节点作为key。
+
+### 建立图的类型的代码？为什么要建Node类？为什么把Graph类作为Digraph的子类？
+
+```python
+class Node(object):
+    def __init__(self, name):
+        """假设name是字符串"""
+        #虽然没有更多信息和方法，但是为Node建一个类，是给将来留更大的灵活空间。
+        #比如可能增加一个子类，是还有港口的节点。
+        self.name = name
+    def getName(self):
+        return self.name
+    def __str__(self):
+        return self.name
+
+
+class Edge(object):
+    def __init__(self, src, dest):
+        """假设src和dest是节点，注意Edge有方向。"""
+        #Edge很简单，只是记录了头尾两个节点。
+        self.src = src
+        self.dest = dest
+    def getSource(self):
+        return self.src
+    def getDestination(self):
+        return self.dest
+    def __str__(self):
+        return self.src.getName() + '->' + self.dest.getName()
+
+
+class WeightedEdge(Edge):
+    def __init__(self, src, dest, weight = 1.0):
+        """假设src和dest是节点，weight是个数值"""
+        self.src = src
+        self.dest = dest
+        #上面这两句也可以写成：Edge.__init__(self, src, dect)
+        self.weight = weight
+    def getWeight(self):
+        return self.weight
+    def __str__(self):
+         return self.src.getName() + '->(' + str(self.weight) + ')'\
+                + self.dest.getName()
+
+
+class Digraph(object):
+    #nodes是图中节点的列表
+    #edges是一个字典，将每个节点映射到其子节点列表
+    def __init__(self):
+        self.nodes = []
+        self.edges = {}
+    def addNode(self, node):
+        if node in self.nodes:
+            raise ValueError('Duplicate node')
+        else:
+            self.nodes.append(node) #加入nodes池，顾名思义当然要做。
+            self.edges[node] = [] #注意同时在edges池里打好关系的框架。
+    def addEdge(self, edge):
+        #拆分出edge中的头尾节点信息
+        src = edge.getSource()
+        dest = edge.getDestination()
+        #然后确认头尾节点已经建立过了。
+        if not (src in self.nodes and dest in self.nodes):
+            raise ValueError('Node not in graph')
+        #在edges字典池中创建/更新信息。
+        self.edges[src].append(dest)
+    def childrenOf(self, node):
+        #问子节点，在edges关系中提取信息。
+        return self.edges[node]
+    def hasNode(self, node):
+        return node in self.nodes
+    def __str__(self):
+        result = ''
+        for src in self.nodes:
+            for dest in self.edges[src]:
+                result = result + src.getName() + '->'\
+                         + dest.getName() + '\n'
+        return result[:-1] #输出时不要最后的新行符。
+
+class Graph(Digraph):
+    def addEdge(self, edge):
+        Digraph.addEdge(self, edge)
+        #建立另一条反方向的Edge。虽然复制了Node资源，但是直观易懂。
+        rev = Edge(edge.getDestination(), edge.getSource())
+        Digraph.addEdge(self, rev)
+```
+
+建Node类是为了将来的扩展灵活空间。
+
+Digraph与Graph几乎共享属性，但是根据"父亲能干的事情儿子必须也会做"的原则，利用了图里edge双向性的一些算法，有向图就做不了。
+
+
+### 最著名的图的最优化问题
+
+最短路径：
+
+对于两个节点n1和n2，找到边<s_n_, d_n_>（源节点和目标节点）的最短序列，使得：
+- 第一条边的源节点是n1；
+- 最后一条边的目标节点是n2；
+- 对于序列中任意的边e1和e2，如果e2在序列中紧跟在e1后面，那么e2的源节点是e1的目标节点。
+
+最短加权路径：
+
+与最短路径非常相似，但它的目标不是找出连接两个节点的最短的边的序列。对于序列中边的权重，我们会定义某种函数（比如权重的和），并使这个函数的值最小化。Google Maps计算两点之间的最短驾驶距离时，就是在解决这种问题。
+
+最大团：
+
+团是一个节点集合，集合中每两个节点之间都有一条边。最大团是一个图中规模最大的团。
+
+最小割：
+
+在一个图中，给定两个节点集合，割就是一个边的集合。去掉这组边之后，一个节点集合中的每个节点和另一个节点集合中的每个节点之间都不存在任何相连的路径。最小割就是这样一个最小的边的集合。
+
+
+### 最短路径问题的一个现实版？
+
+Facebook朋友链。
+
+![](http://www.ituring.com.cn/figures/2017/PythonIntroduction/15.d12z.002.png)
+
+
+### 深度优先搜索DFS的逻辑？
+
+```python
+def DFS(graph, start, end, path, shortest, toPrint = False):
+    """假设graph是无向图；start和end是节点；
+          path和shortest是节点列表
+       返回graph中从start到end的最短路径。"""
+    path = path + [start]
+    if toPrint:
+        print('Current DFS path:', printPath(path))
+    if start == end: #踩到了总目标点，结束递归，返回当前走过的路径
+        return path
+    for node in graph.childrenOf(start): #没有子节点就不进入循环了，结束递归，返回上次存过的最短路径。
+        if node not in path: #没走过的节点才需要再尝试，在path里的就跳过。
+           if shortest == None or len(path) < len(shortest): #没有最短路径时，或者还没有超过最短路径时，才执行递归函数。
+               newPath = DFS(graph, node, end, path, shortest, #以当前节点为起点，探索新路径。层层递归，直到踩到总目标节点或者没有子节点，返回上次存过的最短路径。
+                             toPrint)
+               if newPath != None:
+                     shortest = newPath #用新的猜到了目标节点的路径更新最短路径，它最多与上一个最短路径一样长，当然可能更短。
+    return shortest #返回最短路径。
+```
+
+它是一个递归函数，每次递归变更的形式变量是start节点，每次用新的node作为实际变量输入。
+
+在递归调用时，shortest路径也可能有更新，一般来说，它是上一次存储过的那个最短路径。如果踩到了目标点，总步数有不比之前的最短路径多，才会用这个newpath更新shortest。
+
+函数有两个返回值出口。一个是递归调用时，node走到了目标节点end，函数返回当前走过的path节点路径，并可能更新shortest节点路径。另一个出口是node节点没有子节点了，不进入for循环，也就没有递归，直接返回之前的shortest节点路径。
+
+综上，这个函数优先往深里走，直到走到目标节点或者没有子节点的点。
+
+```commandline
+Current DFS path: 0
+Current DFS path: 0->1
+Current DFS path: 0->1->2
+Current DFS path: 0->1->2->3
+Current DFS path: 0->1->2->3->4
+Current DFS path: 0->1->2->3->5
+Current DFS path: 0->1->2->4
+Current DFS path: 0->2
+Current DFS path: 0->2->3
+Current DFS path: 0->2->3->4
+Current DFS path: 0->2->3->5
+Current DFS path: 0->2->3->1
+Current DFS path: 0->2->4
+Shortest path is 0->2->3->5
+```
+
+
+### 广度优先搜索BFS的逻辑？
+
+```python
+def BFS(graph, start, end, toPrint = False):
+    """假设graph是无向图；start和end是节点
+       返回graph中从start到end的最短路径。"""
+    initPath = [start] #包含节点的列表
+    pathQueue = [initPath] #节点列表的列表
+    if toPrint:
+        print('Current BFS path:', printPath(path))
+    while len(pathQueue) != 0: #pathQueue的长度可能减到0。
+        #从pathQueue这个路径列表里取最老的一个组合，开始探索。
+        tmpPath = pathQueue.pop(0)
+        print('Current BFS path:', printPath(tmpPath))
+        lastNode = tmpPath[-1]
+        if lastNode == end: #找到了，返回这个路径就够了。
+            return tmpPath
+        #向后探索一层
+        for nextNode in graph.childrenOf(lastNode):
+            if nextNode not in tmpPath: #不走回头路。
+                #它会产生很多个newPath，都会被加入pathQueue里面，以备探索。
+                newPath = tmpPath + [nextNode]
+                pathQueue.append(newPath)
+    return None
+```
+
+它是一个循环函数。while在外层，只要pathQueue里还有路径没有被探索过，就一个一个地探索下去。for在内层，每次循环向当权路径中追加一个子节点，形成新的路径，存入pathQueue，以备探索。
+
+当新路径的末端节点是目标节点，就停止循环，返回当前路径。因为循环是逐层深入的，那最早走到目标的路经，层级也就最少。
+
+```commandline
+Current BFS path: 0
+Current BFS path: 0->1
+Current BFS path: 0->2
+Current BFS path: 0->1->2
+Current BFS path: 0->2->3
+Current BFS path: 0->2->4
+Current BFS path: 0->1->2->3
+Current BFS path: 0->1->2->4
+Current BFS path: 0->2->3->4
+Current BFS path: 0->2->3->5
+Shortest path found by BFS: 0->2->3->5
+```
+
+### 实际练习：假设有一个带有加权边的有向图，那么使用BFS找到的第一条路径一定是边的权重总和最小的路径吗？
+
+不是。因为BFS是用循环保证的层级最少，踩到目标节点就停止循环了，并没有遍历所有可能性。
+
+---
+以上，2018-04-27 13:54:59
