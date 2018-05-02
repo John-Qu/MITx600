@@ -11,19 +11,22 @@ class Mortgage(object):
     """建立不同种类抵押贷款的抽象类"""
     def __init__(self, loan, annRate, months):
         self.loan = loan
-        self.rate = annRate/12.0
+        self.rate = annRate/12.0 #月利率用年利率平均一下就可以。
         self.months = months
-        self.paid = [0.0]
-        self.outstanding = [loan]
-        self.payment = findPayment(loan, self.rate, months)
-        self.legend = None #description of mortgage
+        self.paid = [0.0] #每月还款额，初始为零。
+        self.outstanding = [loan] #剩余本金，初始为原始本金。
+        self.payment = findPayment(loan, self.rate, months) #某个期间内每月固定还款额
+        self.legend = None #还款方式的说明文字
 
     def makePayment(self):
         self.paid.append(self.payment)
+        #当月还掉的本金 = 当月还款额 - 上月剩余本金*月利率
         reduction = self.payment - self.outstanding[-1]*self.rate
+        #当月剩余本金 = 上月剩余本金 - 当月还掉的本金
         self.outstanding.append(self.outstanding[-1] - reduction)
 
     def getTotalPaid(self):
+        #每月偿还额加总
         return sum(self.paid)
 
     def __str__(self):
@@ -109,7 +112,16 @@ def compareMortgages(amt, years, fixedRate, pts, ptsRate,
 
 
 def plotMortgages(morts, amt):
-    #建一个给图做标注的函数，顺便存档
+    """建一个给图做标注的函数，顺便存档
+    要求：
+    morts是列表，集合各类还款方式；
+    amt是数值，表示贷款额。
+    输出：
+    四张图，分别表示各种还款方式的每月信息：
+    1 还款额；
+    2 以付总额；
+    3 待还本金；
+    4 除去本金的净成本。"""
     def labelPlot(figure, title, xLabel, yLabel):
         pylab.figure(figure)
         pylab.title(title)
@@ -118,11 +130,13 @@ def plotMortgages(morts, amt):
         pylab.legend(loc = 'best')
         pylab.savefig(title)
 
+    #三种还款方式，各自有颜色、线型特征。
     styles = ['b-', 'g-.', 'r:']
 
     #给图编号赋名，方便理解和区分
     payments, cost, balance, netCost = 0, 1, 2, 3
 
+    #在各种还款方式之间循环，三种方式分别画四张图，带自己的颜色、线型特征。
     for i in range(len(morts)):
         pylab.figure(payments)
         morts[i].plotPayments(styles[i])
@@ -132,7 +146,7 @@ def plotMortgages(morts, amt):
         morts[i].plotBalance(styles[i])
         pylab.figure(netCost)
         morts[i].plotNet(styles[i])
-
+    #分别给四张图标注名称和X、Y坐标轴。
     labelPlot(payments, 'Monthly Payments of $' + str(amt) +
                 ' Mortgages', 'Months', 'Monthly Payments')
     labelPlot(cost, 'Cash Outlay of $' + str(amt) +

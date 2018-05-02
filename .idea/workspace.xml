@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a5a47a1-793f-4974-94e3-350147d8e3ef" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/C14-RANDOM-WALK-AND-MORE-ABOUT-DATA-VISUALIZATION.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codes_from_book/em_14_drunkard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes_from_book/em_11_2_mortgage.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes_from_book/em_11_2_mortgage.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,15 +18,45 @@
     <favorites_list name="Guttag" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Readme.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Readme.md">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="C14-RANDOM-WALK-AND-MORE-ABOUT-DATA-VISUALIZATION.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/C14-RANDOM-WALK-AND-MORE-ABOUT-DATA-VISUALIZATION.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="575">
-                <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="377">
+                <caret line="234" column="91" selection-start-line="234" selection-start-column="91" selection-end-line="234" selection-end-column="91" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="em_11_2_mortgage.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/codes_from_book/em_11_2_mortgage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="599">
+              <caret line="138" column="35" selection-start-line="138" selection-start-column="35" selection-end-line="138" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="C11-PLOTTING-AND-MORE-ABOUT-CLASSES.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/C11-PLOTTING-AND-MORE-ABOUT-CLASSES.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SECOND">
+              <first_editor relative-caret-position="1691">
+                <caret line="183" column="25" selection-start-line="183" selection-start-column="25" selection-end-line="183" selection-end-column="25" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="em_14_drunkard.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codes_from_book/em_14_drunkard.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6350">
+              <caret line="254" column="4" selection-start-line="254" selection-start-column="4" selection-end-line="254" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -46,6 +79,7 @@
       <find>loc</find>
       <find>怎样减少collision</find>
       <find>class Item</find>
+      <find>list comprehension</find>
     </findStrings>
     <replaceStrings>
       <replace>y</replace>
@@ -61,8 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Book_Finger_exercise/2-4-Fe1-toPrint-numXs-times" />
-        <option value="$PROJECT_DIR$/Book_Finger_exercise/2-4-Fe2-toFind-largest-odd-number.py" />
         <option value="$PROJECT_DIR$/3-2-Fe1-Sum-string-num.py" />
         <option value="$PROJECT_DIR$/Book_Finger_exercise/3-2-Fe1-Sum-string-num.py" />
         <option value="$PROJECT_DIR$/Book_Finger_exercise/3-4-Em1-not-equal.py" />
@@ -100,7 +132,6 @@
         <option value="$PROJECT_DIR$/C8-CLASS-AND-OBJECT-ORIENTED-PROGRAMMING.md" />
         <option value="$PROJECT_DIR$/codes_from_book/em_11_0_pylab.py" />
         <option value="$PROJECT_DIR$/codes_from_book/em_11_1_principal.py" />
-        <option value="$PROJECT_DIR$/codes_from_book/em_11_2_mortgage.py" />
         <option value="$PROJECT_DIR$/C11-PLOTTING-AND-MORE-ABOUT-CLASSES.md" />
         <option value="$PROJECT_DIR$/codes_from_book/em_9_3_6_gempowerset.py" />
         <option value="$PROJECT_DIR$/codes_from_book/em_12_1_greedy.py" />
@@ -112,10 +143,13 @@
         <option value="$PROJECT_DIR$/codes_from_book/em_13_2_knapsack.puy.py" />
         <option value="$PROJECT_DIR$/C13-DYNAMIC-PROGRAMMING.md" />
         <option value="$PROJECT_DIR$/Readme.md" />
+        <option value="$PROJECT_DIR$/codes_from_book/em_14_drunkard.py" />
+        <option value="$PROJECT_DIR$/C14-RANDOM-WALK-AND-MORE-ABOUT-DATA-VISUALIZATION.md" />
+        <option value="$PROJECT_DIR$/codes_from_book/em_11_2_mortgage.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="22" />
     <option name="width" value="840" />
     <option name="height" value="1028" />
@@ -128,6 +162,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -140,16 +175,10 @@
               <item name="Guttag" type="462c0819:PsiDirectoryNode" />
               <item name="codes_from_book" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Guttag" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Guttag" type="462c0819:PsiDirectoryNode" />
-              <item name="finger_exercis_in_book" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -304,10 +333,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="840" height="1028" extended-state="0" />
+    <frame x="0" y="22" width="1680" height="1028" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918962" weight="0.36507937" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918962" visible="true" weight="0.18022905" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50045496" side_tool="true" weight="0.5102041" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
@@ -328,21 +357,21 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918962" visible="true" weight="0.11646952" />
       <window_info id="Structure" order="1" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32867885" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.33641025" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.33683106" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
       <window_info id="Favorites" order="2" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.33641025" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -357,16 +386,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/C3-SOME-SIMPLE-NUMERICAL PROGRAMS.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="4089">
-            <caret line="141" column="24" selection-start-line="141" selection-start-column="24" selection-end-line="141" selection-end-column="24" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/note-of-INTRODUCTION-TO-COMPUTATION-AND-PROGRAMMING-WITH-PYTHON.md" />
     <entry file="file://$PROJECT_DIR$/Book_Finger_exercise/3-2-Fe1-Sum-string-num.py" />
     <entry file="file://$PROJECT_DIR$/note-of-INTRODUCTION-TO-COMPUTATION-AND-PROGRAMMING-WITH-PYTHON.md" />
@@ -510,17 +529,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/C8-CLASS-AND-OBJECT-ORIENTED-PROGRAMMING.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="236">
             <caret line="454" column="6" lean-forward="true" selection-start-line="454" selection-start-column="6" selection-end-line="454" selection-end-column="6" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
@@ -535,23 +554,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
           <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/C11-PLOTTING-AND-MORE-ABOUT-CLASSES.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="25">
-            <caret line="183" column="25" selection-start-line="183" selection-start-column="25" selection-end-line="183" selection-end-column="25" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codes_from_book/em_11_2_mortgage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="831">
-          <caret line="111" selection-start-line="111" selection-end-line="111" />
         </state>
       </provider>
     </entry>
@@ -589,9 +591,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codes_from_book/em_13_2_fastfib.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/C13-DYNAMIC-PROGRAMMING.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -606,9 +605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="67" selection-start-line="67" selection-end-line="67" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -643,6 +639,40 @@
             <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codes_from_book/em_14_drunkard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6350">
+          <caret line="254" column="4" selection-start-line="254" selection-start-column="4" selection-end-line="254" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C14-RANDOM-WALK-AND-MORE-ABOUT-DATA-VISUALIZATION.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="377">
+            <caret line="234" column="91" selection-start-line="234" selection-start-column="91" selection-end-line="234" selection-end-column="91" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C11-PLOTTING-AND-MORE-ABOUT-CLASSES.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="1691">
+            <caret line="183" column="25" selection-start-line="183" selection-start-column="25" selection-end-line="183" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codes_from_book/em_11_2_mortgage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="138" column="35" selection-start-line="138" selection-start-column="35" selection-end-line="138" selection-end-column="35" />
         </state>
       </provider>
     </entry>
