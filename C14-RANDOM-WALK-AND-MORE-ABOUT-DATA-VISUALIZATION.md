@@ -52,9 +52,6 @@ All models are wrong, but some are useful.
 - George E.P. Box
 
 
-## 14.1 Random Walks
-
-
 ### 布朗运动的接力跑？
 
 公元前60年，罗马诗人Titus Lucretius长诗On the Nature of Things.
@@ -215,7 +212,7 @@ class EWDrunk(Drunk):
 这些限制是在子类中定义的。
 
 
-### 调试醉汉游走程序时，进行了冒烟测试？
+### 调试醉汉游走程序时，进行了冒烟测试smoke test？
 
 运行drunkTest((0, 1), 100, UsualDrunk)后，得到的结果令人难以置信：
 
@@ -246,3 +243,334 @@ UsualDrunk random walk of 1 steps
 是不是跟横平竖直的勾股定理有关？
 
 
+### 干嘛要在醉汉游走模型中引入图表？
+
+打印输出是能看到一点趋势，但是不如图表来得全面直观。
+
+打印版
+```python
+def simAll(drunkKinds, walkLengths, numTrials):
+    """把各种醉鬼drunkKinds的情况都模拟出来，请他们各自通过drunkTest打印输出平均距离和最大最小距离.
+    要求：
+    drunkKinds是元组或列表，元素Drunk的几个子类。
+    walklengths是元组或列表，走多少步的各种情况。
+    numTrials是正整数，表示尝试多少次，以便算取平均值和最大最小值。
+    返回：
+    None。动作和输出都在drunkTest里实现。
+    """
+    for dClass in drunkKinds:
+        drunkTest(walkLengths, numTrials, dClass)
+
+#模拟三种醉鬼在两种步长情况下的移动距离，打印结果。
+simAll((UsualDrunk, ColdDrunk, EWDrunk), (100, 1000), 10)
+```
+
+```commandline
+UsualDrunk random walk of 100 steps
+ Mean = 10.38
+ Max = 16.1 Min = 1.4
+UsualDrunk random walk of 1000 steps
+ Mean = 31.59
+ Max = 58.7 Min = 8.9
+ColdDrunk random walk of 100 steps
+ Mean = 25.19
+ Max = 42.2 Min = 12.8
+ColdDrunk random walk of 1000 steps
+ Mean = 256.2
+ Max = 305.1 Min = 212.3
+EWDrunk random walk of 100 steps
+ Mean = 7.2
+ Max = 18.0 Min = 0.0
+EWDrunk random walk of 1000 steps
+ Mean = 23.2
+ Max = 42.0 Min = 4.0
+```
+能看出codeDrunk走得更远，而差多少量级，就不好说了。
+
+绘图版：
+```python
+class styleIterator(object):
+    """为打印样式不重样，专门建了一个类。"""
+    def __init__(self, styles):
+        """styles是打印样式的字符串的元组。"""
+        self.index = 0
+        self.styles = styles
+
+    def nextStyle(self):
+        """返回当前index指向的styles元组中的字符串，
+        同时将index向后移动一格，如果到底就从头再来。"""
+        result = self.styles[self.index]
+        #如果到底，就从头再来。
+        if self.index == len(self.styles) - 1:
+            self.index = 0
+        else:
+            self.index += 1
+        return result
+
+
+def simDrunk(numTrials, dClass, walkLengths):
+    """为了绘图，计算不同步数对应的出走平均距离。
+    要求：
+    numTrails是正整数；
+    dClass是Drunk的某一个子类；
+    walkLengths是各种步数情况的元组。
+    返回：
+    一个列表，表示与各种步长一一对应的出走平均距离。"""
+    meanDistances = []
+    for numSteps in walkLengths:
+        print('Starting simulation of', numSteps, 'steps')
+        trials = simWalks(numSteps, numTrials, dClass)
+        mean = sum(trials)/len(trials)
+        meanDistances.append(mean)
+    return meanDistances
+
+
+def simAll1(drunkKinds, walkLengths, numTrials):
+    """模拟各种醉鬼的情况, 绘图输出在各种步数情况下的平均出走距离。
+    相比于simAll，不是分别打印，而是分别绘图。
+    要求：
+    drunkKinds是元组或列表，元素Drunk的几个子类。
+    walklengths是元组或列表，走多少步的各种情况。
+    numTrials是正整数，表示尝试多少次，以便算取平均值和最大最小值。
+    返回：
+    一张图表, 各种醉鬼各种步数的平均移动距离.png"""
+    styleChoice = styleIterator(('m-', 'r:', 'k-.'))
+    #循环样式，分别绘图。
+    pylab.figure('simAll1')
+    for dClass in drunkKinds:
+        curStyle = styleChoice.nextStyle()
+        print('Starting simulation of', dClass.__name__)
+        #调用为了绘图的simDrunk，返回的是数组。
+        means = simDrunk(numTrials, dClass, walkLengths)
+        pylab.plot(walkLengths, means, curStyle,
+                   label = dClass.__name__)
+    #下面这几句是绘制正常的醉汉步数与距离的规律用的。
+    #curStyle = styleChoice.nextStyle()
+    #refs = [math.sqrt(x) for x in walkLengths]
+    #pylab.plot(walkLengths, refs, curStyle, label = 'Square root of steps')
+    #给这张图整体做装饰。
+    pylab.title('Mean Distance from Origin (' + str(numTrials) + ' trials)')
+    pylab.xlabel('Number of Steps')
+    pylab.ylabel('Distance from Origin')
+    pylab.legend(loc = 'best')
+    #坐标轴调整为对数标度
+    pylab.semilogx()
+    pylab.semilogy()
+    pylab.savefig("各种醉鬼各种步数的平均移动距离")
+```
+
+![](https://ws4.sinaimg.cn/large/006tNc79gy1fqx2266j3cj30hs0dcq3o.jpg)
+各种醉鬼各种步数的平均移动距离，可以看出：
+- 怕冷的醉鬼跑得快，几乎快一个量级。
+- 四方游走与东西游走的出走距离差不多，增长速度基本是步数根号2。
+
+> 普通醉汉和追寻阳光的醉汉（EWDrunk）看上去以大致相同的节奏离开原点，但是追寻温暖的醉汉（ColdDrunk）离开原点的速度看上去高出不止一个数量级。这很有趣，因为平均来说，他的移动速度只比其他醉汉快25%（平均来说，他走5步时其他人只走4步）。
+
+由此可见，图表有打印不可替代的力量。
+
+
+### 从线图中看到了规律，怎么更加深刻地理解3种醉汉的行为？
+
+绘制对于某个特定的步数，各个醉汉的最终位置分布。
+
+```python
+def getFinalLocs(numSteps, numTrials, dClass):
+    """模拟某类醉鬼从原点出发多次游走的停止位置。
+    要求：
+    numSteps，正整数，步数。
+    numTrials，正整数，尝试次数。
+    dClass，Drunk的某个子类，醉鬼的特征。
+    返回：
+    locs，列表，numTrials次游走的最终位置。"""
+    locs = []
+    d = dClass()
+    for t in range(numTrials):
+        f = Field()
+        f.addDrunk(d, Location(0, 0))
+        for s in range(numSteps):
+            f.moveDrunk(d)
+        locs.append(f.getLoc(d))
+    return locs
+
+
+def plotLocs(drunkKinds, numSteps, numTrials):
+    """绘制各种醉鬼走相同步数后的各种最终位置图。
+    要求：
+    drunkKinds是元组或列表，元素Drunk的几个子类。
+    numSteps是正整数，表示步数。
+    numTrials是正整数，表示尝试多少次，以便看到最终位置的分布趋势。
+    返回：
+    一张图表, 各种醉鬼走相同步数后的多次最终位置.png。
+    """
+    styleChoice = styleIterator(('k+', 'r^', 'mo'))
+    #循环各中醉鬼的情况。
+    pylab.figure("plotLocs")
+    for dClass in drunkKinds:
+        #模拟出这种醉鬼多次尝试的最终位置。
+        locs = getFinalLocs(numSteps, numTrials, dClass)
+        #将Locations的信息拆出来
+        xVals, yVals = [], []
+        for loc in locs:
+            xVals.append(loc.getX())
+            yVals.append(loc.getY())
+        #算取平均位置
+        meanX = sum(xVals)/len(xVals)
+        meanY = sum(yVals)/len(yVals)
+        #绘图并标注
+        curStyle = styleChoice.nextStyle()
+        pylab.plot(xVals, yVals, curStyle,
+                      label = dClass.__name__ + ' mean loc. = <'
+                      + str(meanX) + ', ' + str(meanY) + '>')
+    #整体修饰图表
+    pylab.title('Location at End of Walks ('
+                + str(numSteps) + ' steps)')
+    pylab.xlabel('Steps East/West of Origin')
+    pylab.ylabel('Steps North/South of Origin')
+    pylab.legend(loc = 'lower left')
+    pylab.savefig("各种醉鬼走相同步数后的多次最终位置")
+
+
+#描绘最终位置图表，三种醉鬼，走100步，尝试200次。
+plotLocs((UsualDrunk, ColdDrunk, EWDrunk), 100, 200)
+```
+
+得到
+![](https://ws1.sinaimg.cn/large/006tNc79gy1fqx2grlyphj30hs0dc3zl.jpg)
+
+从图 各种醉鬼走相同步数后的多次最终位置 可见：
+- UsualDrunk漫无目的四处游走；
+- EWDrunk只在X轴上移动，200个点有很多重合了。
+- ColdDrunk更偏向南方。
+
+
+### 从平均意义上说，为什么ColdDrunk相对于其他两种类型的醉汉，总是试图从原点走得更远？
+
+要搞清这个问题，恐怕不能从多次游走的终点入手，而应该看一下单次游走经过的路径。
+
+```python
+# 单次游走经过的路径
+
+def traceWalk(drunkKinds, numSteps):
+    """绘制各种醉鬼一次漫步的轨迹。
+    要求：
+    drunkKinds是元组或列表，元素Drunk的几个子类。
+    numSteps是正整数，表示步数。
+    返回：
+    一张图表。
+    """
+    styleChoice = styleIterator(('k+', 'r^', 'mo'))
+    f = Field()
+    #替换为有1000个虫洞的场地，场地内有正负100*正负200，共80000个点。虫洞占比1/80。
+    # f = oddField(1000, 100, 200)
+    pylab.figure("traceWalk")
+    for dClass in drunkKinds:
+        d = dClass()
+        f.addDrunk(d, Location(0, 0))
+        #把每一步的位置存入locs列表。
+        locs = []
+        for s in range(numSteps):
+            f.moveDrunk(d)
+            locs.append(f.getLoc(d))
+        #拆分出xy信息。
+        xVals, yVals = [], []
+        for loc in locs:
+            xVals.append(loc.getX())
+            yVals.append(loc.getY())
+        #各种醉鬼分别绘图
+        curStyle = styleChoice.nextStyle()
+        pylab.plot(xVals, yVals, curStyle,
+                  label = dClass.__name__)
+    #整体修饰标注
+    pylab.title('Spots Visited on Walk ('
+                + str(numSteps) + ' steps)')
+    pylab.xlabel('Steps East/West of Origin')
+    pylab.ylabel('Steps North/South of Origin')
+    pylab.legend(loc = 'best')
+    pylab.savefig("各种醉鬼一次漫步的轨迹")
+
+
+#绘制三种醉鬼各走100步的轨迹图表。
+traceWalk((UsualDrunk, ColdDrunk, EWDrunk), 100)
+```
+
+
+![](https://ws3.sinaimg.cn/large/006tNc79gy1fqx2nqi90oj30hs0dcaao.jpg)
+由图"各种醉鬼一次漫步的轨迹"可见：
+- UsualDrunk和ColdDrunk经常重复自己走过的路。
+- ColdDrunk很少重复自己走过的路。
+- 有倾向性，长远积累起来，走得更远。
+
+
+### 从醉汉游走的模型开发过程中，注意体会哪三点？
+
+> 首先，我们将模拟代码分成了4个独立的部分。其中3个为类（Location、Field和Drunk），对应于问题非正式描述中出现的3个抽象数据类型。第4部分是一组函数，可以使用这些类进行一些简单的模拟。
+
+一开始，就想把程序分成几个类，和在抽象类基础上的函数，做简单模拟，调试抽象类。
+
+> 然后，我们为Drunk类精心设计了一个层次结构，这样可以观察各种不同类型的有偏随机游走。关于Location和Field的代码依然保持不变，但修改了模拟代码来遍历Drunk的不同子类。在此期间，我们利用了“类本身也是一个对象”这一特点，将其作为实参进行传递。
+
+然后丰富类，更有针对性地描述问题。
+
+> 最后，我们对模拟过程进行了一系列增量修改，但其中没有任何修改涉及表示抽象类型的类。这些修改多数是为了生成图形，这些图形可以使我们对不同类型的游走有更深刻的理解。这是一种典型的开发模拟模型的方法，先使基础的模拟运行起来，然后不断添加新功能。
+
+最后为了更深刻地理解问题，不改变抽象类，添加新功能。
+
+
+### 在有虫洞的田地里，醉汉可能走成什么模样？
+
+```python
+class oddField(Field):
+    """这是一个特别场地，它有虫洞。"""
+    def __init__(self, numHoles, xRange, yRange):
+        """初始化虫洞特别场地。
+        要求：
+        numHoles是正整数值，表示场地内虫洞的数量。
+        xRange和yRange都是正数值，正负xy和起来表示场地的范围。
+        建立：
+        drunks字典, 继承Field类，将drunk者映射到他们各自的位置。
+        wormholes字典，将位置(x, y)的虫洞映射到新位置上Location(newX, newY)"""
+        Field.__init__(self)
+        self.wormholes = {}
+        for w in range(numHoles):
+            #在范围内随机找一个点。
+            x = random.randint(-xRange, xRange)
+            y = random.randint(-yRange, yRange)
+            #在范围内随机找另一个点。
+            newX = random.randint(-xRange, xRange)
+            newY = random.randint(-yRange, yRange)
+            #把另一个点的数据集成入一个Location抽象类。
+            newLoc = Location(newX, newY)
+            #注意字典的键是(x, y)元组，键值是Location类。
+            self.wormholes[(x, y)] = newLoc
+
+    def moveDrunk(self, drunk):
+        """请drunk者移动一步，如果他踩到了虫洞，那就他的位置更新为虫洞彼岸的位置。"""
+        Field.moveDrunk(self, drunk)
+        x = self.drunks[drunk].getX()
+        y = self.drunks[drunk].getY()
+        if (x, y) in self.wormholes:
+            self.drunks[drunk] = self.wormholes[(x, y)]
+           
+#在有虫洞的田地里，绘制三种醉鬼各走500步的轨迹图表。
+traceWalk((UsualDrunk, ColdDrunk, EWDrunk), 500)
+```
+
+![](https://ws4.sinaimg.cn/large/006tNc79gy1fqx38p410sj30hs0dcgma.jpg)
+
+由图可见：
+- ColdDrunk踩到虫洞的几率更大。
+- 虫洞空间虽然受限，但是醉汉游走的空间不受限制。
+
+
+### 干嘛要在醉汉游走的田地里引入虫洞玩以下，教学要点是什么？
+
+> 我们的代码是高度结构化的，所以很容易适应建模情形的重大改变。就像可以在不修改Field的情况下添加不同类型的醉汉一样，我们也可以在不对Drunk及其任何子类进行修改的情况下，添加一种新的Field类型。（如果有足够的先见之明，在trackWalk中使用一个形参表示田地，甚至都不用修改traceWalk中的第2行代码。）
+
+- 因为各个结构彼此独立，可以在后续修改中避免冲突。
+
+> 在简单随机游走问题甚至有偏随机游走问题中，通过分析方法推导各种不同类型醉汉的预期行为还是比较可行的，但如果引入虫洞再做这些分析就很困难了。相比之下，修改模型以模拟新的情形则非常容易。与分析性模型相比，适应性强是模拟模型引以为傲的一大优点。
+
+- 手工分析推演虽然可行，但是模拟模型能力范围更广。
+
+---
+以上，2018-05-02 16:50:01记完。

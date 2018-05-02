@@ -1,3 +1,6 @@
+import random, pylab, math
+
+
 class Location(object):
     def __init__(self, x, y):
         """x和y为数值型，可以做加减乘除"""
@@ -64,7 +67,38 @@ class Field(object):
         return self.drunks[drunk]
 
 
-import random, pylab, math
+class oddField(Field):
+    """这是一个特别场地，它有虫洞。"""
+    def __init__(self, numHoles, xRange, yRange):
+        """初始化虫洞特别场地。
+        要求：
+        numHoles是正整数值，表示场地内虫洞的数量。
+        xRange和yRange都是正数值，正负xy和起来表示场地的范围。
+        建立：
+        drunks字典, 继承Field类，将drunk者映射到他们各自的位置。
+        wormholes字典，将位置(x, y)的虫洞映射到新位置上Location(newX, newY)"""
+        Field.__init__(self)
+        self.wormholes = {}
+        for w in range(numHoles):
+            #在范围内随机找一个点。
+            x = random.randint(-xRange, xRange)
+            y = random.randint(-yRange, yRange)
+            #在范围内随机找另一个点。
+            newX = random.randint(-xRange, xRange)
+            newY = random.randint(-yRange, yRange)
+            #把另一个点的数据集成入一个Location抽象类。
+            newLoc = Location(newX, newY)
+            #注意字典的键是(x, y)元组，键值是Location类。
+            self.wormholes[(x, y)] = newLoc
+
+    def moveDrunk(self, drunk):
+        """请drunk者移动一步，如果他踩到了虫洞，那就他的位置更新为虫洞彼岸的位置。"""
+        Field.moveDrunk(self, drunk)
+        x = self.drunks[drunk].getX()
+        y = self.drunks[drunk].getY()
+        if (x, y) in self.wormholes:
+            self.drunks[drunk] = self.wormholes[(x, y)]
+
 
 class Drunk(object):
     def __init__(self, name = None):
@@ -197,39 +231,6 @@ def simDrunk(numTrials, dClass, walkLengths):
     return meanDistances
 
 
-class oddField(Field):
-    """这是一个特别场地，它有虫洞。"""
-    def __init__(self, numHoles, xRange, yRange):
-        """初始化虫洞特别场地。
-        要求：
-        numHoles是正整数值，表示场地内虫洞的数量。
-        xRange和yRange都是正数值，正负xy和起来表示场地的范围。
-        建立：
-        drunks字典, 继承Field类，将drunk者映射到他们各自的位置。
-        wormholes字典，将位置(x, y)的虫洞映射到新位置上Location(newX, newY)"""
-        Field.__init__(self)
-        self.wormholes = {}
-        for w in range(numHoles):
-            #在范围内随机找一个点。
-            x = random.randint(-xRange, xRange)
-            y = random.randint(-yRange, yRange)
-            #在范围内随机找另一个点。
-            newX = random.randint(-xRange, xRange)
-            newY = random.randint(-yRange, yRange)
-            #把另一个点的数据集成入一个Location抽象类。
-            newLoc = Location(newX, newY)
-            #注意字典的键是(x, y)元组，键值是Location类。
-            self.wormholes[(x, y)] = newLoc
-
-    def moveDrunk(self, drunk):
-        """请drunk者移动一步，如果他踩到了虫洞，那就他的位置更新为虫洞彼岸的位置。"""
-        Field.moveDrunk(self, drunk)
-        x = self.drunks[drunk].getX()
-        y = self.drunks[drunk].getY()
-        if (x, y) in self.wormholes:
-            self.drunks[drunk] = self.wormholes[(x, y)]
-
-
 def simAll1(drunkKinds, walkLengths, numTrials):
     """模拟各种醉鬼的情况, 绘图输出在各种步数情况下的平均出走距离。
     相比于simAll，不是分别打印，而是分别绘图。
@@ -252,11 +253,9 @@ def simAll1(drunkKinds, walkLengths, numTrials):
     #下面这几句是绘制正常的醉汉步数与距离的规律用的。
     #curStyle = styleChoice.nextStyle()
     #refs = [math.sqrt(x) for x in walkLengths]
-    #pylab.plot(walkLengths, refs, curStyle,
-               label = 'Square root of steps')
+    #pylab.plot(walkLengths, refs, curStyle, label = 'Square root of steps')
     #给这张图整体做装饰。
-    pylab.title('Mean Distance from Origin ('
-                + str(numTrials) + ' trials)')
+    pylab.title('Mean Distance from Origin (' + str(numTrials) + ' trials)')
     pylab.xlabel('Number of Steps')
     pylab.ylabel('Distance from Origin')
     pylab.legend(loc = 'best')
@@ -273,6 +272,8 @@ simAll1((UsualDrunk, ColdDrunk, EWDrunk),
 #下面这句是绘制正常的醉汉步数与距离的规律用的。
 #simAll1((UsualDrunk,), (10,100,1000,10000,100000), 100)
 
+
+# 以下代码用于绘制对于某个特定步数，各个醉汉的最终位置分布。
 
 def getFinalLocs(numSteps, numTrials, dClass):
     """模拟某类醉鬼从原点出发多次游走的停止位置。
@@ -334,6 +335,8 @@ def plotLocs(drunkKinds, numSteps, numTrials):
 plotLocs((UsualDrunk, ColdDrunk, EWDrunk), 100, 200)
 
 
+# 单次游走经过的路径
+
 def traceWalk(drunkKinds, numSteps):
     """绘制各种醉鬼一次漫步的轨迹。
     要求：
@@ -343,7 +346,7 @@ def traceWalk(drunkKinds, numSteps):
     一张图表。
     """
     styleChoice = styleIterator(('k+', 'r^', 'mo'))
-    #f = Field()
+    # f = Field()
     #替换为有1000个虫洞的场地，场地内有正负100*正负200，共80000个点。虫洞占比1/80。
     f = oddField(1000, 100, 200)
     pylab.figure("traceWalk")
@@ -373,7 +376,10 @@ def traceWalk(drunkKinds, numSteps):
     pylab.savefig("各种醉鬼一次漫步的轨迹")
 
 
-#绘制三种醉鬼各走200步的轨迹图表。
+#绘制三种醉鬼各走100步的轨迹图表。
+# traceWalk((UsualDrunk, ColdDrunk, EWDrunk), 100)
+
+#在有虫洞的田地里，绘制三种醉鬼各走500步的轨迹图表。
 traceWalk((UsualDrunk, ColdDrunk, EWDrunk), 500)
 
 
