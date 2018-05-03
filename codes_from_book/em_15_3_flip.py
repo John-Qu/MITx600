@@ -4,7 +4,7 @@ import random, pylab
 def flip(numFlips):
     """随机抛掷硬皮多次，记录正面向上的比例。
     假设：
-    numFlips是一个正整数。
+    numFlips是一个正整数, 是抛的次数。
     返回：
     人头向上的比例值"""
     heads = 0
@@ -66,7 +66,7 @@ def flipPlot(minExp, maxExp):
     假设：
     minExp和maxExp是正整数，定义单次投掷硬币的次数区间，以2为底的指数，minExp<maxExp。
     绘制：
-    从2**minExp到2**maxExp次硬币投掷的结果"""
+    2张图表，反映从2**minExp到2**maxExp次硬币投掷的结果"""
 
     # ratios是正反比例列表，diffs是正反差值的绝对值列表，xAxis是几个尝试次数的列表。
     ratios, diffs, xAxis = [], [], []
@@ -206,8 +206,8 @@ def flipPlot1(minExp, maxExp, numTrials):
 
 
 # 模拟20次投掷硬币实验，每次投掷2**4到2**20次。
-flipPlot1(4, 20, 20)
-pylab.show()
+# flipPlot1(4, 20, 20)
+# pylab.show()
 
 
 def CV(X):
@@ -259,3 +259,8 @@ def flipPlot2(minExp, maxExp, numTrials):
     title = 'Coeff. of Var. Heads/Tails Ratio' + numTrialsString
     makePlot(xAxis, ratiosCVs, title, 'Number of Flips',
              'Coeff. of Var.', 'ko', logX = True, logY = True)
+
+# 实验20次取平均值
+# flipPlot2(4, 20, 20)
+flipPlot2(4, 20, 1000)
+pylab.show()
