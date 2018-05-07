@@ -446,11 +446,38 @@ def DFS(graph, start, end, path, shortest, toPrint = False):
                if newPath != None:
                      shortest = newPath #用新的猜到了目标节点的路径更新最短路径，它最多与上一个最短路径一样长，当然可能更短。
     return shortest #返回最短路径。
+    
+    
+# 上面的实现方式中，实际上newPath已经比目标答案深了一层，只是从pathQueue中提取到目标答案时，才停止。这浪费时间。
+# 下面的写法在第一时间检查是否踩到了目标点，打印输出的内容与上面相同。
+def BFS(graph, start, end, toPrint = False):
+    """假设graph是无向图；start和end是节点
+       返回graph中从start到end的最短路径。"""
+    initPath = [start] #包含节点的列表
+    pathQueue = [initPath] #节点列表的列表
+    if toPrint:
+        print('Current BFS path:', printPath(path))
+    while len(pathQueue) != 0: #pathQueue的长度可能减到0。
+        #从pathQueue这个路径列表里取最老的一个组合，开始探索。
+        tmpPath = pathQueue.pop(0)
+        lastNode = tmpPath[-1]
+        #向后探索一层
+        for nextNode in graph.childrenOf(lastNode):
+            if nextNode == end: #找到了，返回这个路径就够了。
+                newPath = tmpPath + [nextNode]
+                print('Current BFS path:', printPath(newPath))
+                return newPath
+            if nextNode not in tmpPath: #不走回头路。
+                #它会产生很多个newPath，都会被加入pathQueue里面，以备探索。
+                newPath = tmpPath + [nextNode]
+                print('Current BFS path:', printPath(newPath))
+                pathQueue.append(newPath)
+    return None
 ```
 
 它是一个递归函数，每次递归变更的形式变量是start节点，每次用新的node作为实际变量输入。
 
-在递归调用时，shortest路径也可能有更新，一般来说，它是上一次存储过的那个最短路径。如果踩到了目标点，总步数有不比之前的最短路径多，才会用这个newpath更新shortest。
+在递归调用时，shortest路径也可能有更新，一般来说，它是上一次存储过的那个最短路径。如果踩到了目标点，总步数又不比之前的最短路径多，才会用这个newpath更新shortest。
 
 函数有两个返回值出口。一个是递归调用时，node走到了目标节点end，函数返回当前走过的path节点路径，并可能更新shortest节点路径。另一个出口是node节点没有子节点了，不进入for循环，也就没有递归，直接返回之前的shortest节点路径。
 

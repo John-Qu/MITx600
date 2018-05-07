@@ -115,6 +115,30 @@ def shortestPath(graph, start, end, toPrint = False):
     return DFS(graph, start, end, [], None, toPrint)
 
 
+# def BFS(graph, start, end, toPrint = False):
+#     """假设graph是无向图；start和end是节点
+#        返回graph中从start到end的最短路径。"""
+#     initPath = [start] #包含节点的列表
+#     pathQueue = [initPath] #节点列表的列表
+#     if toPrint:
+#         print('Current BFS path:', printPath(path))
+#     while len(pathQueue) != 0: #pathQueue的长度可能减到0。
+#         #从pathQueue这个路径列表里取最老的一个组合，开始探索。
+#         tmpPath = pathQueue.pop(0)
+#         print('Current BFS path:', printPath(tmpPath))
+#         lastNode = tmpPath[-1]
+#         if lastNode == end: #找到了，返回这个路径就够了。
+#             return tmpPath
+#         #向后探索一层
+#         for nextNode in graph.childrenOf(lastNode):
+#             if nextNode not in tmpPath: #不走回头路。
+#                 #它会产生很多个newPath，都会被加入pathQueue里面，以备探索。
+#                 newPath = tmpPath + [nextNode]
+#                 pathQueue.append(newPath)
+#     return None
+
+# 上面的实现方式中，实际上newPath已经比目标答案深了一层，只是从pathQueue中提取到目标答案时，才停止。这浪费时间。
+# 下面的写法在第一时间检查是否踩到了目标点，打印输出的内容与上面相同。
 def BFS(graph, start, end, toPrint = False):
     """假设graph是无向图；start和end是节点
        返回graph中从start到end的最短路径。"""
@@ -125,15 +149,17 @@ def BFS(graph, start, end, toPrint = False):
     while len(pathQueue) != 0: #pathQueue的长度可能减到0。
         #从pathQueue这个路径列表里取最老的一个组合，开始探索。
         tmpPath = pathQueue.pop(0)
-        print('Current BFS path:', printPath(tmpPath))
         lastNode = tmpPath[-1]
-        if lastNode == end: #找到了，返回这个路径就够了。
-            return tmpPath
         #向后探索一层
         for nextNode in graph.childrenOf(lastNode):
+            if nextNode == end: #找到了，返回这个路径就够了。
+                newPath = tmpPath + [nextNode]
+                print('Current BFS path:', printPath(newPath))
+                return newPath
             if nextNode not in tmpPath: #不走回头路。
                 #它会产生很多个newPath，都会被加入pathQueue里面，以备探索。
                 newPath = tmpPath + [nextNode]
+                print('Current BFS path:', printPath(newPath))
                 pathQueue.append(newPath)
     return None
 

@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a5a47a1-793f-4974-94e3-350147d8e3ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/codes_from_book/em_15_3_flip.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codes_from_book/em_15_4_check_empirical.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codes_from_book/em_15_4_flips.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edX/ex_4_is_in.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edX/ex_4_polysum.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finger_exercis_in_book/fe_15_4_two_dice.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/C0-PREFACE.md" beforeDir="false" afterPath="$PROJECT_DIR$/C0-PREFACE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/C14-RANDOM-WALK-AND-MORE-ABOUT-DATA-VISUALIZATION.md" beforeDir="false" afterPath="$PROJECT_DIR$/C14-RANDOM-WALK-AND-MORE-ABOUT-DATA-VISUALIZATION.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_14_drunkard.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes_from_book/em_14_drunkard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/各种醉鬼一次漫步的轨迹.png" beforeDir="false" afterPath="$PROJECT_DIR$/codes_from_book/各种醉鬼一次漫步的轨迹.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/各种醉鬼各种步数的平均移动距离.png" beforeDir="false" afterPath="$PROJECT_DIR$/codes_from_book/各种醉鬼各种步数的平均移动距离.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/各种醉鬼走相同步数后的多次最终位置.png" beforeDir="false" afterPath="$PROJECT_DIR$/codes_from_book/各种醉鬼走相同步数后的多次最终位置.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C12-KNAPSACK-AND-GRAPH-OPTIMIZATION-PROBLEMS.md" beforeDir="false" afterPath="$PROJECT_DIR$/C12-KNAPSACK-AND-GRAPH-OPTIMIZATION-PROBLEMS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C13-DYNAMIC-PROGRAMMING.md" beforeDir="false" afterPath="$PROJECT_DIR$/C13-DYNAMIC-PROGRAMMING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C15-STOCHASTIC-PROGRAMS-PROBABILITY-AND-DISTRIBUTIONS.md" beforeDir="false" afterPath="$PROJECT_DIR$/C15-STOCHASTIC-PROGRAMS-PROBABILITY-AND-DISTRIBUTIONS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes_from_book/em_12_2_graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes_from_book/em_12_2_graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes_from_book/em_15_3_flip.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes_from_book/em_15_3_flip.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,23 +26,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="C14-RANDOM-WALK-AND-MORE-ABOUT-DATA-VISUALIZATION.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/C14-RANDOM-WALK-AND-MORE-ABOUT-DATA-VISUALIZATION.md">
+      <file leaf-file-name="C15-STOCHASTIC-PROGRAMS-PROBABILITY-AND-DISTRIBUTIONS.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/C15-STOCHASTIC-PROGRAMS-PROBABILITY-AND-DISTRIBUTIONS.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="147">
-                <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+              <first_editor relative-caret-position="2246">
+                <caret line="727" column="4" lean-forward="true" selection-start-line="727" selection-start-column="4" selection-end-line="727" selection-end-column="4" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="em_14_drunkard.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codes_from_book/em_14_drunkard.py">
+      <file leaf-file-name="ex_w2_ps2_credit_payment.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/edX/ex_w2_ps2_credit_payment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="381" selection-start-line="381" selection-end-line="381" />
+            <state>
+              <caret column="19" selection-start-column="19" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -64,6 +67,9 @@
       <find>class Item</find>
       <find>list comprehension</find>
       <find>simAll1</find>
+      <find>O/1背包问题的二叉树结构，是否具有优化子结构和重复子问题</find>
+      <find>深度优先搜索DFS的逻辑</find>
+      <find>round</find>
     </findStrings>
     <replaceStrings>
       <replace>y</replace>
@@ -79,15 +85,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Book_Finger_exercise/3-2-Fe1-Sum-string-num.py" />
-        <option value="$PROJECT_DIR$/Book_Finger_exercise/3-4-Em1-not-equal.py" />
-        <option value="$PROJECT_DIR$/temp.md" />
-        <option value="$PROJECT_DIR$/Book_Finger_exercise/3-5-Newton-Raphson.py" />
-        <option value="$PROJECT_DIR$/C2-INTRODUCTION-TO-PYTHON.md" />
-        <option value="$PROJECT_DIR$/C3-SOME-SIMPLE-NUMERICAL PROGRAMS.md" />
-        <option value="$PROJECT_DIR$/4-2-Em1.py" />
-        <option value="$PROJECT_DIR$/4-3-2-Palindrome.py" />
-        <option value="$PROJECT_DIR$/5-3-1-Em-removeDups.py" />
         <option value="$PROJECT_DIR$/4-3-Em-factorial.py" />
         <option value="$PROJECT_DIR$/Book_Finger_exercise/4-2-Em1.py" />
         <option value="$PROJECT_DIR$/5-4-Em-apply_to_each.py" />
@@ -118,18 +115,27 @@
         <option value="$PROJECT_DIR$/codes_from_book/em_9_3_6_gempowerset.py" />
         <option value="$PROJECT_DIR$/codes_from_book/em_12_1_greedy.py" />
         <option value="$PROJECT_DIR$/codes_from_book/em_12_1_choosebest.py" />
-        <option value="$PROJECT_DIR$/codes_from_book/em_12_2_graph.py" />
-        <option value="$PROJECT_DIR$/C12-KNAPSACK-AND-GRAPH-OPTIMIZATION-PROBLEMS.md" />
         <option value="$PROJECT_DIR$/C10-SOME-SIMPLE-ALGORITHMS-AND-DATA-STRUCTURES.md" />
         <option value="$PROJECT_DIR$/codes_from_book/em_13_2_fastfib.py" />
         <option value="$PROJECT_DIR$/codes_from_book/em_13_2_knapsack.puy.py" />
-        <option value="$PROJECT_DIR$/C13-DYNAMIC-PROGRAMMING.md" />
         <option value="$PROJECT_DIR$/Readme.md" />
         <option value="$PROJECT_DIR$/codes_from_book/em_11_2_mortgage.py" />
-        <option value="$PROJECT_DIR$/codes_from_book/em_15_3_flip.py" />
         <option value="$PROJECT_DIR$/C0-PREFACE.md" />
         <option value="$PROJECT_DIR$/codes_from_book/em_14_drunkard.py" />
         <option value="$PROJECT_DIR$/C14-RANDOM-WALK-AND-MORE-ABOUT-DATA-VISUALIZATION.md" />
+        <option value="$PROJECT_DIR$/C13-DYNAMIC-PROGRAMMING.md" />
+        <option value="$PROJECT_DIR$/codes_from_book/em_15_4_distribution.py" />
+        <option value="$PROJECT_DIR$/codes_from_book/em_12_2_graph.py" />
+        <option value="$PROJECT_DIR$/C12-KNAPSACK-AND-GRAPH-OPTIMIZATION-PROBLEMS.md" />
+        <option value="$PROJECT_DIR$/codes_from_book/em_15_3_flip.py" />
+        <option value="$PROJECT_DIR$/finger_exercis_in_book/fe_15_4_two_dice.py" />
+        <option value="$PROJECT_DIR$/codes_from_book/em_15_4_check_empirical.py" />
+        <option value="$PROJECT_DIR$/codes_from_book/em_15_4_flips.py" />
+        <option value="$PROJECT_DIR$/edX/ex_4_is_in.py" />
+        <option value="$PROJECT_DIR$/edX/ex_4_polysum.py" />
+        <option value="$PROJECT_DIR$/C15-STOCHASTIC-PROGRAMS-PROBABILITY-AND-DISTRIBUTIONS.md" />
+        <option value="$PROJECT_DIR$/edX/ex_w4_ps2_credit_payment.py" />
+        <option value="$PROJECT_DIR$/edX/ex_w2_ps2_credit_payment.py" />
       </list>
     </option>
   </component>
@@ -158,6 +164,16 @@
               <item name="Guttag" type="b2602c69:ProjectViewProjectNode" />
               <item name="Guttag" type="462c0819:PsiDirectoryNode" />
               <item name="codes_from_book" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Guttag" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Guttag" type="462c0819:PsiDirectoryNode" />
+              <item name="edX" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Guttag" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Guttag" type="462c0819:PsiDirectoryNode" />
+              <item name="finger_exercis_in_book" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -320,14 +336,14 @@
     <frame x="0" y="22" width="840" height="1028" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918962" weight="0.4078144" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918962" visible="true" weight="0.2002442" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50045496" side_tool="true" weight="0.5102041" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49954504" weight="0.42964554" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.33619764" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.33590308" />
       <window_info id="Structure" order="1" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49954504" visible="true" weight="0.51651984" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49954504" visible="true" weight="0.49229074" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -341,19 +357,19 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918962" visible="true" weight="0.11646952" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918962" visible="true" weight="0.2002442" />
       <window_info id="Structure" order="1" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32867885" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49954504" weight="0.42964554" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.33641025" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.33619764" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.33683106" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49954504" weight="0.49229074" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50045496" side_tool="true" weight="0.5102041" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
     </layout-to-restore>
@@ -366,27 +382,17 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/codes_from_book/em_15_4_distribution.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Book_Finger_exercise/3-2-Fe1-Sum-string-num.py" />
-    <entry file="file://$PROJECT_DIR$/note-of-INTRODUCTION-TO-COMPUTATION-AND-PROGRAMMING-WITH-PYTHON.md" />
-    <entry file="file://$PROJECT_DIR$/note-of-INTRODUCTION-TO-COMPUTATION-AND-PROGRAMMING-WITH-PYTHON.md" />
-    <entry file="file://$PROJECT_DIR$/Book_Finger_exercise/2-4-Fe2-toFind-largest-odd-number.py" />
-    <entry file="file://$PROJECT_DIR$/Book_Finger_exercise/2-4-Fe1-toPrint-numXs-times" />
-    <entry file="file://$PROJECT_DIR$/Book_Finger_exercise/3-5-Newton-Raphson.py" />
-    <entry file="file://$PROJECT_DIR$/Book_Finger_exercise/3-2-Fe1-Sum-string-num.py" />
-    <entry file="file://$PROJECT_DIR$/C3-SOME-SIMPLE-NUMERICAL PROGRAMS.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="326">
-            <caret line="207" column="61" selection-start-line="207" selection-start-column="61" selection-end-line="207" selection-end-column="61" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Book_Finger_exercise/4-3-2-Palindrome.py" />
     <entry file="file://$PROJECT_DIR$/5-3-1-Em-removeDups.py" />
     <entry file="file://$PROJECT_DIR$/4-3-Em-factorial.py" />
@@ -554,37 +560,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/C10-SOME-SIMPLE-ALGORITHMS-AND-DATA-STRUCTURES.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="12715">
-            <caret line="503" column="38" selection-start-line="503" selection-start-column="38" selection-end-line="503" selection-end-column="38" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/C13-DYNAMIC-PROGRAMMING.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="198">
-            <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/codes_from_book/em_13_2_knapsack.puy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="67" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codes_from_book/em_12_2_graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3250">
-          <caret line="117" selection-start-line="117" selection-end-line="117" />
         </state>
       </provider>
     </entry>
@@ -622,21 +601,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/codes_from_book/em_14_drunkard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="808">
+          <caret line="381" selection-start-line="381" selection-end-line="381" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C13-DYNAMIC-PROGRAMMING.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="450">
+            <caret line="182" column="54" selection-start-line="182" selection-start-column="54" selection-end-line="182" selection-end-column="54" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/C0-PREFACE.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="346">
+          <first_editor relative-caret-position="396">
             <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/C14-RANDOM-WALK-AND-MORE-ABOUT-DATA-VISUALIZATION.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="804">
+            <caret line="476" column="35" selection-start-line="476" selection-start-column="35" selection-end-line="476" selection-end-column="35" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codes_from_book/em_12_2_graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="794">
+          <caret line="165" selection-start-line="165" selection-end-line="165" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/C12-KNAPSACK-AND-GRAPH-OPTIMIZATION-PROBLEMS.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="306">
-            <caret line="270" column="19" lean-forward="true" selection-start-line="270" selection-start-column="19" selection-end-line="270" selection-end-column="19" />
+          <first_editor relative-caret-position="163">
+            <caret line="449" selection-start-line="449" selection-end-line="449" />
           </first_editor>
           <second_editor />
         </state>
@@ -644,25 +657,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/codes_from_book/em_15_3_flip.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="808">
-          <caret line="218" column="27" selection-start-line="218" selection-start-column="27" selection-end-line="218" selection-end-column="27" />
+        <state relative-caret-position="2825">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codes_from_book/em_14_drunkard.py">
+    <entry file="file://$PROJECT_DIR$/finger_exercis_in_book/fe_15_4_two_dice.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="381" selection-start-line="381" selection-end-line="381" />
+        <state relative-caret-position="300">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/C14-RANDOM-WALK-AND-MORE-ABOUT-DATA-VISUALIZATION.md">
+    <entry file="file://$PROJECT_DIR$/C10-SOME-SIMPLE-ALGORITHMS-AND-DATA-STRUCTURES.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="147">
-            <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+          <first_editor relative-caret-position="1500">
+            <caret line="503" column="38" selection-start-line="503" selection-start-column="38" selection-end-line="503" selection-end-column="38" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edX/ex_4_polysum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edX/ex_4_is_in.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C3-SOME-SIMPLE-NUMERICAL PROGRAMS.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="357">
+            <caret line="207" column="61" selection-start-line="207" selection-start-column="61" selection-end-line="207" selection-end-column="61" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codes_from_book/em_15_4_flips.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1569">
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edX/ex_w4_ps2_credit_payment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C15-STOCHASTIC-PROGRAMS-PROBABILITY-AND-DISTRIBUTIONS.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="2246">
+            <caret line="727" column="4" lean-forward="true" selection-start-line="727" selection-start-column="4" selection-end-line="727" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edX/ex_w2_ps2_credit_payment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
