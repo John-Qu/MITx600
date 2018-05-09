@@ -725,4 +725,286 @@ pylab.show()
 ![](https://ws4.sinaimg.cn/large/006tKfTcly1fr0mn268w7j30zk0qojsj.jpg)
 
 
-### 
+### 什么是均匀分布？分为哪两种？
+
+假设你想在一个车站搭乘公共汽车，汽车每15分钟一班。如果没有按照发车时间表到达车站，那么你的预期等待时间就是一个0~15分钟的均匀分布。
+
+地图软件估算时间就是取平均值。
+
+我们可以使用一个参数完全描述出连续型均匀分布的特性，即它的范围（也就是最小值和最大值）。如果可能取值的范围是min~max，那么一个值落入x~y 的概率可以由以下公式给出：
+
+![](https://ws2.sinaimg.cn/large/006tKfTcgy1fr3tfkh0gsj30rs064dgl.jpg)
+
+调用random.uniform(min, max)可以生成一个连续型均匀分布的值，它会返回在min和max之间随机选择的一个浮点数。
+
+离散型均匀分布描述的是，结果不是连续的而且每个结果发生的概率完全相同的情况。离散型均匀分布：
+
+![](https://ws4.sinaimg.cn/large/006tKfTcgy1fr3ti1b0z1j30rs0cq75a.jpg)
+
+这里的S是可能出现的结果的集合，|S|是S中的元素数量。
+
+
+### 什么是二项式分布与多项式分布？
+
+#### 分类变量
+
+只能在一个离散集合中取值的随机变量称为分类变量categorical vairable，也称名义变量nominal variable或离散变量discrete variable。
+
+#### 二项式分布
+
+如果分类变量只可能有两个值（如成功或失败），那么这时的概率分布就称为二项式分布。可以将二项式分布理解为n次独立实验中正好成功k次的概率。如果单次实验成功的概率为p，那么n 次独立实验中正好成功k次的概率可以由以下公式给出：
+
+![](https://ws1.sinaimg.cn/large/006tKfTcgy1fr3tproml0j30rs0akt9n.jpg)
+
+n选k数量 * k次成功概率 * n-k次不成功概率 
+
+这里的
+
+![](https://ws4.sinaimg.cn/large/006tKfTcgy1fr3tsjzkoej30rs0beq40.jpg)
+
+公式称为二项式系数，它的一种读法是“n选k”，因为它等价于从大小为n的集合中选择出的大小为k的子集数量。
+
+在15.2节中，我们提出了一个问题，即扔10次骰子时，正好扔出两个1的概率是多少。现在我们就有了合适的工具来计算这个概率。可以将扔10次骰子看成10次独立实验，如果扔出1，则实验成功，扔出其他情况则失败。二项式分布会告诉我们在10次实验中正好成功两次的概率为：
+
+#### 多项式分布
+
+多项式分布[multinomial distribution](https://en.wikipedia.org/wiki/Multinomial_distribution)是二项式分布的推广，用来描述取值多于两个的分类数据。如果在n次独立实验(n independent trials)中，每次实验都存在m个具有固定概率的(having a fixed probability of occuring)互相排斥的结果(m mutually exclusive outcomes)，那么这时候适用于多项式分布。多项式分布可以给出各种结果的任何一种组合(combination)发生的概率。
+
+![](https://wikimedia.org/api/rest_v1/media/math/render/svg/b4a54261a2d46d3c7ffa14b3cd211d24055e4ea7)
+
+
+### 实际练习：实现一个函数，计算扔k次骰子时正好扔出两个3的概率，并绘制出k从2~100时的概率变化。
+
+```python
+import pylab
+
+
+def two3():
+    """实际练习：实现一个函数，计算扔k次骰子时正好扔出两个3的概率，
+    并绘制出k从2~100时的概率变化。
+    :k int, rolls of a fair die"""
+    vals = []
+    for k in range(2, 100):
+        val = k * 1/36 * (35/36)**(k-1)
+        vals.append(val)
+    pylab.plot(vals)
+    pylab.title("The probability of rolling exactly two 3's in k rolls")
+    pylab.xlabel("times of rolls")
+    pylab.ylabel("Probability of exactly two 3's")
+
+two3()
+pylab.show()
+```
+
+![](https://ws4.sinaimg.cn/large/006tKfTcgy1fr3xfq5pe7j30zk0qojt6.jpg)
+
+
+### 指数分布用来描述什么情况？
+
+> 指数分布([Exponential distribution](https://en.wikipedia.org/wiki/Exponential_distribution))非常常见，它经常用来对两次输入的时间间隔(inter-arrival times)进行建模。例如，汽车进入高速公路的间隔时间(cars entering a highway)和访问网页的时间间隔(requests for a Web page)。
+
+什么是inter-arrival times？两个例子哪里体现出指数分布了？
+
+MIT的OCW6.262离散随机过程，第二章讲义，用数学讲述了它。
+
+https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-262-discrete-stochastic-processes-spring-2011/course-notes/MIT6_262S11_chap02.pdf
+
+
+### 药物的指数衰减图形什么样？
+
+```python
+import pylab
+
+
+def clear(n, p, steps):
+    """假设n和steps都是正整数，p是个浮点数
+         n：分子的初始数量
+         p：一个分子被清除的概率
+         steps：模拟的时间长度"""
+    numRemaining = [n]
+    for t in range(steps):
+        numRemaining.append(n*((1-p)**t))
+    pylab.plot(numRemaining)
+    pylab.xlabel('Time')
+    pylab.ylabel('Molecules Remaining')
+    pylab.title('Clearance of Drug')
+
+
+clear(1000, 0.01, 1000)
+pylab.show()
+```
+
+![](https://ws4.sinaimg.cn/large/006tKfTcgy1fr40i4g30nj30z40q8q4x.jpg)
+
+- 指数衰减(exponetial decay)经常用半衰期(half-lift)来描述，即初始值衰减到50%所需的时间。
+- 独立的项目也可以有半衰期。例如，一个药物分子的半衰期就是指它被清除的概率达到0.5所需的时间。
+- 当时间逐渐增加时，剩余的分子数逐渐趋近于0，但永远不能到达0。
+- 对这种情况，不应该解释为总会有一些分子幸存下来，而应该这样解释：因为系统是概率性的，所以永远不能保证所有分子都被清除。
+
+
+![](https://ws1.sinaimg.cn/large/006tKfTcgy1fr40l3drcjj30yw0qamz4.jpg)
+
+- 直线斜率是衰减率(rate of decay)
+- 这个斜率就是lambda。
+- random.expovariate(lambd)，这里的lambd是想得到的均值的倒数。
+- 如果lambd是个正数，函数会返回0和正无穷大之间的一个值；如果lambd是个负数，则返回负无穷大和0之间的一个值。
+- 因为指数分布的PDF写成
+
+![](https://wikimedia.org/api/rest_v1/media/math/render/svg/a693ce9cd1fcd15b0732ff5c5b8040c359cc9332)
+
+
+### 几何分布什么样？
+
+> 几何分布是指数分布的离散模拟，经常用于描述在第一次成功（或第一次失败）之前所需的独立尝试次数。
+
+每次尝试，成功的概率是p，尝试的次数是t，尝试n次   才成功的概率是(1-p)^^n.
+
+> 举例来说，假设你有一辆很旧的汽车，当你转动钥匙（或按下启动按钮）时，它只有50%的概率能够启动。几何分布就可以用来描述在成功之前尝试启动汽车的次数。
+
+```python
+import random, pylab
+
+def successfulStarts(successProb, numTrials):
+    """假设successProb是一个浮点数，表示单次尝试成功的概率。numTrials是个正整数。
+       返回一个列表，其中的元素是每次实验成功之前的尝试次数。"""
+    triesBeforeSuccess = []
+    for t in range(numTrials):
+        consecFailures = 0
+        # 随机数大于成功的概率，就是失败。
+        # 直到成功，才退出while循环。
+        while random.random() > successProb:
+            consecFailures += 1
+        # 将循环的次数作为失败次数添加进列表。
+        triesBeforeSuccess.append(consecFailures)
+    return triesBeforeSuccess
+
+probOfSuccess = 0.5
+numTrials = 5000
+distribution = successfulStarts(probOfSuccess, numTrials)
+# 直方图，横轴是成功之前的失败次数，纵轴是在集合中出现的个数。
+pylab.hist(distribution, bins = 14)
+pylab.xlabel('Tries Before Success')
+pylab.ylabel('Number of Occurrences Out of ' + str(numTrials))
+pylab.title('Probability of Starting Each Try = '\
+            + str(probOfSuccess))
+pylab.show()
+```
+
+![](https://ws4.sinaimg.cn/large/006tKfTcgy1fr41749eczj30yo0q4di0.jpg)
+
+- 直方图，横轴是成功之前的失败次数，纵轴是这个次数在集合中出现的个数。
+
+
+### 为什么说本福德定律Benford's Distribution定义了一种十分奇怪的分布？
+
+令S是一个大的十进制数集合，那么每个非0数字出现的第一位的概率是多少？大多数人会认为应该是1/9。在人造数据集中（如伪造实验数据或者进行金融欺诈），这个想法通常是对的。但在自然产生的数据集中，这个想法一般是错的，它们服从一种由本福德定律预测的分布。
+
+对于一个十进制数的集合，如果第一位数字是d的概率符合P(d) = log10(1+1/d)，就称它满足本福德定律。
+
+1     2     3     4     5     6     7     8     9     
+30.1% 17.6% 12.5% 9.7% 7.9% 6.7% 5.8% 5.1% 4.6% 
+
+满足本福德定律的数集有：
+- 佩波那契数列
+- iPhone开机密码
+- Twitter上各位关注的朋友数
+- 国家人口数
+- 恒星到地球的距离
+
+
+## 15.5 Hashing and Collisions
+
+### 散列表发生碰撞的概率很高吗？
+
+很高，几乎就是1。
+
+我们对这个问题进行更为精确的描述。
+
+假设：
+- 散列表的范围是1~n，
+- 要执行K次插入操作，
+- 散列函数为插入操作中使用的键生成一个完美的均匀分布，也就是说，对于所有的键key和1~n中的所有整数i，hash(key)=i的概率都是1/n。
+
+那么，至少发生一次碰撞的概率是多少？
+
+等价于问：
+
+在1~n 的范围内随机生成K 个整数，至少有两个整数相等的概率是多少？
+
+解决这个问题的最容易的方式是找到相反情况的答案：“在1~n 的范围内随机生成K 个整数，所有整数都不相等的概率是多少？”
+
+前三次插入时不发生碰撞的概率就是1 × (n - 1)/n × (n - 2)/n，在第K次插入结束后，不发生碰撞的概率就是1 × (n - 1)/n × (n - 2)/n × … × n - (K - 1)/n。
+
+要得到至少发生一次碰撞的概率，我们应该用1减去这个值。
+
+
+## 15.6 How Often Does the Better Team Win?
+
+### 在七局四胜的赛制下，强队获胜的把握与单场获胜的概率之间有什么关系？强队靠实力还是运气？
+
+有把握最终获胜，定义为400场模拟中，能胜95%的比率。对应的单场获胜概率需要在0.75左右。
+实际上走入决赛的两支队伍的单场获胜概率分别是58.6%和55.5%. 对应的最终获胜概率只有60%左右。
+
+![](https://ws3.sinaimg.cn/large/006tNc79gy1fr4xqflibfj30yi0q4tax.jpg)
+
+```python
+import random, pylab
+
+
+def playSeries(numGames, teamProb):
+    """
+    一次模拟，进行numGames场比赛，过半数则胜。
+    :param numGames: int，两队比赛场数。
+    :param teamProb: float，某队单场获胜概率。
+    :return: 布尔值，胜败。
+    """
+    numWon = 0
+    for game in range(numGames):
+        # 用随机数与获胜概率做比较
+        if random.random() <= teamProb:
+            numWon += 1
+    # 胜负是真假值，作为判断依据
+    return (numWon > numGames//2) # 7//2 = 3, 4 > 3
+
+def fractionWon(teamProb, numSeries, seriesLen):
+    """
+    计算在numSeries次模拟中，某队获胜的比率。
+    :param teamProb: float，某队单场获胜概率
+    :param numSeries: int，模拟的次数
+    :param seriesLen: int，两队交锋场数
+    :return: float，获胜的比率
+    """
+    won = 0
+    for series in range(numSeries):
+        if playSeries(seriesLen, teamProb):
+            won += 1
+    return won/float(numSeries)
+
+def simSeries(numSeries):
+    """
+    模拟numSeries次，看某队获胜比率与单场获胜概率之间的关系。
+    :param numSeries: int，模拟次数。
+    :return: 图表。
+    """
+    # 某队单场获胜比率大于0.5才有可能整体获胜。
+    prob = 0.5
+    fracsWon, probs = [], []
+    while prob <= 1.0: # prob递增到1.0为止。
+        # 把某队获胜比率和单场获胜概率添加进列表
+        fracsWon.append(fractionWon(prob, numSeries, 7)) # 7是关键参数，七局四胜制。
+        probs.append(prob)
+        prob += 0.01
+    # 输出某队获胜比率和单场获胜概率图表
+    pylab.axhline(0.95) # 认为超过95%的获胜比率才算是有能力、有把握最终获胜。
+    pylab.plot(probs, fracsWon, 'k', linewidth = 5)
+    pylab.xlabel('Probability of Winning a Game')
+    pylab.ylabel('Probability of Winning a Series')
+    pylab.title(str(numSeries) + ' Seven-Game Series')
+
+
+simSeries(400)
+pylab.show()
+```
+
+---
+以上，2018-05-09 11:46:14.
