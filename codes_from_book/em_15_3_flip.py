@@ -27,7 +27,7 @@ def flipSim(numFlipsPerTrial, numTrials):
     return mean
 
 
-print('Mean =', flipSim(10, 100))
+# print('Mean =', flipSim(10, 100))
 
 
 def regressToMean(numFlips, numTrials):
@@ -58,7 +58,7 @@ def regressToMean(numFlips, numTrials):
     pylab.legend(loc = 'best')
     # pylab.show()
 
-regressToMean(15, 40)
+# regressToMean(15, 40)
 
 
 def flipPlot(minExp, maxExp):
@@ -106,9 +106,9 @@ def flipPlot(minExp, maxExp):
     pylab.semilogx()
 
 #以0为种子，开始生成伪随机数，保证每次执行下面的绘图命令得到的数据相同。
-random.seed(0)
+# random.seed(0)
 # 做2**4，到2**20次投掷硬币，绘图。
-flipPlot(4, 20)
+# flipPlot(4, 20)
 
 
 def variance(X):
@@ -262,5 +262,5 @@ def flipPlot2(minExp, maxExp, numTrials):
 
 # 实验20次取平均值
 # flipPlot2(4, 20, 20)
-flipPlot2(4, 20, 1000)
+# flipPlot2(4, 20, 1000)
 #pylab.show()

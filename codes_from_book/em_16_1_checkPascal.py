@@ -4,6 +4,7 @@ import random
 def rollDie():
     return random.choice([1,2,3,4,5,6])
 
+
 def checkPascal(numTrials):
     """假设numTrials是正整数
        输出获胜概率的估值"""
