@@ -31,6 +31,7 @@ Inferential statistics involves making inference about a population of examples 
 
 ## 17.1 Sampling a data set
 
+
 ### 一个简单的随机抽样，看图形、均值与方差，得到什么启示？
 
 ```python
