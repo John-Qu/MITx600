@@ -1,0 +1,339 @@
+# 19 RANDOMIZED TRIALS AND HYPOTHESIS CHECKING
+
+### 随机试验的英文其实是什么？
+
+randomized trails
+
+randomized tests
+
+randomized experiment
+
+进行trail，而不是experiment，也不是test。
+
+trial | ˈtrī(ə)l |
+noun
+
+1 a formal examination of evidence before a judge, and typically before a jury, in order to decide guilt in a case of criminal or civil proceedings: the newspaper accounts of the trial | the editor was summoned to stand trial for libel.
+
+2 a test of the performance, qualities, or suitability of someone or something: clinical trials must establish whether the new hip replacements are working.
+
+• an athletic contest to test the ability of players eligible for selection to a team.
+• (trials) an event in which horses, dogs, or other animals compete or perform: horse trials.
+
+3 a person, thing, or situation that tests a person's endurance or forbearance: the trials and tribulations of married life.
+
+verb (trials, trialing, trialed; British trials, trialling, trialled)
+
+1 [with object] test (something, especially a new product) to assess its suitability or performance: all seeds are carefully trialed in a variety of growing conditions.
+
+2 [no object] (of a horse, dog, or other animal) compete in trials: the pup trialed on Saturday.
+
+on trial
+
+being tried in a court of law.
+
+trial and error
+
+    the process of experimenting with various methods of doing something until one finds the most successful.
+
+
+### 试验组和对照组的英文其实是什么？
+
+treatment group 处理，试验用
+
+control group 控制，对照用
+
+
+## 19.1 Checking Significance
+
+
+### 为什么要检验统计显著性statistical significance？
+
+在任何实验中，只要包括从总体随机抽取样本的步骤，就会存在一种可能性：观测到的效果observed effect仅仅出于偶然。
+
+图19-2形象地表示了2014年1月的气温与1951~1980年1月平均气温之间的差异。现在，假设你在地球上随机选择20个地点，构造出一个样本，然后发现样本的平均气温变化是+1摄氏度。
+
+那么，你观测到的这种平均气温的变化有多大的概率是因为对样本地点的随机选择造成的，而不是因为全球气温变暖？
+What is the probability that
+the observed change in mean temperature was 
+an artifact of the sites you happened to sample rather than 
+an indication that the planet as a whole is warming?
+
+统计显著性就是用来回答这种问题的。
+
+
+### 统计学假设检验的方法计算哪类问题？
+
+> 20世纪初，罗纳德·费希尔Ronald Fisher提出了一种使用统计学进行假设检验的方法developed an approach to statistical hypothesis testing，它是在计算观测效果出于偶然性的概率时最常使用的方法that has become the most commonly used approach for evaluating the probability of an observed effect having occured purely by chance。
+
+#### 第248页 19.1 检验显著性
+
+错误内容：20世纪初，罗纳德·费希尔提出了一种使用统计学进行假设检验的方法，最常用于计算观测结果出于偶然性的概率。
+
+应改为：20世纪初，罗纳德·费希尔提出了一种使用统计学进行假设检验的方法，它是在计算观测效果出于偶然性的概率时最常使用的方法。
+
+我想Guttag教授的原意是说，在分析“计算观测结果出于偶然性的概率”的问题时，Fisher的方法虽然最常用，但是并不惟一，因为下一章的贝叶斯方法就绕开了它的弱点。
+
+另外，“观测效果”，“观测结果”，本页中对an observed effect有两种翻译。我认为前者更能传达出“PED-X药品是否有效”这个例子的原意。
+
+bbQuickor 提交于 2018-05-16 10:10 · 电子版 · 第1印 · 技术错误
+
+
+
+
+### 费希尔的这种检验显著性的方法是什么？
+
+> 据费希尔所说，他之所以会发明这种方法，是拜穆丽尔·布里斯托·洛奇博士所赐。穆丽尔宣称，她喝奶茶时可以分辨出是先放的奶还是先放的茶。费希尔向穆丽尔提出了挑战，进行了一场“奶茶测试”，他给了穆丽尔8杯奶茶（4杯先放奶，4杯先放茶），请她分辨出哪些杯子中茶是先于奶放进去的。穆丽尔完美地完成了这一测试。然后，费希尔计算出了她纯凭运气分辨出8杯奶茶的概率。正如我们在15.4.4节中看到的，，也就是说，从8杯奶茶中选择4杯有70种不同的方法。因为这70种组合中只有一种对应着4杯奶茶都是先放茶，所以费希尔得出，布里斯托·洛奇博士纯凭运气做出正确选择的概率是1/70 ≈ 0.014。根据这个结果，他得出结论，穆丽尔几乎不可能仅凭运气通过这次测试。
+
+(1) 定义一个原(空)假设null hypothesis和一个备择假设alternative hypothesis。原假设表示“实验方法（treatment处理）”**没有**我们想知道的interesting效果。对于“奶茶测试”，原假设就是“布里斯托·洛奇博士根本品尝不出不同奶茶之间的区别”。备择假设仅当原假设是错误的时候才成立，例如，“布里斯托·洛奇博士可以品尝出奶茶之间的区别”。
+
+(2) 理解待评价样本的统计学假设。对于“奶茶测试”，费希尔假设布里斯托·洛奇博士对每一杯奶茶都可以做出独立判断。
+
+(3) 计算相关的检验统计量test statisitic。在本例中，检验统计量就是布里斯托·洛奇博士给出正确答案的可能性fraction of correct answers。(而不是常用的t统计量)
+
+(4) 在原假设成立的情况下under the null hypothesis，推导出检验统计量的概率。在本例中，就是仅凭运气正确找出所有奶茶的概率，也就是0.014。
+
+(5) 确定这个概率是否足够小到可以使你放心地认为you are willing to assume原假设是错的，即拒绝原假设to reject the null hypothesis。这个能使你拒绝原假设的概率common values for the rejection level要事先决定好，一般为0.05或0.01。
+
+
+### 选择拒绝原假设的阈值的原则是什么？
+
+我们接下来看看能否拒绝原假设 (go about **trying** to reject the null hypothesis)。选择一个阈值(threshold) α 作为统计显著性(for statistical significance)，并试图证明(**try** to show)：如果总体分布与原假设一致，那么从总体中抽取出现有数据的概率小于α (that the probabilty of the data having been drawn from distributions consistent with the null hypothesis is less than α)。
+
+然后，我们就可以在置信度为α的情况下拒绝原假设，接受概率为1-α 的与原假设相反的假设。(We then say that we can reject the null hypothesis with confidence α, and accept the nagation of the null hypothesis with probability 1-α.)
+
+对α的选择会影响我们犯错误的类型。α越大，我们越可能在原假设为真的情况下拒绝原假设，这称为第一类错误(type I errors错误地认为有效果)。α越小，我们越可能在原假设为假的情况下接受原假设，这称为第二类错误(type II errors错误地认为没效果)。
+
+通常，我们选择α = 0.05。但根据出现错误的严重性，α可以取更大的值或更小的值。举例来说，如果原假设是“由于服用PED-X和PED-Y而造成的过早死亡率没有区别”，那么就应该选择一个较小的α，比如0.01，作为拒绝原假设的基准，以确定一种药品比另一种更安全。另一方面，如果原假设是“PED-X和PED-Y的味道没有区别”，那么我们就可以放心地选择一个更大的α。
+
+很多研究者（包括本书作者）强烈认为believe strongly，以这种“拒绝rejectionist”的方式发布统计结果to report statisitics是不合适的unfortunate，更合适preferable的方式是通报report实际的显著性水平the actural significance level，而不是仅做出“在5%的水平上拒绝原假设the null hypothesis has been rejected at the 5% level.”这样的声明stating。
+
+
+### 什么是检验统计量？最常用的检验统计量是什么？
+
+t统计量 t-statisitc。（不唯一的检验统计量，女士品茶就是直接考察可能出现的比率）
+
+t统计量告诉我们，以标准误差为单位时，从样本数据中得出的估计值与原假设之间的差异有多大。(The t-statisic tells us how different, measured in units of standard error, the estimate derived from the data is from the null hypothesis.)
+
+
+> t统计量越大，拒绝原假设的可能性就越大。对于我们的例子，t 统计量告诉我们，两个均值的差（118.79 - 120.17 = -1.38）距离0(也就是原假设)有多少个标准误差。PED-X样本的t统计量为-2.13165598142，它的含义是什么呢？我们应该如何使用这个统计量呢？ 
+对t统计量的使用方法非常类似于在计算置信区间时对标准差的使用，我们会说距离均值有几个标准差。回忆一下，对于所有正态分布，某个值位于均值两侧固定数量的标准差范围内的概率也是固定的。对于t 统计量，问题要复杂一些，因为要考虑到计算标准误差的样本的数量。我们假设t统计量服从t分布，而不是服从正态分布。 
+t分布最早由威廉·戈塞于1908年提出。统计学家戈塞为亚瑟·吉尼斯父子酿酒厂工作。t分布实际上是一族分布，因为分布的形状依赖于样本的自由度。 
+自由度描述了导出t统计量所用的独立信息量。我们通常可以认为自由度就是样本中独立观测的数量，样本从总体中抽取而出，并用来估计总体的某些统计量。 
+t分布看上去与正态分布很相似，自由度越大，越接近正态分布。自由度较小时，相对于正态分布，t分布具有明显的肥尾现象。当自由度为30或更大时，t分布非常接近正态分布。
+
+
+### 什么是p值？如何计算？
+
+在原假设成立的前提之下，能够得到像观测值这样极端，甚至比它还极端的统计量的概率称为P-值。Under the assumptin that the null hypothesis holds, the probability of getting a value at leat as extreme as the observed value is called a p-value.
+
+- p-value是概率值。在[0, 1]区间里。
+- 与观测值（观测效果）相关，拿来与阈值相比。
+- 衡量极端性，反原假设的保守性。
+
+> 对于PED-X的例子，P-值就是在试验组和对照组的总体均值相等的前提下，得到一个像观测到的差异那么大，甚至比它还大的样本均值之差的概率。 
+你可能有些莫名其妙，P-值告诉我们的是当原假设成立时发生某个事件的概率，但我们所期望的则是原假设不成立。然而，这种方法与经典的“科学方法”没有什么不同，它们的基础都是设计一些实验，以驳倒某个假设。
+
+
+### p值与原假设真假之间的关系可以如何类比？无罪推定原则与假设检验有什么可比性？
+
+法庭。无罪推定原则，需要有证据证明它有罪。p值是证据，仅仅是证据而已。p值够小，可以怀疑是原假设不成立，但是不能推出原假设本身的概率。真相永远不可知，看到的只是呈堂证供而已。
+
+P-值的含义很容易被误解，它经常被认为是原假设为真的概率，但实际上不是。
+It is way too easy to read something into a p-value that it dosen't really imply. It is tempting to think of a p-value as the probability of the null hypothesis being true. But this is not what is actually means.
+
+原假设类似于英美刑事司法制度Anglo-American criminal justice system中的被告人defendant。这种制度基于“无罪推定presumption of innocence”的原则，也就是说，只要不能证明被告有罪，那他就是无罪的innocent until proven guilty。类似地，我们也假定原假设为真，除非得到足够的相反证据。
+
+可以将P-值认为是陪审团的一个判决，判决依据的“排除合理怀疑”原则对应着选择一个非常小的α值，证据就是用来构造t统计量的数据。
+
+在一次审判中，陪审团可以判定被告人“有罪”或“无罪”。“无罪”判决意味着没有足够的证据能说服陪审团认为被告在“排除合理怀疑”的原则下是有罪的，可以认为它相当于“无法证明有罪guilty was not proven”。“无罪”判决并不意味着有足够的证据说服陪审团认为被告人是无辜的，如果有了新的证据，这个判决也与陪审团会做出何种结论无关。
+
+如果P-值很小，就意味着在原假设为真的情况下，得到特定样本的可能性很小。这类似于陪审团认为，如果被告是无辜的，那么得到现有呈堂证供的可能性非常小，因此会做出“有罪”的判决。当然，这并不意味着被告确实有罪，可能陪审团得到的是伪证。类似地，得到一个较小的P-值可能确实因为原假设是错的，也可能仅仅因为样本不能代表其来自的总体，也就是说，证据是误导人的。
+
+注：“排除合理怀疑beyond a reasonable doubt”这个原则意味着主流社会相信，在刑事审判criminal trial中，第一类错误（将无罪的人判为有罪convicting an innocent person）的危害远远大于are much less desirable第二类错误（将有罪的人判为无罪acquitting a guilty person）。在民事案件civil cases中，遵循的原则是“优势证据”，这意味着主流社会认为，此时两种错误是同样有害的。
+
+
+### 为什么能否真正恰当地拒绝原假设，只看P-值是靠不住的？
+
+令我们感到惊奇的是，在已经知道两个分布均值确实不同的情况下，得到在5%的水平下显著的结果的概率只有11.6%。在多于88%的情况下，我们都不能在5%的水平下拒绝错误的原假设。（如果将样本量提高到2000，那么不能拒绝错误的原假设的概率就只有6%。）
+
+- 5%的水平是阈值，p值与它相比。
+    - p值来自于t统计量。
+    - t统计量来自于样本数据和样本自由度。
+- 6%的概率是误判的概率，多次试验里，p值小于5%（可以正确地否定原假设）的概率提高到了94%。
+
+能否真正恰当地拒绝原假设，只看P-值是靠不住的。所以在很多科学文献中，实验结果不能得到其他科学家的重现。还有一个问题就是，研究动力（样本量）和统计发现的可靠性之间，存在着很强的联系。
+That p-values can be unreliable indicators of whether it is truly appropriate to reject a null hypothesis is one of the reasons that so many of the results appearing in the scientific literature cannnot be reproduced by other scientists. One problem is that there is a strong relationship between the study power (the size of the sample) and the credibility of the statistical finding.
+
+- 不是"还有一个问题"，而是"（p值靠不住）的一个问题是"。
+- 翻译成"研究动力"，容易理解成项目的初衷，不如翻译成"研究力度"，表达结果的说服力。
+
+样本量的问题是统计学中频率论方法的一个内在属性。第20章会介绍另外一种方法，它会试图解决这个问题。
+The problem of sample size is an intrinsic attribute of what is called the frequentist approach to statistics.
+
+
+## 19.3 One-tail and One-sample Tests
+
+
+### 为什么要进行单尾检验？为什么可以？
+
+单尾检验，弱化原假设，更容易推翻它。
+
+> 假设PED-X的价格明显比PED-Y便宜。为了开拓市场，X博士只需表明PED-X的效果至少不比PED-Y的效果差。
+证明这个结论的一种方法是，拒绝
+(“两个均值相等”或“PED-X的均值更大”)
+的假设。请注意，这个假设严格弱于均值相等的假设。（假设A严格弱于假设B，那么只要B为真A就为真，反之则不然。）
+
+用更小的p值拒绝弱化了的原假设。
+
+> 因为t分布是对称的，所以要得到单尾检验的P值，只需将双尾检验的P值一分为二即可。所以，单尾检验的P值是0.01718603999075。这使我们可以在大约1.7%的水平上拒绝更弱的假设，使用双尾检验是不能达到这个水平的。
+
+检验的是方向，而不是是否有差别，才用单尾检验。
+
+> 因为单尾检验在测试实验效果方面更有力，所以只要假设是关于某个效果的方向时，人们更喜欢使用单尾检验。但这通常不是一个好方法，只有未检验的方向上缺少效果造成的影响可以忽略时，才适合使用单尾检验。
+
+
+### 在PED-X试验统计分析中，我们得到什么经验教训？
+
+除非是无限数量样本，否则不能保证揭示真相。
+
+> 尽管PED-X和PED-Y的使用者在预期表现上的确存在差异，但如果PED-X和PED-Y的使用者样本数量有限no finite sample is guaranteed to reveal that difference，则无法保证揭示出这一差异。
+
+真有差别，如果差别太小，也难以在95%的置信水平上找到足够的证据。
+
+> 而且，因为预期均值之间的差异很小（不到0.5个百分点），所以像X博士那样的实验（每组100位骑手）不太可能找到足够的证据，使我们在95%的置信水平上认为均值之间存在差异。
+
+刻意增加显著性的做法，可能是自欺欺人。
+
+> 在95%的置信水平上，使用单尾测试可以增加获得统计上显著的结果的可能性，但这样做是有误导性的，因为我们没有任何理由假定PED-X的效果不次于PED-Y。
+
+
+## 19.4 Significant or Not?
+
+
+### 双尾和单尾检验可以用蒙特卡洛模拟来写吗？
+
+用scipy内置函数写
+
+```python
+# 已知条件只有两个
+numGames = 1273
+lyndsayWins = 666
+# 构造sample，赢的是1，输了是0，连在一起写也可以。
+outcomes = [1.0]*lyndsayWins + [0.0]*(numGames-lyndsayWins)
+# scipy.stats.ttest_1samp(a, popmean, axis=0, nan_policy='propagate')
+# Returns:	
+# statistic : float or array
+#            t-statistic
+# pvalue : float or array
+#          two-tailed p-value
+print('The p-value from a one-sample test is',
+      stats.ttest_1samp(outcomes, 0.5)[1])
+```
+
+没有学过统计学，用蒙特卡洛模拟。注意是单尾的，假设了Linda玩得更好，只计入了LWin比观测值还要极端的概率。
+
+```python
+numGames = 1273
+lyndsayWins = 666
+numTrials = 10000
+atLeast = 0
+for t in range(numTrials):
+    LWins = 0
+    for g in range(numGames):
+        if random.random() < 0.5:
+            LWins += 1
+    if LWins >= lyndsayWins:
+        atLeast += 1
+print('Probability of result at least this',
+      'extreme by accident =', atLeast/numTrials)
+```
+
+逻辑正确的写法
+
+```python
+numGames = 1273
+lyndsayWins = 666
+numTrials = 10000
+atLeast = 0
+for t in range(numTrials):
+    LWins, JWins = 0, 0
+    for g in range(numGames):
+        if random.random() < 0.5:
+            LWins += 1
+        else:
+            JWins += 1
+    if LWins >= lyndsayWins or JWins >= lyndsayWins:
+        atLeast += 1
+print('Probability of result at least this',
+      'extreme by accident =', atLeast/numTrials)
+```
+
+程序1和3的结论类似：
+```commandline
+The p-value from a one-sample test is 0.0982205871244
+Probability of result at least this extreme by accident = 0.0986
+```
+
+
+## 19.5 Which N?
+
+
+### 上课与不上课，平均成绩有显著差别吗？
+
+教授期望没有。
+
+但是用两组20个学生40门课各800个成绩，做双尾t检验，p值只有0.01. 推翻了"没有区别"的原假设。
+
+可是两个小组的GPA只有微小的差别啊，怎么如此小的均值差却会有这样的显著性水平呢？
+
+在与N值太大了。
+
+> 当样本足够大时，即使一个很小的效果在统计上也可能是高度显著的。也就是说，N 非常重要。图19-10绘制了使用不同样本量进行1000次试验后的平均P-值。对于每个样本量的每次试验，我们都使用两个样本，这两个样本都来自标准差为5的高斯分布，一个样本均值为100，另一个样本均值为100.5。平均P-值随着样本量的增加而线性减小。当样本量达到1500左右时，0.5%的均值差别就一直在5%的水平上表现出统计上的显著性；当样本量超过2600时，显著性水平达到1%。
+
+![](https://ws1.sinaimg.cn/large/006tNc79gy1frd7h7o8rzj30rs0l3ac4.jpg)
+
+每个学生的40门课成绩并不独立。应该先给它们算平均值，然后用每组20个样本做双尾t检验，这下子p值就有0.3了。
+
+
+## 19.6 Multiple Hypothesis
+
+
+### 5%的置信水平，如果重复20次t检验，是不是就有一次机会拒绝原假设？
+
+是的。5%的本意就是如此。
+
+```python
+import random, scipy
+from scipy import stats # 不加这一句，python3报scipy没有stats属性。
+numHyps = 20
+sampleSize = 200 #这里的值越大，越容易保证有一次5%即1/20的机会推翻原假设。
+population = [] #注意，只有一个总体
+for i in range(5000): #Create large population
+    population.append(random.gauss(0, 1))
+sample1s, sample2s = [], []
+for i in range(numHyps): #Generate many pairs of small samples
+    sample1s.append(random.sample(population, sampleSize))
+    sample2s.append(random.sample(population, sampleSize))
+#Check pairs for statistically significant difference
+numSig = 0
+for i in range(numHyps):
+    if scipy.stats.ttest_ind(sample1s[i], sample2s[i])[1] < 0.05:
+        numSig += 1
+print('Number of statistically significant (p < 0.05) results =',
+       numSig)
+```
+
+因为样本来自同一总体，所以我们知道，原假设为真。但运行这段代码时，会输出以下结果：
+```commandline
+Number of statistically significant (p < 0.05) results = 1
+```
+
+说明根据某一对样本的检验结果，我们可以拒绝原假设。
+
+不用太过惊奇，回忆一下，0.05的P-值意味着在原假设为真的前提下，得到一个像这对样本的均值差异那么大，或者比它更大的均值差异的概率为0.05。因此，当我们检验20对样本时，其中至少有一对的均值在统计上具有显著差异，这一点都不奇怪。将相似的实验执行多次running large sets of related experiments，然后精心挑选出对你有利的结果cherry-picking the result you like，这种行为说好听点叫作“敷衍”can be kindly described as sloppy，但只要稍微较真一点就是另外一种说法了An unkindly person might call it something else。
+
+---
+以上，2018-05-16 16:52:14
+
+

@@ -205,5 +205,202 @@ fitData3('springData.txt')
 去掉6个点后，模型确实发生了变化：k显著减小，而且线性拟合和三次拟合几乎没有区别。
 
 
-### 
+## 18.2 The Behavior of Projectiles
+
+
+### 从四组实验数据里提取一条弹丸轨迹。
+
+```python
+import pylab
+
+
+def getTrajectoryData(fileName):
+    """
+    从弹道数据文件中提取位置与高度，并做格式转换，不做计算。
+    :param fileName: string，弹道数据文件名。
+    :return: 距离，[高度1 2 3 4]数据列表
+    """
+    dataFile = open(fileName, 'r')
+    distances = []
+    heights1, heights2, heights3, heights4 = [],[],[],[]
+    dataFile.readline() # 跨过标题行
+    for line in dataFile:
+        d, h1, h2, h3, h4 = line.split() # tuple对应list赋值
+        # str转float后，推入列表
+        distances.append(float(d))
+        heights1.append(float(h1))
+        heights2.append(float(h2))
+        heights3.append(float(h3))
+        heights4.append(float(h4))
+    dataFile.close()
+    return (distances, [heights1, heights2, heights3, heights4])
+
+
+def processTrajectories(fileName):
+    """
+    处理弹道数据，输出图形。
+    :param fileName:
+    :return: None，显示图形，用一次和二次多项式拟合弹道轨迹。
+    """
+    distances, heights = getTrajectoryData(fileName)
+    numTrials = len(heights)
+    distances = pylab.array(distances)
+    #生成一个数组，用于存储每个距离的高度，并计算平均值
+    totHeights = pylab.array([0]*len(distances))
+    for h in heights:
+        totHeights = totHeights + pylab.array(h)
+    meanHeights = totHeights/len(heights)
+    # 绘图
+    title = 'Trajectory of Projectile (Mean of ' + str(numTrials) + ' Trials)'
+    pylab.figure(title)
+    pylab.title(title)
+    pylab.xlabel('Inches from Launch Point')
+    pylab.ylabel('Inches Above Launch Point')
+    pylab.plot(distances, meanHeights, 'ko')
+    fit = pylab.polyfit(distances, meanHeights, 1)
+    altitudes = pylab.polyval(fit, distances)
+    pylab.plot(distances, altitudes, 'b', label = 'Linear Fit')
+    fit = pylab.polyfit(distances, meanHeights, 2)
+    # 用实验数据对应的点位distances来绘图，导致点少的区域上，曲线不够平滑。
+    altitudes = pylab.polyval(fit, distances)
+    pylab.plot(distances, altitudes, 'k:', label = 'Quadratic Fit')
+    pylab.legend()
+
+
+processTrajectories('launcherData.txt')
+pylab.show()
+``` 
+
+![](https://ws2.sinaimg.cn/large/006tNc79gy1frakj75c1tj30zk0qo409.jpg)
+
+- 二次曲线不够平滑没关系。
+- 二次曲线比一次要好，这很直观，但是好到什么程度？
+
+
+### 为什么不能用最小二乘值来衡量不同拟合方式的优度？
+
+拟合优度goodness of fit也就是预测的准确度accuracy of these predictions。
+
+回忆一下，拟合是通过最小化均方误差minimizing the mean square error而得到的，这说明我们可以通过均方误差来评价拟合优度。
+
+这种方法的问题在于，尽管均方误差具有下界（0），但它没有上界no upper bound。这意味着对于同一数据的两种拟合，我们可以使用均方误差来比较它们的相对优度relative goodness of two fits，但很难用它衡量一个拟合的绝对优度absolute goodness of a fit。
+
+可以使用可决系数coefficient of determination计算一个拟合的绝对优度，可决系数通常写作R2。令yi为第i个观测值，pi为相应的模型预测值，μ为观测值的均值，则：
+
+$$ R^2=1-\frac{\sum_i(y_i-p_i)^2}{\sum_i(y_i-\mu)^2} $$
+
+![](https://ws1.sinaimg.cn/large/006tNc79gy1frakzzlrlkj30as03q74e.jpg)
+
+通过比较估计误差estimation errors（分子the numerator）和原始数据本身的变异性variability of the original values（分母the denominator），R2可以表示在一个数据集中，有多大比例的变异性the proportion of variability(relative to the mean)是由于统计模型by the statisitic model通过拟合provided by the fit造成的accounted for。
+
+评价线性回归模型时，R2的值总是位于0和1之间。如果R2=1，模型就是对数据的完美拟合；如果R2=0，那么模型预测值就与均值周围数据的分布方式没有任何联系。
+
+```python
+def rSquared(measured, predicted):
+    """ 计算线性回归模型的R2可决系数。
+    假设measured为表示测量值的一维数组
+        predicted为表示预测值的一维数组
+    返回可决系数"""
+    # 用数组，语句简洁。
+    # 计算分子，预测值与测量值差方和
+    estimateError = ((predicted - measured)**2).sum()
+    # 计算原始数据方差。分母值是很大，貌似是给均方误差一个上界。
+    meanOfMeasured = measured.sum()/len(measured)
+    variability = ((measured - meanOfMeasured)**2).sum()
+    return 1 - estimateError/variability
+```
+
+
+```commandline
+RSquare of linear fit = 0.0177433205441
+RSquare of quadratic fit = 0.985765369287
+
+```
+
+简单地说，这个结果告诉我们，测量数据中只有不到2%的变异性the variation in the measured data可以用线性模型来解释can be explained by，但超过98%的变异性可以由二次模型来解释。
+
+- 注意这个说法：测量数据的百分之多少的变异性可以用模型来解释。
+
+
+### 用弹丸模型做什么？观摩什么通用模式？
+
+比如求得弹丸落地时的水平速度。
+
+```python
+def getHorizontalSpeed(quadFit, minX, maxX):
+    """计算弹丸落地时的水平速度，打印输出。
+    假设quadFit是二次多项式的系数
+        minX和maxX是用英寸表示的距离，抛物线与x轴的两个交点的坐标。
+       返回以英尺/秒表示的水平速度"""
+    inchesPerFoot = 12
+    xMid = (maxX - minX)/2
+    a,b,c = quadFit[0], quadFit[1], quadFit[2]
+    yPeak = a*xMid**2 + b*xMid + c
+    g = 32.16*inchesPerFoot #accel. of gravity in inches/sec/sec
+    t = (2*yPeak/g)**0.5 #从最高点到目标高度所需时间，单位为秒
+    print('Horizontal speed =',
+          int(xMid/(t*inchesPerFoot)), 'feet/sec')
+          
+# 计算落地时的水平速度，打印输出。
+getHorizontalSpeed(fit, distances[-1], distances[0])
+```
+
+以上我们采取work through的一系列步骤sequence of steps是一种通用的模式a common pattern：
+
+(1) 首先进行实验，获得关于实体系统行为的数据；
+We started by performing an experiment to get some data about the behavior of a physical system.
+
+(2) 然后通过计算找出描述系统行为的模型，并对模型质量进行评价；
+We then used computation to find and evaluate the quality of a model of the behavior of the system.
+
+(3) 最后使用理论分析，设计一个简单的计算过程，推导出感兴趣的模型结果。
+Finally, we used some theory and analysis to desigh a simple computation to derive an interesting consequence of the model.
+
+
+## 18.3 Fitting Exponentially Distributed Data
+
+
+### 指数分布的数据能用线性回归模拟吗？
+
+使用polyfit找出数据模型的方法有个适用范围，即数据之间的联系可以使用形式为y=base^(ax+b)这样的公式来描述。
+
+```python
+def fitExpData(xVals, yVals):
+    """假设xVals和yVals是两个数值型数组，满足yVals[i]=f(xVals(i))，这里的f是指数函数。
+       返回a、b、base，使得log(f(x), base)==ax+b"""
+    logVals = []
+    for y in yVals:
+        logVals.append(math.log(y, 2.0)) #求出以2为底的对数值
+    fit = pylab.polyfit(xVals, logVals, 1)
+    return fit, 2.0
+```
+
+把数据转换一个形式，就可以用已有的方法了。
+
+
+## 18.4 When Theory is Missing
+
+
+### 理论theory科学、实验experimental科学和计算computational科学之间的相互作用interplay怎样？
+
+理论和计算都可以建立模型，实验和计算都可以生成数据，理论和实验互相启发和验证。
+
+在理想世界中，我们可以进行完全可控的实验（例如在弹簧上悬挂重物），研究结果，进而回顾性地retrospectively构建formulate一个与这些结果一致的consistent with模型。然后，再进行新的实验（例如在同一个弹簧上悬挂另一个重物），并将新实验的结果与模型预测的结果进行比较。
+
+不幸的是，在很多情况下，我们甚至不能进行可控的实验。举例来说，假设想构建一个研究利率如何影响股价的模型，我们几乎不可能去设定利率，然后再看看对股价有何影响very few of us are in a position to set interest rates and see what happens。但从另一方面说，相关的历史数据可一点都不少。
+
+
+### 在理论缺失的情况下，怎样让实验数据和计算模型良性互动？
+
+两个类似的策略，共同点是，用数据生成模型，也用数据验证模型。
+
+一种方法是将现有数据划分为训练集training set和保留集holding set，保留集将来会作为测试集test set使用。
+
+另外一种检验模型的方法使用从原始数据中随机选择的多个子集来训练模型，然后检查这些模型彼此之间的相似程度，称为交叉验证cross validation。
+
+
+---
+以上，2018-05-14 11:23:58.
+
+
 
