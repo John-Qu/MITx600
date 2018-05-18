@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a5a47a1-793f-4974-94e3-350147d8e3ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/C20-CONDITIONAL-PROBABILITY-AND-BAYESIAN-STATISTICS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/C21-LIES-DAMNED-LIES-AND-STATISTICS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codes_from_book/em_20_3_calcBayes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codes_from_book/em_20_9_anorexia.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codes_from_book/em_21_3_house_price.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/C22-A-QUICK-LOOK-AT-MACHINE-LEARNING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edX/ex_w3_odd_tuples.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,53 +18,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="C20-CONDITIONAL-PROBABILITY-AND-BAYESIAN-STATISTICS.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/C20-CONDITIONAL-PROBABILITY-AND-BAYESIAN-STATISTICS.md">
+      <file leaf-file-name="C22-A-QUICK-LOOK-AT-MACHINE-LEARNING.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/C22-A-QUICK-LOOK-AT-MACHINE-LEARNING.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="2442">
-                <caret line="111" column="60" selection-start-line="111" selection-start-column="60" selection-end-line="111" selection-end-column="60" />
+              <first_editor relative-caret-position="655">
+                <caret line="216" selection-start-line="216" selection-end-line="216" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="C21-LIES-DAMNED-LIES-AND-STATISTICS.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/C21-LIES-DAMNED-LIES-AND-STATISTICS.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="7634">
-                <caret line="315" column="22" selection-start-line="315" selection-start-column="22" selection-end-line="315" selection-end-column="22" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="em_20_9_anorexia.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codes_from_book/em_20_9_anorexia.py">
+      <file leaf-file-name="ex_w3_odd_tuples.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/edX/ex_w3_odd_tuples.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="em_21_3_house_price.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codes_from_book/em_21_3_house_price.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="em_20_3_calcBayes.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codes_from_book/em_20_3_calcBayes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
-              <caret line="33" column="57" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
+            <state relative-caret-position="66">
+              <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -113,8 +80,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/codes_from_book/em_12_1_greedy.py" />
-        <option value="$PROJECT_DIR$/codes_from_book/em_12_1_choosebest.py" />
         <option value="$PROJECT_DIR$/C10-SOME-SIMPLE-ALGORITHMS-AND-DATA-STRUCTURES.md" />
         <option value="$PROJECT_DIR$/codes_from_book/em_13_2_fastfib.py" />
         <option value="$PROJECT_DIR$/codes_from_book/em_13_2_knapsack.puy.py" />
@@ -164,6 +129,8 @@
         <option value="$PROJECT_DIR$/codes_from_book/em_21_3_house_price.py" />
         <option value="$PROJECT_DIR$/codes_from_book/em_20_9_anorexia.py" />
         <option value="$PROJECT_DIR$/C21-LIES-DAMNED-LIES-AND-STATISTICS.md" />
+        <option value="$PROJECT_DIR$/edX/ex_w3_odd_tuples.py" />
+        <option value="$PROJECT_DIR$/C22-A-QUICK-LOOK-AT-MACHINE-LEARNING.md" />
       </list>
     </option>
   </component>
@@ -190,7 +157,11 @@
             <path>
               <item name="Guttag" type="b2602c69:ProjectViewProjectNode" />
               <item name="Guttag" type="462c0819:PsiDirectoryNode" />
-              <item name="codes_from_book" type="462c0819:PsiDirectoryNode" />
+              <item name="edX" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Guttag" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -201,7 +172,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/codes_from_book/em_16_2_craps_game.py" />
   </component>
   <component name="RecentsManager">
@@ -354,6 +325,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="840" height="1028" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918962" weight="0.3028083" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
@@ -417,20 +389,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/codes_from_book/em_12_1_choosebest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="26" column="18" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codes_from_book/em_13_2_knapsack.puy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/codes_from_book/em_12_1_greedy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2375">
@@ -762,10 +720,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/C21-LIES-DAMNED-LIES-AND-STATISTICS.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="810">
+            <caret line="315" column="22" selection-start-line="315" selection-start-column="22" selection-end-line="315" selection-end-column="22" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/C20-CONDITIONAL-PROBABILITY-AND-BAYESIAN-STATISTICS.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="2442">
+          <first_editor relative-caret-position="810">
             <caret line="111" column="60" selection-start-line="111" selection-start-column="60" selection-end-line="111" selection-end-column="60" />
           </first_editor>
           <second_editor />
@@ -774,16 +742,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/codes_from_book/em_20_9_anorexia.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
+        <state relative-caret-position="550">
           <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/C21-LIES-DAMNED-LIES-AND-STATISTICS.md">
+    <entry file="file://$PROJECT_DIR$/edX/ex_w3_odd_tuples.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C22-A-QUICK-LOOK-AT-MACHINE-LEARNING.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="7634">
-            <caret line="315" column="22" selection-start-line="315" selection-start-column="22" selection-end-line="315" selection-end-column="22" />
+          <first_editor relative-caret-position="655">
+            <caret line="216" selection-start-line="216" selection-end-line="216" />
           </first_editor>
           <second_editor />
         </state>
