@@ -1,4 +1,5 @@
-import pylab
+import numpy
+import matplotlib.pyplot as plt
 
 def minkowskiDist(v1, v2, p):
     """假设v1和v2是两个等长的数值型数组
@@ -13,7 +14,7 @@ class Animal(object):
     def __init__(self, name, features):
         """假设name是字符串；features是数值型列表"""
         self.name = name
-        self.features = pylab.array(features) #列表已经转换为数组
+        self.features = numpy.array(features) #列表已经转换为数组
 
     def getName(self):
         return self.name
@@ -50,7 +51,7 @@ def compareAnimals(animals, precision):
                 row.append(str(round(distance, precision)))
         tableVals.append(row)
     #生成表格
-    table = pylab.table(rowLabels = rowLabels,
+    table = plt.table(rowLabels = rowLabels,
                         colLabels = columnLabels,
                         cellText = tableVals,
                         cellLoc = 'center',
@@ -58,23 +59,29 @@ def compareAnimals(animals, precision):
                         colWidths = [0.2]*len(animals))
     table.scale(1, 2.5)
 
-    pylab.savefig('distances')
+    plt.savefig('distances')
 
 
-rattlesnake = Animal('rattlesnake', [1,1,1,1,0])
-boa = Animal('boa\nconstrictor', [0,1,0,1,0])
-# dartFrog = Animal('dart frog', [1,0,1,0,4]) # 不应给legs更大的权重
-dartFrog = Animal('dart frog', [1,0,1,0,1])
-# animals = [rattlesnake, boa, dartFrog]
+def main():
+    rattlesnake = Animal('rattlesnake', [1,1,1,1,0])
+    boa = Animal('boa\nconstrictor', [0,1,0,1,0])
+    # dartFrog = Animal('dart frog', [1,0,1,0,4]) # 不应给legs更大的权重
+    dartFrog = Animal('dart frog', [1,0,1,0,1])
+    # animals = [rattlesnake, boa, dartFrog]
+    
+    # alligator = Animal('alligator', [1,1,0,1,4]) # 不应给legs更大的权重
+    alligator = Animal('alligator', [1,1,0,1,1])
+    
+    # 把其他几种动物补全
+    cobra = Animal('cobra', [1,1,1,1,0])
+    salmon = Animal('salmon', [1,1,0,1,0])
+    python = Animal('python', [1,1,0,1,0])
+    animals = [cobra, rattlesnake, boa, alligator, dartFrog, salmon, python]
+    
+    compareAnimals(animals, 3)
+    plt.show()
+    
+    
+if __name__ == "__main__":
+    main()
 
-# alligator = Animal('alligator', [1,1,0,1,4]) # 不应给legs更大的权重
-alligator = Animal('alligator', [1,1,0,1,1])
-
-# 把其他几种动物补全
-cobra = Animal('cobra', [1,1,1,1,0])
-salmon = Animal('salmon', [1,1,0,1,0])
-python = Animal('python', [1,1,0,1,0])
-animals = [cobra, rattlesnake, boa, alligator, dartFrog, salmon, python]
-
-compareAnimals(animals, 3)
-pylab.show()
