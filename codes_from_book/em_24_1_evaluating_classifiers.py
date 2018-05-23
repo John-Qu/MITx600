@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+
 def accuracy(truePos, falsePos, trueNeg, falseNeg):
     """
     精确度，计算总体预测准确的程度，即正确识别阳性和阴性的比例，(++ --)/( ++ -+ -- +-)
