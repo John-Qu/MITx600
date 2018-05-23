@@ -1,4 +1,4 @@
-# 20 A QUICK LOOK AT MACHINE LEARNING
+# 22 A QUICK LOOK AT MACHINE LEARNING
 
 
 ### 为什么有必要让机器学会学习？
@@ -116,7 +116,7 @@ to wring more information from "big data"
 
 相似聚簇 clustering：同簇中的个体更相似。
 - 比如：相关基因。
-    
+  
 
 ## 22.1 Feature Vector
 

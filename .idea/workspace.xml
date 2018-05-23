@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a5a47a1-793f-4974-94e3-350147d8e3ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/C23-CLUSTERING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codes_from_book/em_23_1_cluster.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codes_from_book/em_23_2_k_means_clustering.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codes_from_book/em_23_3_contrived_sample.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/C24-CLASSIFICATION-METHODS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codes_from_book/em_24_1_evaluating_classifiers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/distances.png" beforeDir="false" afterPath="$PROJECT_DIR$/codes_from_book/distances.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_22_2_animal.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes_from_book/em_22_2_animal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.spyproject/workspace.ini" beforeDir="false" afterPath="$PROJECT_DIR$/.spyproject/workspace.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C21-LIES-DAMNED-LIES-AND-STATISTICS.md" beforeDir="false" afterPath="$PROJECT_DIR$/C21-LIES-DAMNED-LIES-AND-STATISTICS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C22-A-QUICK-LOOK-AT-MACHINE-LEARNING.md" beforeDir="false" afterPath="$PROJECT_DIR$/C22-A-QUICK-LOOK-AT-MACHINE-LEARNING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes_from_book/dentalFormulas copy.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,24 +21,24 @@
     <favorites_list name="Guttag" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="em_23_4_dentalFormulas.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codes_from_book/em_23_4_dentalFormulas.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="147" column="36" selection-start-line="147" selection-start-column="36" selection-end-line="147" selection-end-column="36" />
+    <leaf>
+      <file leaf-file-name="C24-CLASSIFICATION-METHODS.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/C24-CLASSIFICATION-METHODS.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="319">
+                <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="C23-CLUSTERING.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/C23-CLUSTERING.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="788">
-                <caret line="792" column="22" selection-start-line="792" selection-start-column="22" selection-end-line="792" selection-end-column="22" />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="em_24_1_evaluating_classifiers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codes_from_book/em_24_1_evaluating_classifiers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="836">
+              <caret line="85" column="40" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -89,8 +89,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/C13-DYNAMIC-PROGRAMMING.md" />
-        <option value="$PROJECT_DIR$/codes_from_book/em_15_4_distribution.py" />
         <option value="$PROJECT_DIR$/codes_from_book/em_12_2_graph.py" />
         <option value="$PROJECT_DIR$/C12-KNAPSACK-AND-GRAPH-OPTIMIZATION-PROBLEMS.md" />
         <option value="$PROJECT_DIR$/finger_exercis_in_book/fe_15_4_two_dice.py" />
@@ -140,12 +138,14 @@
         <option value="$PROJECT_DIR$/codes_from_book/dentalFormulas.txt" />
         <option value="$PROJECT_DIR$/codes_from_book/em_23_4_dentalFormulas.py" />
         <option value="$PROJECT_DIR$/C23-CLUSTERING.md" />
+        <option value="$PROJECT_DIR$/codes_from_book/em_24_1_evaluating_classifiers.py" />
+        <option value="$PROJECT_DIR$/C24-CLASSIFICATION-METHODS.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1120" />
+    <option name="width" value="840" />
     <option name="height" value="1028" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -331,10 +331,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1120" height="1028" extended-state="0" />
+    <frame x="0" y="22" width="840" height="1028" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918962" weight="0.20012055" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918962" weight="0.1990232" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50045496" side_tool="true" weight="0.5102041" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49954504" weight="0.42951542" />
@@ -355,21 +355,21 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918962" visible="true" weight="0.2002442" />
       <window_info id="Structure" order="1" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49954504" weight="0.42964554" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.33590308" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49954504" weight="0.49229074" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50045496" side_tool="true" weight="0.5102041" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.33590308" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -396,14 +396,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/codes_from_book/em_12_2_graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="794">
-          <caret line="165" selection-start-line="165" selection-end-line="165" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/C12-KNAPSACK-AND-GRAPH-OPTIMIZATION-PROBLEMS.md" />
     <entry file="file://$PROJECT_DIR$/finger_exercis_in_book/fe_15_4_two_dice.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -570,7 +562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/C19-RANDOMIZED-TRAILS-AND-HYPOTHESIS-CHECKING.md" />
     <entry file="file://$PROJECT_DIR$/codes_from_book/em_20_3_calcBayes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="726">
@@ -601,30 +592,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/C22-A-QUICK-LOOK-AT-MACHINE-LEARNING.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="464">
-            <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/codes_from_book/em_23_3_contrived_sample.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="108" selection-start-line="108" selection-end-line="108" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codes_from_book/dentalFormulas copy.txt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/codes_from_book/em_23_2_k_means_clustering.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -654,11 +627,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/C19-RANDOMIZED-TRAILS-AND-HYPOTHESIS-CHECKING.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="220">
+            <caret line="314" column="38" lean-forward="true" selection-start-line="314" selection-start-column="38" selection-end-line="314" selection-end-column="38" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/C23-CLUSTERING.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="788">
+          <first_editor relative-caret-position="6923">
             <caret line="792" column="22" selection-start-line="792" selection-start-column="22" selection-end-line="792" selection-end-column="22" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C0-PREFACE.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C22-A-QUICK-LOOK-AT-MACHINE-LEARNING.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="134">
+            <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codes_from_book/em_24_1_evaluating_classifiers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="85" column="40" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C24-CLASSIFICATION-METHODS.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="319">
+            <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
           </first_editor>
           <second_editor />
         </state>
