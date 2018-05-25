@@ -269,12 +269,12 @@ def buildROC(trainingSet, testSet, title, plot = True):
         pylab.ylabel('Sensitivity')
     return auroc, sensi_p_pairs
 
-def mean_ROC(examples, num_trials, title, plot = True):
+def mean_ROC(examples, num_trail, title, plot = True):
     xVals, yVals = [], []
     p = 0.0
     sensi_p_pairs = {}
     while p <= 1.0:
-        stats = testModels(examples, num_trials, False, False, p)
+        stats = testModels(examples, num_trail, False, False, p)
         accs, sens, specs, ppvs, aurocs = [], [], [], [], []
         for stat in stats:
             accs.append(stat[0])
@@ -287,16 +287,15 @@ def mean_ROC(examples, num_trials, title, plot = True):
         mean_sensi = sum(sens)/len(sens)
         yVals.append(mean_sensi)
         sensi_p_pairs[mean_sensi] = p
-        p += 0.05
+        p += 0.01
     auroc = sklearn.metrics.auc(xVals, yVals, True)
     if plot:
         pylab.plot(xVals, yVals)
         pylab.plot([0,1], [0,1])
-        title = 'Averages for ' + str(num_trials) + 'trials ' + title + '\nAUROC = ' + str(round(auroc,3))
+        title = "Mean" + title + '\nAUROC = ' + str(round(auroc,3))
         pylab.title(title)
         pylab.xlabel('1 - specificity')
         pylab.ylabel('Sensitivity')
-    return sensi_p_pairs
 
 #random.seed(0)
 #trainingSet, testSet = split80_20(examples)
@@ -329,8 +328,7 @@ def testModels(examples, numTrials, printStats = False, printWeights = False, pr
         auroc = buildROC(training, testSet, "auroc", False)[0]
         tmp = getStats(truePos, falsePos, trueNeg, falseNeg, False)
         stats.append(tmp + (auroc,))
-    if printStats or printWeights:
-        print('Averages for', numTrials, 'trials') #下面两个项目至少打印一项，所以这句放在二者外面。
+    print('Averages for', numTrials, 'trials') #下面两个项目至少打印一项，所以这句放在二者外面。
     if printWeights:
         for feature in range(len(weights)):
             featureMean = sum(weights[feature])/numTrials
@@ -374,7 +372,7 @@ def summarizeStats(stats):
 examples = buildTitanicExamples('TitanicPassengers.txt')
 
 #Look at mean statisics
-# testModels(examples, 100, True, False)
+testModels(examples, 100, True, False)
 
 #Look at weights
 # testModels(examples, 100, False, True)
@@ -418,5 +416,4 @@ examples = buildTitanicExamples('TitanicPassengers.txt')
 # getStats(truePos, falsePos, trueNeg, falseNeg)
 
 #Look at the mean ROC
-# mean_ROC(examples, 20, "auroc", plot = True)
-
+mean_ROC(examples, 100, "auroc", plot = True):

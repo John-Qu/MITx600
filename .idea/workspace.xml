@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a5a47a1-793f-4974-94e3-350147d8e3ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/codes_from_book/em_24_4_logistic_regression.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codes_from_book/em_24_4_runner_logistic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codes_from_book/em_24_4_runner_regression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.spyproject/workspace.ini" beforeDir="false" afterPath="$PROJECT_DIR$/.spyproject/workspace.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/C24-CLASSIFICATION-METHODS.md" beforeDir="false" afterPath="$PROJECT_DIR$/C24-CLASSIFICATION-METHODS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes_from_book/em_24_5_Titanic.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes_from_book/em_24_5_Titanic.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,35 +16,14 @@
     <favorites_list name="Guttag" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4366097">
+    <splitter split-orientation="horizontal" split-proportion="0.46534055">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="em_24_5_Titanic.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="em_24_5_Titanic.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/codes_from_book/em_24_5_Titanic.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="7502">
-                  <caret line="345" selection-start-line="345" selection-end-line="345" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="em_15_3_flip.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/codes_from_book/em_15_3_flip.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2706">
-                  <caret line="123" column="4" selection-start-line="123" selection-start-column="4" selection-end-line="123" selection-end-column="4" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="C24-CLASSIFICATION-METHODS.md" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/C24-CLASSIFICATION-METHODS.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="FIRST">
-                  <first_editor relative-caret-position="810">
-                    <caret line="1474" selection-start-line="1474" selection-end-line="1474" />
-                  </first_editor>
-                  <second_editor />
+                <state relative-caret-position="614">
+                  <caret line="372" selection-start-line="372" selection-end-line="372" />
                 </state>
               </provider>
             </entry>
@@ -60,8 +35,8 @@
           <file leaf-file-name="em_24_5_Titanic.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/codes_from_book/em_24_5_Titanic.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret line="258" column="26" selection-start-line="258" selection-start-column="26" selection-end-line="258" selection-end-column="26" />
+                <state relative-caret-position="1449">
+                  <caret line="407" column="30" selection-start-line="407" selection-start-column="30" selection-end-line="407" selection-end-column="30" />
                 </state>
               </provider>
             </entry>
@@ -360,14 +335,14 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918962" visible="true" weight="0.15370706" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918962" weight="0.15370706" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50045496" side_tool="true" weight="0.5102041" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49954504" weight="0.42951542" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32819384" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.31932774" />
       <window_info id="Structure" order="1" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49954504" weight="0.5121145" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49954504" weight="0.5115546" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" sideWeight="0.5008104" side_tool="true" weight="0.11599512" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -380,22 +355,22 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49954504" weight="0.42951542" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918962" visible="true" weight="0.2002442" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918962" visible="true" weight="0.15370706" />
       <window_info id="Structure" order="1" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49954504" weight="0.42964554" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.33590308" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32819384" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.31932774" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49954504" weight="0.49229074" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49954504" weight="0.5115546" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50045496" side_tool="true" weight="0.5102041" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32819384" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Favorites" order="2" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
+      <window_info id="Favorites" order="2" sideWeight="0.5008104" side_tool="true" weight="0.11599512" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -709,23 +684,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/codes_from_book/em_15_3_flip.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2706">
+        <state relative-caret-position="676">
           <caret line="123" column="4" selection-start-line="123" selection-start-column="4" selection-end-line="123" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/codes_from_book/em_24_5_Titanic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="258" column="26" selection-start-line="258" selection-start-column="26" selection-end-line="258" selection-end-column="26" />
+        <state relative-caret-position="1449">
+          <caret line="407" column="30" selection-start-line="407" selection-start-column="30" selection-end-line="407" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/C24-CLASSIFICATION-METHODS.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="810">
-            <caret line="1474" selection-start-line="1474" selection-end-line="1474" />
+          <first_editor relative-caret-position="793">
+            <caret line="1520" selection-start-line="1520" selection-end-line="1520" />
           </first_editor>
           <second_editor />
         </state>

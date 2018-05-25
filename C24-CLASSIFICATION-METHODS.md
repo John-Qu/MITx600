@@ -1473,3 +1473,49 @@ Try p = 0.44
 数据量太小，如果不对随机采样分组做random.seed(0)的归零处理，ROC每次都不一样，变化很大。所以几个统计量变化也很大。我这样选p，基于一次的ROC，很不靠谱。
 
 
+### 泰坦尼克号幸存者预测模型，因为样本小，随机分组ROC变化大，有没有办法克服？
+
+用多次分组多次实验的平均值画ROC。
+
+```python
+# -*- coding: utf-8 -*-
+
+def mean_ROC(examples, num_trials, title, plot = True):
+    xVals, yVals = [], []
+    p = 0.0
+    sensi_p_pairs = {}
+    while p <= 1.0:
+        stats = testModels(examples, num_trials, False, False, p)
+        accs, sens, specs, ppvs, aurocs = [], [], [], [], []
+        for stat in stats:
+            accs.append(stat[0])
+            sens.append(stat[1])
+            specs.append(stat[2])
+            ppvs.append(stat[3])
+            aurocs.append(stat[4])
+        mean_spec = sum(specs)/len(specs)
+        xVals.append(1.0 - mean_spec)
+        mean_sensi = sum(sens)/len(sens)
+        yVals.append(mean_sensi)
+        sensi_p_pairs[mean_sensi] = p
+        p += 0.05
+    auroc = sklearn.metrics.auc(xVals, yVals, True)
+    if plot:
+        pylab.plot(xVals, yVals)
+        pylab.plot([0,1], [0,1])
+        title = 'Averages for ' + str(num_trials) + 'trials ' + title + '\nAUROC = ' + str(round(auroc,3))
+        pylab.title(title)
+        pylab.xlabel('1 - specificity')
+        pylab.ylabel('Sensitivity')
+    return sensi_p_pairs
+   
+   
+#Look at the mean ROC
+mean_ROC(examples, 20, "auroc", plot = True)
+```
+
+平滑很多了
+![]()
+
+---
+以上，2018-05-25 16:57:16. 书本完结。
