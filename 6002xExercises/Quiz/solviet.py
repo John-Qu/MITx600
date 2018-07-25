@@ -4,10 +4,16 @@ def solveit(test):
         Returns an int, x, with the smallest absolute value such that test(x) is True
         In case of ties, return any one of them.
     """
-    x = 0
-    while not test(x):
-        x += 1
-    return x
+    x, y = 0, 0
+    while True:
+        if test(x):
+            return x
+        else:
+            x += 1
+        if test(y):
+            return y
+        else:
+            y -= 1
 
 #### This test case prints 49 ####
 def f(x):
