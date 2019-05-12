@@ -2,154 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a5a47a1-793f-4974-94e3-350147d8e3ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6002xExercises/Final Exam/p3_monte_carlo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6002xExercises/Final Exam/p6_find_combination.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6002xExercises/Quiz/max_contig_sum.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6002xExercises/Quiz/notes.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6002xExercises/Quiz/solviet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6002xExercises/Quiz/songlist.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6002xExercises/l5_e2_random_even.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6002xExercises/l7_e3_stdDevOfLengths.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6002xExercises/l8_e4_threeball.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Guttag.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Guttag.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.spyproject/codestyle.ini" beforeDir="false" afterPath="$PROJECT_DIR$/.spyproject/codestyle.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.spyproject/encoding.ini" beforeDir="false" afterPath="$PROJECT_DIR$/.spyproject/encoding.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.spyproject/vcs.ini" beforeDir="false" afterPath="$PROJECT_DIR$/.spyproject/vcs.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.spyproject/workspace.ini" beforeDir="false" afterPath="$PROJECT_DIR$/.spyproject/workspace.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/C0-PREFACE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/C1-GETTING-STARTED.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/C10-SOME-SIMPLE-ALGORITHMS-AND-DATA-STRUCTURES.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/C11-PLOTTING-AND-MORE-ABOUT-CLASSES.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/C12-KNAPSACK-AND-GRAPH-OPTIMIZATION-PROBLEMS.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/C13-DYNAMIC-PROGRAMMING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/C14-RANDOM-WALK-AND-MORE-ABOUT-DATA-VISUALIZATION.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/C15-STOCHASTIC-PROGRAMS-PROBABILITY-AND-DISTRIBUTIONS.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/C16-MONTE-CARLO-SIMIULATION.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/C17-SAMPLING-AND-CONFIDENCE-INTERVALS.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/C18-UNDERSTANDING-EXPERIMENTAL-DATA.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/C19-RANDOMIZED-TRAILS-AND-HYPOTHESIS-CHECKING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/C2-INTRODUCTION-TO-PYTHON.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/C20-CONDITIONAL-PROBABILITY-AND-BAYESIAN-STATISTICS.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/C21-LIES-DAMNED-LIES-AND-STATISTICS.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/C22-A-QUICK-LOOK-AT-MACHINE-LEARNING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/C23-CLUSTERING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/C24-CLASSIFICATION-METHODS.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/C3-SOME-SIMPLE-NUMERICAL PROGRAMS.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/C4-FUNCTION-SCOPING-AND-ABSTRACTION.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/C5-STRUCTURED TYPES, MUTABILITY, AND HIGHER-ORDER FUNCITONS.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/C6-TESTING-AND-DEBUGGING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/C7-EXCEPTIONS-AND-ASSERTION.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/C8-CLASS-AND-OBJECT-ORIENTED-PROGRAMMING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/C9-A-SIMPLISTIC-INTRODUCTION-TO-ALGORITHMIC-COMPLEXITY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/112.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/123.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/Balance Remaining of $200000Mortgages.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/Cash Outlay of $200000Mortgages.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/Monthly Payments of $200000 Mortgages.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/Net Cost of $200000 Mortgages.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/TitanicPassengers.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/dentalFormulas.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/distances.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_11_0_pylab.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_11_1_principal.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_11_2_mortgage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_12_1_choosebest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_12_1_greedy.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_12_2_graph.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_13_2_fastfib.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_13_2_knapsack.puy.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_14_drunkard.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_15_3_flip.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_15_4_benford.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_15_4_check_empirical.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_15_4_clearance.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_15_4_distribution.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_15_4_flips.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_15_4_successful_starts.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_15_6_simSeries.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_16_1_checkPascal.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_16_2_craps_game.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_16_4_estPi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_17_1_getBMdata.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_17_1_testsamples.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_17_2_plotmeans.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_17_OCW_lect8.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_17_temperatures.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_18_2_projectiles.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_18_3_exponential.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_18_3_polyfit_exponential.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_18_spring_constant.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_19_1_cyclists.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_19_6_multiple_hypotheses.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_20_3_calcBayes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_20_9_anorexia.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_21_3_house_price.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_22_2_animal.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_23_1_cluster.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_23_2_k_means_clustering.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_23_3_contrived_sample.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_23_4_dentalFormulas.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_24_1_evaluating_classifiers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_24_2_runner.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_24_3_knearest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_24_4_logistic_regression.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_24_4_logistic_regression_two_classes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_24_4_runner_logistic.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_24_4_runner_regression.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_24_5_Titanic copy.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_24_5_Titanic.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_3_4_not_equal.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_3_5_Newton_Raphson.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_4_2_find_root.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_4_3_2_Palindrome.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_4_3_factorial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_4_3_fibonacci.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_5_3_1_removeDups.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_5_3_removeDups.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_5_4_apply_to_each.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_5_4_lambda.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_6_1_1_copy.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_6_1_2_abs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_6_1_2_isprime.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_7_1_read_val.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_8_1_2_Person.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_8_1_int_set.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_8_4_mortgate.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/em_9_3_6_gempowerset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/launcherData.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/mysteryData.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/springData.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/springData2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/temperatures.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/各种醉鬼一次漫步的轨迹.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/各种醉鬼各种步数的平均移动距离.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/各种醉鬼走相同步数后的多次最终位置.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_from_book/检验k-means方法的效果.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/edX/ex_4_is_in.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/edX/ex_4_polysum.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/edX/ex_w2_ps2_credit_payment.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/edX/ex_w3_odd_tuples.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/finger_exercis_in_book/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/finger_exercis_in_book/fe_15_4_binomial_distribution.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/finger_exercis_in_book/fe_15_4_two_dice.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/finger_exercis_in_book/fe_2_4_toFind_largest_odd_number.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/finger_exercis_in_book/fe_2_4_toPrint_numXs_times.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/finger_exercis_in_book/fe_3_2_Sum_string_num.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/finger_exercis_in_book/fe_7_1_sum_digits.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/finger_exercis_in_book/fe_7_2_find_an_even.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/finger_exercis_in_book/fe_7_2_get_ratios.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -203,20 +58,7 @@
     <favorites_list name="Guttag" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Readme.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="817">
-                <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -318,15 +160,6 @@
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
-  </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="840" />
@@ -340,22 +173,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Guttag" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Guttag" type="462c0819:PsiDirectoryNode" />
+              <item name="MITx600" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MITx600" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MITx600" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MITx600" type="462c0819:PsiDirectoryNode" />
+              <item name="BookNotes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="repeat&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
@@ -521,8 +360,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1522913039366</updated>
+      <workItem from="1557650119185" duration="392000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="392000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -536,54 +379,51 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32820514" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50045496" side_tool="true" weight="0.5102041" />
-      <window_info anchor="right" x="0" y="0" width="370" height="850" id="Documentation" order="5" sideWeight="0.50871795" side_tool="true" weight="0.3962149" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32689655" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.3271795" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49954504" weight="0.31076923" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49954504" weight="0.5328032" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49333334" visible="true" weight="0.17948718" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" sideWeight="0.4890511" weight="0.15506716" />
-      <window_info anchor="right" id="SciView" order="4" sideWeight="0.49128205" weight="0.3962149" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49333334" visible="true" weight="0.18131869" />
       <window_info id="Structure" order="1" sideWeight="0.50666666" side_tool="true" weight="0.1978022" />
       <window_info id="Favorites" order="2" sideWeight="0.5016112" side_tool="true" weight="0.25506446" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32819384" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49954504" weight="0.31076923" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.69641024" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32820514" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32689655" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.3271795" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49954504" weight="0.53265303" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50045496" side_tool="true" weight="0.5102041" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32819384" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" sideWeight="0.4890511" weight="0.15506716" />
+      <window_info anchor="right" id="SciView" order="4" sideWeight="0.49128205" weight="0.3962149" />
+      <window_info anchor="right" x="0" y="0" width="370" height="850" id="Documentation" order="5" sideWeight="0.50871795" side_tool="true" weight="0.3962149" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918962" visible="true" weight="0.15370706" />
       <window_info id="Structure" order="1" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.5008104" side_tool="true" weight="0.11599512" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32819384" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49954504" weight="0.42951542" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32819384" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49954504" weight="0.42951542" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.31932774" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49954504" weight="0.5115546" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50045496" side_tool="true" weight="0.5102041" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" sideWeight="0.5008104" side_tool="true" weight="0.11599512" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32819384" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.31932774" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LAST_COMMIT_MESSAGE" value="" />
@@ -602,19 +442,9 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/edX/Final Exam/Problem7.py" />
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="8454" column="13" selection-start-line="8454" selection-start-column="13" selection-end-line="8454" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/C0-PREFACE.md" />
     <entry file="file://$PROJECT_DIR$/6002Exercises/test.py" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -641,19 +471,7 @@
     <entry file="file://$PROJECT_DIR$/6002xExercises/pset1/ps1_partition.py" />
     <entry file="file://$PROJECT_DIR$/6002xExercises/pset1/ps1_cow_data.txt" />
     <entry file="file://$PROJECT_DIR$/6002 Problem Set 1.md" />
-    <entry file="file://$PROJECT_DIR$/6002 Lecture 5 - Stochastic Thinking.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state>
-          <caret column="32" selection-start-column="32" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/6002 Lecture 5 - Stochastic Thinking.md" />
     <entry file="file://$PROJECT_DIR$/6002xExercises/l3_e7_students.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-16">
@@ -756,16 +574,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/6002 Lecture 8 - Monte Carlo Simulations.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="163">
-            <caret line="8" selection-start-line="8" selection-end-line="8" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/6002 Lecture 8 - Monte Carlo Simulations.md" />
     <entry file="file://$PROJECT_DIR$/6002xExercises/l8_e1_flipcoin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -816,13 +625,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.1/python_stubs/1995955354/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.1/python_stubs/1995955354/builtins.py" />
     <entry file="file://$PROJECT_DIR$/6002xExercises/Final Exam/p6_find_combination.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
@@ -837,14 +640,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/6002 Lecture 3 - Graph Problems.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-2" />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/6002 Lecture 3 - Graph Problems.md" />
     <entry file="file://$PROJECT_DIR$/6002xExercises/Final Exam/rabbits.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -858,9 +654,28 @@
     <entry file="file://$PROJECT_DIR$/Readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="817">
+          <first_editor relative-caret-position="774">
             <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
           </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookNotes/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookNotes/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookNotes/C19-RANDOMIZED-TRAILS-AND-HYPOTHESIS-CHECKING.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor />
           <second_editor />
         </state>
       </provider>
