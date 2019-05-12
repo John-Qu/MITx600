@@ -12,22 +12,16 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      loadSidebar: true
-      loadNavbar: false
-      name: '',
-      repo: ''
+      // load from _sidebar.md
+      loadSidebar: true,
+
+      // load from summary.md
+      // loadSidebar: 'summary.md'
+      subMaxLevel: 3,
+      name: 'MITx 600 Series',
+      repo: 'https://github.com/John-Qu/MITx600'
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 </body>
 </html>
-
-<!-- index.html -->
-
-<script>
-  window.$docsify = {
-    loadSidebar: true
-    loadNavbar: false
-  }
-</script>
-<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
