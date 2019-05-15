@@ -2,19 +2,19 @@
 
 ## 仓库内容
 
-这里是我学习 Prof. Guttag 的 *[Introduction to Computation and Programming Using Python - With Application to Understanding Data](https://www.amazon.cn/dp/0262529629/ref=sr_1_1?__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&keywords=Introduction+to+Computation+and+Programming+Using+Python+-+With+Application+to+Understanding+Data&qid=1557665816&s=gateway&sr=8-1)*  一书所做的摘要笔记，以及书中的[程序例子](https://github.com/John-Qu/MITx600/tree/master/BookCodes)。
+这里是我学习 Prof. Guttag 的 [Introduction to Computation and Programming Using Python - With Application to Understanding Data](https://www.amazon.cn/dp/0262529629/ref=sr_1_1?__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&keywords=Introduction+to+Computation+and+Programming+Using+Python+-+With+Application+to+Understanding+Data&qid=1557665816&s=gateway&sr=8-1 "Buy at Amazon") 一书所做的摘要笔记，以及书中的[程序例子](https://github.com/John-Qu/MITx600/tree/master/BookCodes)。
 
 另有 edX 上的练习和作业代码。[MITx6001]() 和 [6002]() 两门课，做得比较匆忙，没有整理笔记。
 
 ## 课程途径
 
-关于课程途径简介，可以参考 C0-PREFACE.md。
+关于课程途径简介，可以参考[前言](https://john-qu.github.io/MITx600/#/c0)。
 
 三月中旬，下定决心后，我在中国亚马逊订购了第二版的英文书。（查实没有第二版的电子版）
 
-![](https://ws4.sinaimg.cn/large/006tKfTcgy1fqhztta6s2j31kw23vx6p.jpg)
+![我的书已经送人，电脑还在](https://ws4.sinaimg.cn/large/006tKfTcgy1fqhztta6s2j31kw23vx6p.jpg)
 
-4月18日在图灵社区发现了它的[中文译本](http://www.ituring.com.cn/book/1966)电子书，是2018年3月23日出版的。中英对照着看，加快了读书速度。另外图灵社区允许复制粘贴，代码试运行效率也得以提升。
+4月18日在图灵社区发现了它的 [中文译本](http://www.ituring.com.cn/book/1966 "在图灵买") 电子书，是2018年3月23日出版的。中英对照着看，加快了读书速度。另外图灵社区允许复制粘贴，代码试运行效率也得以提升。
 
 ## 进度参考
 
@@ -40,5 +40,3 @@
 我是一个很久都没有坐在桌前好好吃完一顿饭的人。前后四个月，终于完成了，难道不值得点两壶酒庆祝一下？
 
 仅此而已，以资鼓励。
-
-
