@@ -117,6 +117,31 @@ def get_available_letters(letters_guessed):
 # print(get_available_letters(letters_guessed))
 
 
+def update_warning_guessing(warnings_remaining, guesses_remaining, warnings, guesses, guessed_word):
+    """
+    Update the warnings and guesses remaining, and tell the messages combined
+    with guessed word
+    :param warnings_remaining: int
+    :param guesses_remaining: int
+    :param warnings: int
+    :param guesses: int
+    :param guessed_word: str
+    :return warnings_remaining: int:
+    :return guesses_remaining: int:
+    """
+    if warnings != 0:
+        if warnings_remaining != 0:
+            warnings_remaining -= warnings
+            print("You have", warnings_remaining, "warnings left:", guessed_word)
+        else:
+            guesses_remaining -= warnings
+            print("You have no warnings left so you lose one guess:", guessed_word)
+    else:
+        guesses_remaining -= guesses
+        print(guessed_word)
+    return warnings_remaining, guesses_remaining
+
+
 
 def minus_waring_or_guessing(warnings_left, guesses_left):
     """
@@ -163,88 +188,85 @@ def hangman(secret_word):
     ##Count the scores in this game. Tell him.
     ##
     ##
-    ##
-
-
-def hangman(secret_word):
-    '''
-    secret_word: string, the secret word to guess.
-    
-    Starts up an interactive game of Hangman.
-    
-    * At the start of the game, let the user know how many 
-      letters the secret_word contains and how many guesses s/he starts with.
-      
-    * The user should start with 6 guesses
-
-    * Before each round, you should display to the user how many guesses
-      s/he has left and the letters that the user has not yet guessed.
-    
-    * Ask the user to supply one guess per round. Remember to make
-      sure that the user puts in a letter!
-    
-    * The user should receive feedback immediately after each guess 
-      about whether their guess appears in the computer's word.
-
-    * After each guess, you should display to the user the 
-      partially guessed word so far.
-    
-    Follows the other limitations detailed in the problem write-up.
-    '''
+    ###Initiate guesses left and warnings left.
+    guesses_remaining, warnings_remaining, = 6, 3
+    ##Tell the user the length of the secret word, and the game rounds start.
     print("Welcome to the game Hangman!")
     print("I am thinking of a word that is", len(secret_word)), "letters long.")
-    print("You have 3 warnings left.")
-    # guesses_left: int
-    guesses_left = 6
-    # warnings_left: int
-    warnings_left = 3
+    print("You have", warnings_remaining, "warnings left.")
+    ##Initiate letters guessed and letters available.
     # letters_guessed: list (of letters)
     letters_guessed = []
-    # hit_flag: bool
-    hit_flag = False
-    while guesses_left > 0:
-        ## update available_letters
-        available_letters = get_available_letters(letters_guessed)
-        # respond_message, warning_message: string
-        respond_message, warning_message = "", ""
-        ## General messages in each guess round
-        print('-------------');
-        print("You have", warnings_left, "warnings left.")
-        print("You have", guesses_left, "guesses left.")
-        print("Available letters:", available_letters)
-        ## check getting a input
+    # letters_available: string
+    letters_available = get_available_letters(letters_guessed)
+    # guessed_word: string, with _ and space
+    guessed_word = get_guessed_word(secret_word, letters_guessed)
+    ##Begin the rounds of guessing.
+    ##Remind the user of how many guesses s/he has left after each guess
+    # game_over: bool, True if guessed or guess chances run out.
+    lost, win = False, False
+    while not game_over:
+        print("-----------")
+        print("You have", guesses_remaining, "guesses left")
+    ##Update all the letters the user has not guessed so far and
+    ## tell the user.
+        letters_available = get_available_letters(letters_guessed)
+        print("Available Letters:", letters_available)
+    ##Ask the user to supply one guess at a time.
         guess_letter = input("Please guess a letter:").lower()
-        while not bool(len(guess_letter)):
+    ##Check whether the user input one symbol. Ask again otherwise.
+        while not len(guess_letter) == 1:
             guess_letter = input("Please guess a letter:").lower()
-        ## check guess letter state
-        if guess_letter in available_letters:
-            letters_guessed += guess_letter
-            if guess_letter in secret_word:
-                respond_message = "Good guess:"
-                hit_flag = True
-            else:
-                respond_message = "Oops! That letter is not in my word."
-                hit_flag = False
-        elif guess_letter == "*":
-            pass
-        elif guess_letter in letters_guessed:
-            warning_message = "Oops! You've already guessed that letter. "
-            warnings_left, guessed_left = minus_waring_or_guessing(warings_left, guessed_left)
+    ##Check whether the input is alphabets. Warn him otherwise.
+        if not guess_letter.isalpha():
+            print("Oops! That is not a valid letter.")
+            warnings_remaining, guesses_remaining = update_warning_guessing(warnings_remaining, guesses_remaining, 1, 0, guessed_word)
+            break
+    ##Check whether the input is already in letters guessed. Warn him otherwise.
+        if guess_letter in letters_guessed:
+            print("Oops! You've already guessed that letter.")
+            warnings_remaining, guesses_remaining = update_warning_guessing(warnings_remaining, guesses_remaining, 1, 0, guessed_word)
+            break
+    ##Update warnings remaining or guesses remaining in the minus cases above.
+        pass
+    ##Update guesses remaining in the plus cases above.
+        pass
+    ##If the input passes all the above tests and put it into letters guessed.
+    ## Update the guessed word.
+        letters_guessed += guess_letter
+        guessed_word = get_guessed_word(secret_word, letters_guessed)
+    ##Check whether the guess is good. Tell him.
+    ## 1. Good guess
+    ## 2. Oops! That letter is not in my word
+        if guess_letter in secret_word:
+            print("Good guess:")
+            warnings_remaining, guesses_remaining = update_warning_guessing(warnings_remaining, guesses_remaining, 0, 0, guessed_word)
         else:
-            respond_message = "Oops! That is not a valid letter."
-
-        print( You have",
-        warnings_left, "warnings left:",
-        get_guessed_word(secret_word, letters_guessed))
-        break
-        print(
-            "You have no warnings left so you lose one guess:",
-            get_guessed_word(secret_word, letters_guessed))
-       if guess_letter in secret_word:
-            print("Good guess:", get_guessed_word(secret_word, letters_guessed))
-        if is_word_guessed(secret_word, letters_guessed):
-            print()
-
+            print("Oops! That letter is not in my word:")
+            if guess_letter in "aeiou":
+                warnings_remaining, guesses_remaining = update_warning_guessing(warnings_remaining, guesses_remaining, 0, 2, guessed_word)
+            else:
+                warnings_remaining, guesses_remaining = update_warning_guessing(warnings_remaining, guesses_remaining, 0, 1, guessed_word)
+    ##Init or update the guessed word. Tell him in the same line.
+        pass
+    ##Check if the num of guesses left has reached zero. Then game over.
+        if guessed_word == secret_word:
+            win = True
+        if guesses_remaining <= 0:
+            lost = True
+    ## Tell him the results and what the secret word is.
+    print("-----------")
+    if lost:
+        print("Sorry, you ran out of guesses. The word was", secret_word)
+    if win:
+        print("Congratulations, you won!")
+    ##Count the scores in this game. Tell him.
+        unique_letters = []
+        for letter in secret_word:
+            if letter not in unique_letters:
+                unique_letters += letter
+        score = guesses_remaining * len(unique_letters)
+        print("Your total score for this game is:", score)
 
 
 

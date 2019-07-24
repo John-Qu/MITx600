@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a5a47a1-793f-4974-94e3-350147d8e3ef" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MIT6_0001F16/ps0.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MIT6_0001F16/ps1a.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MIT6_0001F16/ps1b.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MIT6_0001F16/ps1c.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT6_0001F16/ps2/hangman.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIT6_0001F16/ps2/hangman.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,8 +62,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MIT6_0001F16/ps2/hangman.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="151" column="40" selection-start-line="151" selection-start-column="40" selection-end-line="151" selection-end-column="40" />
+            <state relative-caret-position="396">
+              <caret line="136" column="19" selection-start-line="136" selection-start-column="19" selection-end-line="136" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -401,12 +397,12 @@
       <workItem from="1563758696021" duration="6857000" />
       <workItem from="1563862936702" duration="1613000" />
       <workItem from="1563865994624" duration="9450000" />
-      <workItem from="1563949482163" duration="223000" />
+      <workItem from="1563949482163" duration="4450000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27408000" />
+    <option name="totallyTimeSpent" value="31635000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -432,7 +428,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32820514" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32689655" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.3112245" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="8" visible="true" weight="0.31016043" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49954504" weight="0.18181819" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50045496" side_tool="true" weight="0.5102041" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -790,8 +786,8 @@
     <entry file="file://$PROJECT_DIR$/MIT6_0001F16/hangman.py" />
     <entry file="file://$PROJECT_DIR$/MIT6_0001F16/ps2/hangman.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="151" column="40" selection-start-line="151" selection-start-column="40" selection-end-line="151" selection-end-column="40" />
+        <state relative-caret-position="396">
+          <caret line="136" column="19" selection-start-line="136" selection-start-column="19" selection-end-line="136" selection-end-column="19" />
         </state>
       </provider>
     </entry>
