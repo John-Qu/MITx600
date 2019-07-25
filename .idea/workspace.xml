@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a5a47a1-793f-4974-94e3-350147d8e3ef" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MIT6_0001F16/ps2/hangman.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIT6_0001F16/ps2/hangman.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,19 +58,6 @@
   <component name="FavoritesManager">
     <favorites_list name="Guttag" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MIT6_0001F16/ps2/hangman.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="136" column="19" selection-start-line="136" selection-start-column="19" selection-end-line="136" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -114,69 +102,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/edX/Final Exam/Problem4.py" />
-        <option value="$PROJECT_DIR$/edX/Final Exam/Problem5.py" />
-        <option value="$PROJECT_DIR$/edX/Final Exam/Problem6.py" />
-        <option value="$PROJECT_DIR$/edX/Final Exam/Problem7.py" />
-        <option value="$PROJECT_DIR$/6002Exercises/test.py" />
-        <option value="$PROJECT_DIR$/6002Exercises/power_sets.py" />
-        <option value="$PROJECT_DIR$/6002Exercises/l2_e2_powerset.py" />
-        <option value="$PROJECT_DIR$/C12-KNAPSACK-AND-GRAPH-OPTIMIZATION-PROBLEMS.md" />
-        <option value="$PROJECT_DIR$/6002Exercises/l3_e2_students.py" />
-        <option value="$PROJECT_DIR$/6002Exercises/l3_e7_students.py" />
-        <option value="$PROJECT_DIR$/6002 Lecture 3 - Graph Problems" />
-        <option value="$PROJECT_DIR$/6002xExercises/pset1/test.py" />
-        <option value="$PROJECT_DIR$/6002xExercises/pset1/ps1_partition.py" />
-        <option value="$PROJECT_DIR$/6002 Problem Set 1.md" />
-        <option value="$PROJECT_DIR$/6002 Lecture 5 - Stochastic Thinking.md" />
-        <option value="$PROJECT_DIR$/MITx6002 Problem Set 2" />
-        <option value="$PROJECT_DIR$/6002xExercises/l5_e2_random_even.py" />
-        <option value="$PROJECT_DIR$/6002xExercises/pset1/ps1.py" />
-        <option value="$PROJECT_DIR$/BookCodes/em_24_4_logistic_regression_two_classes.py" />
-        <option value="$PROJECT_DIR$/6002xExercises/Problem Set 2/ps2.py" />
-        <option value="$PROJECT_DIR$/6002xExercises/Quiz/songlist.py" />
-        <option value="$PROJECT_DIR$/6002xExercises/Quiz/max_contig_sum.py" />
-        <option value="$PROJECT_DIR$/6002xExercises/Quiz/notes.md" />
-        <option value="$PROJECT_DIR$/6002xExercises/Quiz/solviet.md.py" />
-        <option value="$PROJECT_DIR$/6002xExercises/Quiz/solviet.py" />
-        <option value="$PROJECT_DIR$/6002xExercises/l7_e3_stdDevOfLengths.py" />
-        <option value="$PROJECT_DIR$/6002xExercises/l8_e1_flipcoin.py" />
-        <option value="$PROJECT_DIR$/6002 Lecture 8 - Monte Carlo Simulations.md" />
-        <option value="$PROJECT_DIR$/6002xExercises/l8_e4_threeball.py" />
-        <option value="$PROJECT_DIR$/6002xExercises/ProblemSet3/ps3b.py" />
-        <option value="$PROJECT_DIR$/6002xExercises/ProblemSet4/ps4.py" />
-        <option value="$PROJECT_DIR$/6002xExercises/Final Exam/p3_monte_carlo.py" />
-        <option value="$PROJECT_DIR$/6002xExercises/Final Exam/die.py" />
-        <option value="$PROJECT_DIR$/6002xExercises/Final Exam/p6_find_combination.py" />
-        <option value="$PROJECT_DIR$/6002xExercises/Final Exam/rabbits.py" />
-        <option value="$PROJECT_DIR$/Readme.md" />
-        <option value="$PROJECT_DIR$/docs/index.html" />
-        <option value="$PROJECT_DIR$/docs/add-space.py" />
-        <option value="$PROJECT_DIR$/docs/c2.md" />
-        <option value="$PROJECT_DIR$/docs/c4.md" />
-        <option value="$PROJECT_DIR$/docs/_sidebar.md" />
-        <option value="$PROJECT_DIR$/docs/c12.md" />
-        <option value="$PROJECT_DIR$/docs/c23.md" />
-        <option value="$PROJECT_DIR$/docs/README.md" />
-        <option value="$PROJECT_DIR$/docs/c23.ipynb" />
-        <option value="$PROJECT_DIR$/docs/c14.md" />
-        <option value="$PROJECT_DIR$/MIT6_0001F16/ps0.py" />
-        <option value="$PROJECT_DIR$/MIT6_0001F16/ps1b.py" />
-        <option value="$PROJECT_DIR$/MIT6_0001F16/ps1a.py" />
-        <option value="$PROJECT_DIR$/MIT6_0001F16/ps1c.py" />
-        <option value="$PROJECT_DIR$/MIT6_0001F16/ps2/hangman.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="758" />
-    <option name="y" value="23" />
-    <option name="width" value="922" />
-    <option name="height" value="1027" />
-  </component>
+  <component name="ProjectId" id="1OUeO26CUxfTZmzBTHrZC7bRnRW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -185,29 +111,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="MITx600" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MITx600" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MITx600" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MITx600" type="462c0819:PsiDirectoryNode" />
-              <item name="MIT6_0001F16" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MITx600" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MITx600" type="462c0819:PsiDirectoryNode" />
-              <item name="MIT6_0001F16" type="462c0819:PsiDirectoryNode" />
-              <item name="ps2" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
       <pane id="Course" />
     </panes>
   </component>
@@ -397,12 +300,11 @@
       <workItem from="1563758696021" duration="6857000" />
       <workItem from="1563862936702" duration="1613000" />
       <workItem from="1563865994624" duration="9450000" />
-      <workItem from="1563949482163" duration="4450000" />
+      <workItem from="1563949482163" duration="8565000" />
+      <workItem from="1564036357465" duration="101000" />
+      <workItem from="1564036574181" duration="3581000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31635000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -413,56 +315,19 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="758" y="23" width="922" height="1027" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49333334" weight="0.35338345" />
-      <window_info id="Structure" order="1" sideWeight="0.50666666" side_tool="true" weight="0.1978022" />
-      <window_info id="Favorites" order="2" sideWeight="0.5016112" side_tool="true" weight="0.25506446" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32819384" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49954504" weight="0.28877005" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.69641024" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32820514" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32689655" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="8" visible="true" weight="0.31016043" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49954504" weight="0.18181819" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50045496" side_tool="true" weight="0.5102041" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Jupyter" order="13" visible="true" weight="0.10714286" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" sideWeight="0.4890511" weight="0.15506716" />
-      <window_info anchor="right" id="SciView" order="4" sideWeight="0.49128205" weight="0.34554335" />
-      <window_info anchor="right" x="0" y="0" width="370" height="850" id="Documentation" order="5" sideWeight="0.50871795" side_tool="true" weight="0.3962149" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918962" visible="true" weight="0.15370706" />
-      <window_info id="Structure" order="1" sideWeight="0.5008104" side_tool="true" weight="0.11693791" />
-      <window_info id="Favorites" order="2" sideWeight="0.5008104" side_tool="true" weight="0.11599512" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32819384" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49954504" weight="0.42951542" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32819384" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.31932774" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49954504" weight="0.5115546" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50045496" side_tool="true" weight="0.5102041" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LAST_COMMIT_MESSAGE" value="" />
@@ -484,312 +349,12 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MITx600$ps0.coverage" NAME="ps0 Coverage Results" MODIFIED="1563760931339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MIT6_0001F16" />
     <SUITE FILE_PATH="coverage/MITx600$ps1c.coverage" NAME="ps1c Coverage Results" MODIFIED="1563779083206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MIT6_0001F16" />
-    <SUITE FILE_PATH="coverage/MITx600$hangman__1_.coverage" NAME="hangman (1) Coverage Results" MODIFIED="1563866268066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MIT6_0001F16/ps2" />
-    <SUITE FILE_PATH="coverage/MITx600$ps1a.coverage" NAME="ps1a Coverage Results" MODIFIED="1563775957787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MIT6_0001F16" />
-    <SUITE FILE_PATH="coverage/MITx600$ps1b.coverage" NAME="ps1b Coverage Results" MODIFIED="1563776557711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MIT6_0001F16" />
     <SUITE FILE_PATH="coverage/MITx600$hangman.coverage" NAME="hangman Coverage Results" MODIFIED="1563865957390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MIT6_0001F16" />
+    <SUITE FILE_PATH="coverage/MITx600$hangman__1_.coverage" NAME="hangman (1) Coverage Results" MODIFIED="1564040462438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MIT6_0001F16/ps2" />
+    <SUITE FILE_PATH="coverage/MITx600$ps1a.coverage" NAME="ps1a Coverage Results" MODIFIED="1563775957787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MIT6_0001F16" />
     <SUITE FILE_PATH="coverage/MITx600$rabbits.coverage" NAME="rabbits Coverage Results" MODIFIED="1563758970680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/6002xExercises/Final Exam" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="774">
-            <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookNotes/README.md" />
-    <entry file="file://$PROJECT_DIR$/BookNotes/index.html" />
-    <entry file="file://$PROJECT_DIR$/BookNotes/C19-RANDOMIZED-TRAILS-AND-HYPOTHESIS-CHECKING.md" />
-    <entry file="file://$PROJECT_DIR$/BookCodes/em_4_3_2_Palindrome.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookCodes/em_3_5_Newton_Raphson.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/_navbar.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/add-space.py" />
-    <entry file="file://$PROJECT_DIR$/docs/c0-preface.md" />
-    <entry file="file://$PROJECT_DIR$/docs/C2-INTRODUCTION-TO-PYTHON.md" />
-    <entry file="file://$PROJECT_DIR$/docs/c1-getting-started.md" />
-    <entry file="file://$PROJECT_DIR$/docs/c3.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/c5.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor>
-            <folding>
-              <element signature="e#0#23#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/c6.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/c7.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/c12.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="653">
-            <caret line="185" column="17" selection-start-line="185" selection-start-column="17" selection-end-line="185" selection-end-column="17" />
-            <folding>
-              <element signature="e#0#58#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/_sidebar.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="450">
-            <caret line="25" selection-start-line="25" selection-end-line="25" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/c13.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/c15.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/c24.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/c21.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/c20.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/C20-CONDITIONAL-PROBABILITY-AND-BAYESIAN-STATISTICS.md" />
-    <entry file="file://$PROJECT_DIR$/docs/c19.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor>
-            <folding>
-              <element signature="e#0#20#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/c18.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/c17.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor>
-            <folding>
-              <element signature="e#0#27#0" expanded="true" />
-              <element signature="e#0#20#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/c16.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="486">
-            <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/c23.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="414">
-            <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/c22.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/c4.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="594">
-            <caret line="32" selection-start-line="32" selection-end-line="32" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/c2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/c23.ipynb">
-      <provider selected="true" editor-type-id="jupyter-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/c14.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="4842">
-            <caret line="269" selection-start-line="269" selection-end-line="269" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/c0.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/6001xExercises/primes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookCodes/em_11_0_pylab.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookCodes/em_6_1_2_isprime.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookCodes/em_5_4_lambda.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookCodes/em_4_3_factorial.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookCodes/em_4_2_find_root.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/6001xExercises/ps3_hangman.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/6001xExercises/ex_4_is_in.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MIT6_0001F16/ps0.py" />
-    <entry file="file://$PROJECT_DIR$/docs/c1.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="-441" />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MIT6_0001F16/ps1a.py" />
-    <entry file="file://$PROJECT_DIR$/MIT6_0001F16/ps1b.py" />
-    <entry file="file://$PROJECT_DIR$/MIT6_0001F16/ps1c.py" />
-    <entry file="file://$PROJECT_DIR$/MIT6_0001F16/hangman.py" />
-    <entry file="file://$PROJECT_DIR$/MIT6_0001F16/ps2/hangman.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="136" column="19" selection-start-line="136" selection-start-column="19" selection-end-line="136" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <SUITE FILE_PATH="coverage/MITx600$ps0.coverage" NAME="ps0 Coverage Results" MODIFIED="1563760931339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MIT6_0001F16" />
+    <SUITE FILE_PATH="coverage/MITx600$ps1b.coverage" NAME="ps1b Coverage Results" MODIFIED="1563776557711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MIT6_0001F16" />
   </component>
 </project>
