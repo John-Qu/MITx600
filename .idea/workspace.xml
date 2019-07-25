@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2a5a47a1-793f-4974-94e3-350147d8e3ef" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MIT6_0001F16/ps2/hangman.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIT6_0001F16/ps2/hangman.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,14 +104,6 @@
   <component name="ProjectId" id="1OUeO26CUxfTZmzBTHrZC7bRnRW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Course" />
-    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -302,7 +293,7 @@
       <workItem from="1563865994624" duration="9450000" />
       <workItem from="1563949482163" duration="8565000" />
       <workItem from="1564036357465" duration="101000" />
-      <workItem from="1564036574181" duration="3581000" />
+      <workItem from="1564036574181" duration="3976000" />
     </task>
     <servers />
   </component>
