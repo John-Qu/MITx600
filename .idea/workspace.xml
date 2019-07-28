@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2a5a47a1-793f-4974-94e3-350147d8e3ef" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT6_0001F16/PS3/ps3.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIT6_0001F16/PS3/ps3.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,6 +107,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="repeat&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -143,7 +145,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.hangman (1)">
+  <component name="RunManager" selected="Python.test_ps3">
     <configuration name="hangman (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Guttag" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -188,50 +190,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ps1a" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Guttag" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MIT6_0001F16" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MIT6_0001F16/ps1a.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ps1b" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Guttag" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MIT6_0001F16" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MIT6_0001F16/ps1b.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="ps1c" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Guttag" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -254,20 +212,64 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="ps3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Guttag" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MIT6_0001F16/PS3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MIT6_0001F16/PS3/ps3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_ps3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Guttag" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MIT6_0001F16/PS3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MIT6_0001F16/PS3/test_ps3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.ps1a" />
-      <item itemvalue="Python.ps1b" />
       <item itemvalue="Python.ps1c" />
       <item itemvalue="Python.hangman" />
       <item itemvalue="Python.hangman (1)" />
+      <item itemvalue="Python.ps3" />
+      <item itemvalue="Python.test_ps3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test_ps3" />
+        <item itemvalue="Python.ps3" />
         <item itemvalue="Python.hangman (1)" />
         <item itemvalue="Python.hangman" />
         <item itemvalue="Python.ps1c" />
-        <item itemvalue="Python.ps1b" />
-        <item itemvalue="Python.ps1a" />
       </list>
     </recent_temporary>
   </component>
@@ -293,7 +295,9 @@
       <workItem from="1563865994624" duration="9450000" />
       <workItem from="1563949482163" duration="8565000" />
       <workItem from="1564036357465" duration="101000" />
-      <workItem from="1564036574181" duration="3976000" />
+      <workItem from="1564036574181" duration="9042000" />
+      <workItem from="1564142283192" duration="1496000" />
+      <workItem from="1564349946722" duration="289000" />
     </task>
     <servers />
   </component>
@@ -314,13 +318,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="XDebuggerManager">
@@ -346,6 +353,8 @@
     <SUITE FILE_PATH="coverage/MITx600$ps1a.coverage" NAME="ps1a Coverage Results" MODIFIED="1563775957787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MIT6_0001F16" />
     <SUITE FILE_PATH="coverage/MITx600$rabbits.coverage" NAME="rabbits Coverage Results" MODIFIED="1563758970680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/6002xExercises/Final Exam" />
     <SUITE FILE_PATH="coverage/MITx600$ps0.coverage" NAME="ps0 Coverage Results" MODIFIED="1563760931339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MIT6_0001F16" />
+    <SUITE FILE_PATH="coverage/MITx600$ps3.coverage" NAME="ps3 Coverage Results" MODIFIED="1564096154473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MIT6_0001F16/PS3" />
+    <SUITE FILE_PATH="coverage/MITx600$test_ps3.coverage" NAME="test_ps3 Coverage Results" MODIFIED="1564143589446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MIT6_0001F16/PS3" />
     <SUITE FILE_PATH="coverage/MITx600$ps1b.coverage" NAME="ps1b Coverage Results" MODIFIED="1563776557711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MIT6_0001F16" />
   </component>
 </project>

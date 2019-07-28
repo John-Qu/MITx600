@@ -54,7 +54,7 @@ def get_frequency_dict(sequence):
     """
     
     # freq: dictionary (element_type -> int)
-    freqs = {}
+    freq = {}
     for x in sequence:
         freq[x] = freq.get(x,0) + 1
     return freq
@@ -91,8 +91,17 @@ def get_word_score(word, n):
     n: int >= 0
     returns: int >= 0
     """
-    
-    pass  # TO DO... Remove this line when you implement this function
+    # word_freq: dict
+    word_freq = get_frequency_dict(word.lower())
+    letters_score = 0
+    for letter in word_freq.keys():
+        letters_score += word_freq.get(letter, 0) * SCRABBLE_LETTER_VALUES[letter]
+    # factor: int
+    factor = 7*len(word) - 3*(n-len(word))
+    if factor < 1:
+        factor = 1
+    return letters_score * factor
+
 
 #
 # Make sure you understand how this function works and what it does!
@@ -167,8 +176,15 @@ def update_hand(hand, word):
     hand: dictionary (string -> int)    
     returns: dictionary (string -> int)
     """
-
-    pass  # TO DO... Remove this line when you implement this function
+    updated_hand = hand.copy()
+    for letter in word.lower():
+        if letter in hand.keys():
+            if updated_hand[letter] > 0:
+                updated_hand[letter] -= 1
+    for k in hand.keys():
+        if updated_hand[k] == 0:
+            del updated_hand[k]
+    return updated_hand
 
 #
 # Problem #3: Test word validity
@@ -184,8 +200,14 @@ def is_valid_word(word, hand, word_list):
     word_list: list of lowercase strings
     returns: boolean
     """
-
-    pass  # TO DO... Remove this line when you implement this function
+    flag = True
+    hist = get_frequency_dict(word.lower())
+    for letter in hist.keys():
+        if hist[letter] > hand.get(letter, 0):
+            flag = False
+    if word.lower() not in word_list:
+        flag = False
+    return flag
 
 #
 # Problem #5: Playing a hand
@@ -197,8 +219,11 @@ def calculate_handlen(hand):
     hand: dictionary (string-> int)
     returns: integer
     """
+    count = 0
+    for k in hand.keys():
+        count += hand[k]
+    return count
     
-    pass  # TO DO... Remove this line when you implement this function
 
 def play_hand(hand, word_list):
 
@@ -233,7 +258,7 @@ def play_hand(hand, word_list):
     
     # BEGIN PSEUDOCODE <-- Remove this comment when you implement this function
     # Keep track of the total score
-    
+    total_score = 0
     # As long as there are still letters left in the hand:
     
         # Display the hand
