@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a5a47a1-793f-4974-94e3-350147d8e3ef" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MIT6_0001F16/PS3/ps3.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIT6_0001F16/PS3/ps3.py" afterDir="false" />
-    </list>
+    <list default="true" id="2a5a47a1-793f-4974-94e3-350147d8e3ef" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,7 +296,7 @@
       <workItem from="1564142283192" duration="1496000" />
       <workItem from="1564349946722" duration="1404000" />
       <workItem from="1564353181483" duration="4518000" />
-      <workItem from="1564556265524" duration="3598000" />
+      <workItem from="1564556265524" duration="3674000" />
     </task>
     <servers />
   </component>
