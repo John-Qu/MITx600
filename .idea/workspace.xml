@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a5a47a1-793f-4974-94e3-350147d8e3ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/MIT6_0001F16/ps4/MIT6_0001F16_Pset4.skim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MIT6_0001F16/ps4/ps4a.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIT6_0001F16/ps4/ps4a.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MIT6_0001F16/ps4/ps4b.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIT6_0001F16/ps4/ps4b.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/c10.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/c10.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/c11.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/c11.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/c9.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/c9.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT6_0001F16/ps4/ps4c.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIT6_0001F16/ps4/ps4c.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
