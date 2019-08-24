@@ -1,5 +1,5 @@
 # Problem Set 4C
-# Name: <your name here>
+# Name: John Qu
 # Collaborators:
 # Time Spent: x:xx
 

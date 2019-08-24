@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a5a47a1-793f-4974-94e3-350147d8e3ef" name="Default" comment="" />
+    <list default="true" id="2a5a47a1-793f-4974-94e3-350147d8e3ef" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/MIT6_0001F16/ps4/MIT6_0001F16_Pset4.skim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT6_0001F16/ps4/ps4a.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIT6_0001F16/ps4/ps4a.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT6_0001F16/ps4/ps4b.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIT6_0001F16/ps4/ps4b.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/c10.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/c10.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/c11.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/c11.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/c9.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/c9.md" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,39 +71,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>x</find>
-      <find>factor</find>
-      <find>只有分支与循环的程序有什么不足</find>
-      <find>什么是信息隐藏information hiding</find>
-      <find>loc</find>
-      <find>怎样减少collision</find>
-      <find>class Item</find>
-      <find>list comprehension</find>
-      <find>simAll1</find>
-      <find>O/1背包问题的二叉树结构，是否具有优化子结构和重复子问题</find>
-      <find>深度优先搜索DFS的逻辑</find>
-      <find>round</find>
-      <find>stdDev</find>
-      <find>print</find>
-      <find>hatch</find>
-      <find>pylab</find>
-      <find>em_23_1_cluster</find>
-      <find>For label</find>
-      <find>buildModel</find>
-      <find>incorrect</find>
-      <find>simulation</find>
-      <find>reproduce</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>y</replace>
-      <replace>/</replace>
-      <replace>numpy</replace>
-      <replace>plt</replace>
-      <replace>em_23_2_k_means_clustering</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -142,73 +117,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ps3">
-    <configuration name="hangman (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Guttag" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MIT6_0001F16/ps2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MIT6_0001F16/ps2/hangman.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="hangman" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Guttag" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MIT6_0001F16" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MIT6_0001F16/hangman.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ps1c" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Guttag" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MIT6_0001F16" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MIT6_0001F16/ps1c.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.ps4b">
     <configuration name="ps3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Guttag" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -223,6 +132,48 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MIT6_0001F16/PS3/ps3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ps4a" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Guttag" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MIT6_0001F16/ps4" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MIT6_0001F16/ps4/ps4a.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ps4b" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Guttag" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MIT6_0001F16/ps4" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MIT6_0001F16/ps4/ps4b.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -253,20 +204,38 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Doctests in ps4a" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+      <module name="Guttag" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MIT6_0001F16/ps4" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MIT6_0001F16/ps4/ps4a.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.ps1c" />
-      <item itemvalue="Python.hangman" />
-      <item itemvalue="Python.hangman (1)" />
       <item itemvalue="Python.ps3" />
       <item itemvalue="Python.test_ps3" />
+      <item itemvalue="Python.ps4a" />
+      <item itemvalue="Python.ps4b" />
+      <item itemvalue="Python tests.Doctests in ps4a" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ps4b" />
+        <item itemvalue="Python.ps4a" />
+        <item itemvalue="Python tests.Doctests in ps4a" />
         <item itemvalue="Python.ps3" />
         <item itemvalue="Python.test_ps3" />
-        <item itemvalue="Python.hangman (1)" />
-        <item itemvalue="Python.hangman" />
-        <item itemvalue="Python.ps1c" />
       </list>
     </recent_temporary>
   </component>
@@ -297,6 +266,7 @@
       <workItem from="1564349946722" duration="1404000" />
       <workItem from="1564353181483" duration="4518000" />
       <workItem from="1564556265524" duration="3674000" />
+      <workItem from="1564977392608" duration="241000" />
     </task>
     <servers />
   </component>
