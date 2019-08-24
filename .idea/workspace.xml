@@ -112,7 +112,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ps4b">
+  <component name="RunManager" selected="Python.ps4c">
     <configuration name="ps3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Guttag" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -177,7 +177,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_ps3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ps4c" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Guttag" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -185,12 +185,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MIT6_0001F16/PS3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MIT6_0001F16/ps4" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MIT6_0001F16/PS3/test_ps3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MIT6_0001F16/ps4/ps4c.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -219,18 +218,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.ps3" />
-      <item itemvalue="Python.test_ps3" />
       <item itemvalue="Python.ps4a" />
       <item itemvalue="Python.ps4b" />
       <item itemvalue="Python tests.Doctests in ps4a" />
+      <item itemvalue="Python.ps4c" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ps4c" />
         <item itemvalue="Python.ps4b" />
         <item itemvalue="Python.ps4a" />
         <item itemvalue="Python tests.Doctests in ps4a" />
         <item itemvalue="Python.ps3" />
-        <item itemvalue="Python.test_ps3" />
       </list>
     </recent_temporary>
   </component>
